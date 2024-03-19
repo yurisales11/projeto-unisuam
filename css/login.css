@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  /* Menu Fixo*/
+  .menu {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100px;
+    display: flex;
+   justify-content: space-between;
+    
+  }
+
+
+
+  body
+  {
+    background-color:  rgb(237, 237, 237);
+    
+    }
+
+/* DIV LOGO*/
+.unipetlogo{
+    
+    max-width: 35%;
+    width: 14%;
+    display: flex;
+    margin: 0px 11%;
+    align-items: center;
+    cursor:auto;
+   }
+    
+    /*LOGO*/
+#logonav {
+  max-width: 100%;
+    display: flex;
+    
+    margin: auto;
+}
+
+    .ambienteseguro{
+        margin: 0% 10%;
+        display: flex;
+    align-items: center;
+gap: 0.5rem;
+}
+
+.ambienteseguro h1{
+
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(117, 117, 117);
+    font-size: 2rem;
+
+}
+.linha-vertical {
+
+        color: gray;
+        height: 30px;/*Altura da linha*/
+        border-left: 1px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+}
+
+
+.containermain {display: flex;
+    justify-content: center;
+}
+
+.containerlogin {
+    display:flex;
+    background-color: white;
+    flex-direction: column;
+    width: 26%;
+    height: 450px;
+    border-radius: 20px;
+  }
+
+  .containerlogin h2 {margin: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  .containerlogin span {font-size: 1.0rem;
+padding: 0px 0%;}
+  .containerlogin input { width: 100%;
+    max-width: 100%;
+    padding: 10px 3%;
+    border-radius: 5px;
+    
+  }
+.containerinput{display: flex;
+    flex-direction: column;
+    
+    border: 1px solid;
+    margin: 0px 6%;
+    max-width: 100%;
+    height: 100%;
+    gap: 5%;
+}  
+
+  .TituloLogin{padding: 30px 27%;
+    font-family: Georgia, 'Times New Roman', Times, serif, Courier, monospace;
+    font-size: 1.2rem;
+}
+
+.containercadastro{display: inline-block;
+background-image: url(../fotos/cardcadastre-se.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+border-radius: 20px;}
+
+
+.containercadastro h2 {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+margin: 15px 5%;
+color: transparent;}
+
+
+
+.btnentrar{
+    margin-top: 78px;
+    max-width: 100%;
+    width: 100%;
+    padding: 16px;
+    background-color: rgb(86, 195, 242);
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+.btncadastre-se{ margin-top: 250px;
+    max-width: 100%;
+    width: 50%;
+    padding: 8px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid rgb(251, 149, 16);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-left: 25%;
+  }
+
+  .btncadastre-se:hover{
+    background-color:rgb(255, 128, 0);
+    transition: 0.6s;
+  }

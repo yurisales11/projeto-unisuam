@@ -4,15 +4,17 @@
   box-sizing: border-box;
 }
 
+
 /* Menu Fixo*/
 nav {
-  background-color: white;
   
-  width: 100%;
+  background-color: white;
   height: 150px;
   display: flex;
   position: sticky;
   top: 0;
+  align-items: flex-start
+  
 
 }
 
@@ -28,8 +30,8 @@ section div{
 /* DIV LOGO*/
 .unipetlogo{
 display: flex;
-margin-left: 12%;
-margin-top: 0.8%;
+margin: auto;
+
 width: 13%;
 height: 50%;
 }
@@ -46,7 +48,9 @@ height: 50%;
   display: flex;
 max-width: 100%;
 width: 70%;
-margin-left: 0%;
+margin-right: 50px;
+
+
 
 }
 
@@ -55,10 +59,10 @@ margin-left: 0%;
   max-width: 100%;
   width: 70%;
   box-shadow: 1px 1px 1px 2px #ffc19a;
-margin-top: 1.8%;
+
 border-radius: 15px;
 height: 40%;
-margin-left: 5%;
+
 }
 
 .inputdiv{
@@ -67,13 +71,12 @@ max-width: 100%;}
 /* DIV IMG LUPA */
 .lupasearch{
 max-width: 6%;
-margin-top: -0.8%;
-margin-left: 1.2%;
+
 }
 /* IMG LUPA */
 #lupasearch{
   max-width: 100%;
-margin-top: 0%;}
+;}
 
 
 /* INPUT GERAL */
@@ -83,9 +86,9 @@ input{
 border-radius: 13px;
 width: 92%;
 padding: 27px;
-margin-top: -7.5%;
+
 border: none;
-margin-left: 8%;
+
 height: 50px;
 outline:none;
 text-align: justify;
@@ -103,8 +106,7 @@ button{
 width: 30%;
 justify-content: center;
 gap: 10%;
-margin-top: 3%;
-margin-left: 5%;
+
 text-decoration: none;
 }
 
@@ -124,8 +126,7 @@ color: rgb(0, 0, 0)
   display:flex;
   height: 50px;
   width: 100%;
-  margin-top: 1%;
-  margin-right: 60%;
+ 
    
 }
 /* Listas NAV Horizontal*/
@@ -141,7 +142,7 @@ text-decoration: none;
 padding: 18px;
 font-size: 1.2rem;
 font-family: 'Courier New', Courier, monospace;
-margin-left: 0%;}
+}
 
 /* Listas NAV Horizontal *A* HOVER*/
 nav li a:hover{
@@ -154,13 +155,13 @@ transition: 0.3s;
   position: absolute;
   box-shadow: 0.5px 0.5px 0.6px 0.6px rgb(107, 107, 107);
   display: none;
-  margin-top: -0.5%;
+ 
   background-color: white;
   border-radius: 2%;
   width: 14%;
-  
- 
+  transition: 1s;
 }
+  
 /* Menu Dropdown *A* (Ração, Coleiras e Remedios)*/
 .dropdown-menu a{font-size: small;
 font-family:sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Courier, monospace;
