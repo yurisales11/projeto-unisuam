@@ -1,185 +1,303 @@
 *{
   padding: 0;
-  margin: 0;
+ margin: 0;
   box-sizing: border-box;
 }
 
-
-/* Menu Fixo*/
-nav {
-  
-  background-color: white;
-  height: 150px;
-  display: flex;
-  position: sticky;
+nav{background-color:white;
+   position: sticky;
   top: 0;
-  align-items: flex-start
-  
 
-}
 
-/* EDITAR*/
-section div{
-  width: 80%;
-  height: 150px;
-  background-color: #ccc;
-  margin: 20px auto;
-  border-radius: 15px;
-}
+max-width: 100%;}
+.containernav{
+  display: flex;
+  gap: 2rem;
+  margin-top: 0%;
+  height: 70px;
+align-items: center;}
+
 
 /* DIV LOGO*/
-.unipetlogo{
-display: flex;
-margin: auto;
-
-width: 13%;
-height: 50%;
-}
-
-/*LOGO*/
-#logonav {
-  display:flex; 
-  margin-top: 0%;
-  width: 100%;
-}
-
-/* DIV AREA DE SERVIÇO GERAL*/
-.areadeserviço{
+.logoimg{
   display: flex;
-max-width: 100%;
-width: 70%;
-margin-right: 50px;
+  align-items: flex-end;
+  width: 13%;
+  height: 100%;
+  margin: 0px 10%;
+  }
+  
+  /*LOGO*/
+  #logoimagem {display: flex;
+    width: 100%;
+   
+   
+    height: 70px;
+ 
+  }
 
+  /* DIV INPUT GEREAL */
+  .areainput {display: flex;
+    border-radius: 15px;
+             box-shadow: 1px 1px 1px 2px #b7b7b7;
+            max-width: 60%;
+           
+          gap: 0.2rem;
+          height: 90%;
+          
+  }
 
+  .imglupa{
+    display: flex;
+  max-width: 7.5%;
+height: 60px;}
 
-}
+#lupaimagem{display: flex;
 
-/* DIV AREA INPUT (BUTTON E INPUT)*/
-.areainput {
-  max-width: 100%;
-  width: 70%;
-  box-shadow: 1px 1px 1px 2px #ffc19a;
-
-border-radius: 15px;
-height: 40%;
-
-}
-
-.inputdiv{
 max-width: 100%;}
 
-/* DIV IMG LUPA */
-.lupasearch{
-max-width: 6%;
-
-}
-/* IMG LUPA */
-#lupasearch{
+/* DIV Area de Login */
+.iconeslogin{display: flex;
+gap: 1.3rem;
+margin: auto;}
+/* Area de Login HOVER*/
+i:hover{background-color:rgb(186, 186, 186);
   max-width: 100%;
-;}
+  transition: 0.3s;
+  border-radius: 50px;
+  padding: 6px;}
 
-
-/* INPUT GERAL */
-input{
-  display: flex;
-  max-width: 93%;
-border-radius: 13px;
-width: 92%;
-padding: 27px;
-
-border: none;
-
-height: 50px;
-outline:none;
-text-align: justify;
+  .areadeservico{
+    display: flex;
+    justify-content: flex-start;
+    
+   
+    }
+    ul{display: flex;
+      margin:0px 27%;
+  
+ 
 }
+    ul li a{
+      text-decoration: none;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0px auto;
+    padding: 10px 50px;
+    
+    
+    }
+    li{display: flex;
+      list-style: none;
+     
+    
+    }
+    
+    ul li a:hover{color: rgb(255, 140, 0);
+    transition: 0.2s;}
+  
+ 
 
+
+
+  
 /* BUTTON GERAL */
 button{
   background-color:transparent; /* Torna o fundo transparente */
     border: none;
     cursor:pointer
 }
-/* Area de Login */
-.iconeslogin{
-  display: flex;
-width: 30%;
-justify-content: center;
-gap: 10%;
 
-text-decoration: none;
-}
-
-/* Area de Login HOVER*/
-i:hover{background-color:rgb(186, 186, 186);
+/* INPUT div */
+.inputsearch{
 max-width: 100%;
-transition: 0.3s;
-border-radius: 50px;
-padding: 6px;}
-
-/* Span*/
-span {text-align: justify;
-color: rgb(0, 0, 0)
+width: 100%;
+border: none;
+height: 65px;
+text-align: justify;
 }
-/* DIV Serviços*/
-.servicos{
-  display:flex;
+
+input{
+  max-width: 100%;
+  width: 98%;
+  padding: 10px;
+  border: none;
   height: 50px;
-  width: 100%;
- 
+  outline: none;
+text-align:left;
+margin: 8px;}
+
+
+.dificil{
+  display: flex;
+ margin: 10px 0px;
+width: 100%;
+height: 41px;
+align-items: center;
+cursor: pointer;
+}
+
+
+.dificil:hover a{color:rgb(255, 140, 0)}
+
+.dificil::after{
+  content: " ";
+  width: 0%;
+  height: 1.7px;
+  background-color: rgb(0, 132, 255);
+position:absolute;
+bottom: 0;
+transition: 0.5s ease-in-out;
+}
+
+.dificil:hover::after{width: 8.9%;
+}
+
    
-}
-/* Listas NAV Horizontal*/
-nav li{
-  display: inline-block;
+    /* Menu Dropdown (Ração, Coleiras e Remedios)*/
+    .dropdown-menu{
+      
+      position: absolute;
+      box-shadow: 0.5px 0.5px 0.6px 0.6px rgb(239, 239, 239);
+      display: none;
+     background-color: white;
+      border-radius: 2%;
+      width: 14%;
+      
+    }
+      
+    /* Menu Dropdown *A* (Ração, Coleiras e Remedios)*/
+    .dropdown-menu a{
+      font-size: small;
+    font-family:sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Courier, monospace;
+      display: block;
+      text-align: justify;
+      padding: 5%;
+      transition: 0.5s;
+      
+      }
+    /* Menu Dropdown *A* HOVER CORES (Ração, Coleiras e Remedios)*/
+      .dropdown-menu a:hover{
+        background-color:rgba(250, 209, 198, 0.835);
+        border-radius: 30px;
+        width: 100%;
+        transition: 0.5s;
+        
+        
+      }
+    
+      /* Menu Dropdown *A* HOVER APARECER (Ração, Coleiras e Remedios)*/
+    .dropdown:hover .dropdown-menu{
+      display:block;
+      margin-top: 3.2%; 
+      position: absolute !important
+      
+      
 }
 
-/* Listas NAV Horizontal A*/
-nav li a{
-  display: inline-block;
-  color: rgb(0, 0, 0);
-text-decoration: none;
-padding: 18px;
-font-size: 1.2rem;
-font-family: 'Courier New', Courier, monospace;
-}
+   
 
-/* Listas NAV Horizontal *A* HOVER*/
-nav li a:hover{
-  color:rgb(255, 119, 0);
-transition: 0.3s;
-}
+.sectionmsg{display: flex;
+  align-items: center;
+  justify-content: center;
+   width: 100%;
+  height: 60px;
+  background-color: #d4d4d5;
+  margin: 20px auto;
+ }
 
-/* Menu Dropdown (Ração, Coleiras e Remedios)*/
-.dropdown-menu{
-  position: absolute;
-  box-shadow: 0.5px 0.5px 0.6px 0.6px rgb(107, 107, 107);
-  display: none;
+  .mensagemcadastre-se{display: flex;
+  align-items: center;
  
-  background-color: white;
-  border-radius: 2%;
-  width: 14%;
-  transition: 1s;
-}
-  
-/* Menu Dropdown *A* (Ração, Coleiras e Remedios)*/
-.dropdown-menu a{font-size: small;
-font-family:sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Courier, monospace;
-  display: block;
-  text-align: justify;
-  padding: 5%;
-  transition: 0.5s;
-  }
-/* Menu Dropdown *A* HOVER CORES (Ração, Coleiras e Remedios)*/
-  .dropdown-menu a:hover{
-    background-color:rgba(250, 209, 198, 0.835);
-    border-radius: 100px;
-    width: 100%;
-    transition: 0.5s;
-  }
+gap: 5rem;}
 
-  /* Menu Dropdown *A* HOVER APARECER (Ração, Coleiras e Remedios)*/
-.dropdown:hover .dropdown-menu{
-  display: block;
+.mensagemcadastre-se a{text-decoration: none;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: black;
+font-size: 1.3rem;}
+
+.mensagemcadastre-se span:hover{background-color:rgb(186, 186, 186);
+border-radius: 10px;
+width: 50%;}
+
+  /* EDITAR*/
+.sectionedit{
+  width: 80%;
+  height: 130px;
+  background-color: #ccc;
+  margin: 20px auto;
+  border-radius: 15px;
 }
+
+/*BANNER*/
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousell {
+  display: flex;
+  
+
+}
+
+.carousell img {
+  border-radius: 15px;
+  margin: 0px 8%;
+  width: 100%;
+  height: auto;
+}
+
+
+/* Animação do carrossel */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  45% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  70% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+  95% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.carousell {
+  animation: scroll 10s infinite;
+}
+
+
+
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  .carousel img {
+    width: auto;
+    max-width: 100%;
+  }
+}
+
+
+
+
+
 
