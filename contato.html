@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contato.css">
+    <title>Document</title>
+ </head>
+ <header> 
+    <div class = menu>
+    <!--Logo UniPet-->
+   <div class = unipetlogo>
+   <a href="index.html"><img src="fotos/unipet.png" alt="unipetlogo" id = logonav></a>
+</div>
+
+   <div class = ambienteseguro>
+    <div class="linha-vertical"></div>
+    <i class="bi bi-lock-fill"style="font-size: 30px; color: gray"></i> 
+   <h1>Ambiente Seguro</h1>
+</div>
+   </div>
+</header>
+ <body>
+    <section class="form-container">
+        <div class="container">
+            <form method="post" action="envia.php">
+                <h1>Entre em contato </h1>
+                <p> Preencha o formulário abaixo e entraremos em contato com você.</p>
+                <div class="input-single">
+                    <input class="input" type="text" id="nome" name="nome" required autocomplete="off" >
+                    <label for="nome">Seu nome completo</label>
+                </div>
+                <div class="input-single">
+                    <input class="input" type="text" id="email" name="email" required autocomplete="off"  >
+                    <label for="email">Seu e-mail</label>
+                </div>
+                <div class="input-single">
+                    <input class="input" type="text" id="telefone" name="telefone" required autocomplete="off"  >
+                    <label for="telefone"> Seu telefone</label>
+                </div>
+             
+                <div class="btn"><input type="submit" value="Enviar"></div>
+            </form>
+        </div>
+    </section>
+ </body>
+ </html>

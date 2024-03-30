@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Menu Fixo*/
+.menu {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100px;
+  display: flex;
+ justify-content: space-between;
+  
+}
+
+/* DIV LOGO*/
+.unipetlogo{
+  
+  max-width: 35%;
+  width: 14%;
+  display: flex;
+  margin: 0px 11%;
+  align-items: center;
+  cursor:auto;
+ }
+  
+  /*LOGO*/
+#logonav {
+max-width: 100%;
+  display: flex;
+  
+  margin: auto;
+}
+
+  .ambienteseguro{
+      margin: 0% 10%;
+      display: flex;
+  align-items: center;
+gap: 0.5rem;
+}
+
+.ambienteseguro h1{
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(117, 117, 117);
+  font-size: 2rem;
+
+}
+.linha-vertical {
+
+      color: gray;
+      height: 30px;/*Altura da linha*/
+      border-left: 1px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(180deg,#FEF7C9 ,#d47234 );
+    align-items: center;
+    justify-content: center;
+}
+
+.container{background-color: black;
+    max-width: 1280px;
+    margin: 150px auto;
+    padding: 0 4%;
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    background-color: rgb(123, 52, 52);
+    max-width: 500px;
+    height: 450px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+form h1{
+    text-align: center;
+    font-size: 30px;
+    color: #2d5966;
+}
+
+form p{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.input-single{
+    position: relative;
+    margin: 30px 0;
+}
+
+.input-single label{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: all 0.3s;
+    cursor: text;
+}
+
+.input{
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #ccc;
+    padding: 5px;
+    font-size: 17px;
+    outline: 0;
+}
+
+form .input-single .input:focus ~ label,
+form .input-single .input:valid ~ label {
+    transform: translateY(-20px);
+    font-size: 12px;
+    color: #2d5966;
+}
+
+.btn{
+    width: 100%;
+    text-align: center;
+}
+
+form input[type=submit]{
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #ff7700;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn input:hover{background-color: rgb(250, 154, 45);
+transition: 0.2s};
+

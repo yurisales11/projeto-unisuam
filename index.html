@@ -1,135 +1,889 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/index.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UniPet</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Unipet - Ração de Alta Qualidade</title>
+  <meta name="title" content="Unipet - Ração de Alta Qualidade">
+  <meta name="description" content="Loja virtual">
+
+  <!--bootstrap icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!--icon-->
+  <link rel="shortcut icon" href="imagens/favicon/icon-unipet.png" type="">
+  <!--css link-->
+  <link rel="stylesheet" href="css/index.css">
+
+
 </head>
+
 <body>
-    <nav class = navbar>
-        <div class = containernav>
-            <div class= logoimg> 
-                <a href="index.html">
-                <img src="fotos/unipet.png" alt="imglogo" id = logoimagem></a>
-            </div>
-            <div class = areainput>
-                <div class = imglupa>
-                    <button><img src="fotos/lupapng.png" alt="imglupa" id = lupaimagem></button>
-                </div>
-                <div class = inputsearch>
-                    <input type="text" placeholder="Digite aqui o que seu pet precisa!"></input>
-                </div>
-            </div>
-            <div class = iconeslogin>
-                <div class = iconlogin><a href="login.html"><i class="bi bi-telephone-fill" style="font-size:20px; color: black;"></i></a></div>
-                <div class = iconlogin><a href="login.html"><i class="bi bi-heart" style="font-size:20px;color: black;"></i></a></div>
-                <div class = iconlogin><a href="login.html"><i class="bi bi-bag" style="font-size:20px;color: black;"></i></a></div>
-                <div class = iconlogin><a href="login.html"><i class="bi bi-person" style="font-size:20px;color: rgb(255, 157, 0);"></i></a></div>
-            </div>
-            </div>
-            <div class = areadeservico>
-                <ul>
-                    <li class =dropdown>
-                           
-                       <div class = dificil> <a href="PaginaMenu/cahorro.html">
-                            <b>Cachorro</b></a></div>
-                        
-                        <div class = dropdown-menu>
-                            <a href="PaginaMenu/cahorro.html"><b>Ração</b></a> 
-                            <a href="PaginaMenu/cahorro.html"><b>Remédios</b></a>
-                            <a href="PaginaMenu/cahorro.html"><b>Coleira</b></a>
 
-                        </div>
-                    </li>
-                    
-                    <li class =dropdown>
-                           
-                        <div class = dificil> <a href="PaginaMenu/cahorro.html">
-                            <b>Gato</b></a></div>
-                        
-                        <div class = dropdown-menu>
-                            <a href="PaginaMenu/cahorro.html"><b>Ração</b></a>
-                            <a href="PaginaMenu/cahorro.html"><b>Remédios</b></a>
-                            <a href="PaginaMenu/cahorro.html"><b>Coleira</b></a>
-
-                        </div>
-                    </li>
-                    <li class =dropdown>
-                           
-                        <div class = dificil><a href="PaginaMenu/cahorro.html">
-                            <b>Peixe</b></a></div>
-                        
-                        <div class = dropdown-menu>
-                            <a href="PaginaMenu/cahorro.html"><b>Ração</b></a>
-                            <a href="PaginaMenu/cahorro.html"><b>Remédios</b></a>
-                            <a href="PaginaMenu/cahorro.html"><b>Coleira</b></a>
-
-                        </div>
-                    </li>
-                    <li class =dropdown>
-                           
-                        <div class = dificil> <a href="PaginaMenu/cahorro.html">
-                            <b>UniPet</b></a></div>
-                        
-                        
-                    </li>
-                    <li class =dropdown>
-                           
-                        <div class = dificil>  <a href="PaginaMenu/cahorro.html">
-                            <b>Doação</b></a></div>
-                        
-                        
-                    </li>
-                    <li class =dropdown>
-                           
-                        <div class = dificil> <a href="PaginaMenu/cahorro.html">
-                            <b>Recompra</b></a></div>
-                            
-                        
-                        
-                    </li>
-                   
-                   
-
-                </ul>
-            </div>
-
-          
+  <!--Header-->
+  <header class="header">
+    <!--menu-->
+    <nav class = "navbar">
+      <div class = "containernav">
         
-    </nav>
-    <section class = sectionmsg>
-        <div class = mensagemcadastre-se>
-            <a href="cadastre-se.html"><i class="bi bi-suit-heart-fill" style="font-size: 20px; color: black";></i>
-            <span>Cadastre-se Agora! e Ganhe 20% de <B>DESCONTO</B></span></a>
+        <div class= "logoimg"> 
+          <a href="index.html"><img src="imagens/unipet.png" alt="imglogo" id ="logoimagem"></a>
         </div>
-    </section>
-    <div class="carousel-container">
-        <div class="carousell">
-            
-          <img src="banner/1.png" alt="Image 1">
-          <img src="banner/2.png" alt="Image 1">
-          <img src="banner/3.png" alt="Image 1">
-          <img src="banner/5.png" alt="Image 1">
-          
-          
-          
+
+        <div class = "areainput">
+          <div class = "imglupa">
+            <button><img src="imagens/imagem-menu/lupapng.png" alt="imglupa" id = "lupaimagem"></button>
+          </div>
+
+          <div class = "inputsearch">
+            <input type="text" placeholder="Digite aqui o que seu pet precisa!"></input>
+          </div>
         </div>
+
+        <div class = "iconeslogin">
+          <div class = "iconlogin"><a href="login.html"><i class="bi bi-telephone-fill" style="font-size:20px; color: black;"></i></a></div>
+          <div class = "iconlogin"><a href="login.html"><i class="bi bi-heart" style="font-size:20px;color: black;"></i></a></div>
+          <div class = "iconlogin"><a href="login.html"><i class="bi bi-bag" style="font-size:20px;color: black;"></i></a></div>
+          <div class = "iconlogin"><a href="login.html"><i class="bi bi-person" style="font-size:20px;color: rgb(255, 157, 0);"></i></a></div>
+          <div class="dark-mode">
+            <button id="btn-dark-mode">ok</button>
+          </div>
+        </div>
+
       </div>
-  
-        <!--AREA DE TESTA NAO MEXER--> 
-    <section class = sectionedit>
-        
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
 
+      <div class = "areadeservico">
+        <ul class="ul-dropdown">
+          <li class="li-dropdown">
+            <div class = "dificil"> 
+              <a href="PaginaMenu/cahorro.html"><b>Cachorro</b></a>
+            </div>
+                      
+            <div class = "dropdown-menu">
+              <a href="PaginaMenu/cahorro.html"><b>Ração</b></a> 
+              <a href="PaginaMenu/cahorro.html"><b>Remédios</b></a>
+              <a href="PaginaMenu/cahorro.html"><b>Coleira</b></a>
+            </div>
+          </li>
+                  
+          <li class= "li-dropdown">
+            <div class = "dificil"> 
+              <a href="PaginaMenu/cahorro.html"><b>Gato</b></a>
+            </div>
+                      
+            <div class = "dropdown-menu">
+              <a href="PaginaMenu/cahorro.html"><b>Ração</b></a>
+              <a href="PaginaMenu/cahorro.html"><b>Remédios</b></a>
+              <a href="PaginaMenu/cahorro.html"><b>Coleira</b></a>
+            </div>
+          </li>
+
+          <li class = "li-dropdown">           
+            <div class = "dificil">
+              <a href="PaginaMenu/cahorro.html"><b>Passarinho</b></a>
+            </div>
+                      
+            <div class = "dropdown-menu">
+              <a href="PaginaMenu/cahorro.html"><b>Ração</b></a>
+              <a href="PaginaMenu/cahorro.html"><b>Remédios</b></a>
+              <a href="PaginaMenu/cahorro.html"><b>Coleira</b></a>
+            </div>
+          </li>
+
+          <li class = "li-dropdown">
+            <div class = "dificil"> 
+              <a href="PaginaMenu/cahorro.html"><b>UniPet</b></a>
+            </div>         
+          </li>
+
+          <li class = "li-dropdown">         
+            <div class = "dificil">  
+              <a href="PaginaMenu/cahorro.html"><b>Doação</b></a>
+            </div>      
+          </li>
+
+          <li class = "li-dropdown">   
+            <div class = "dificil">
+              <a href="PaginaMenu/cahorro.html"><b>Recompra</b></a>
+            </div>         
+          </li>
+
+        </ul>
+      </div>  
+    </nav>
+
+    <section class = "sectionmsg">
+      <div class = mensagemcadastre-se>
+        <a href="cadastre-se.html"><i class="bi bi-suit-heart-fill" style="font-size: 20px; color: black";></i><span>Cadastre-se Agora! e Ganhe 20% de <B>DESCONTO</B></span></a>
+      </div>
     </section>
+
+    <div class="carousel-container">
+      <div class="carousell">
+          <img src="imagens/banner/1.png" alt="Image 1">
+          <img src="imagens/banner/2.png" alt="Image 1">
+          <img src="imagens/banner/3.png" alt="Image 1">
+          <img src="imagens/banner/4.png" alt="Image 1">
+      </div>
+    </div>
+    
+  </header>
+
+  <main>
+    <article>
+
+      <!--Categoria-->
+
+      <section class="secao categoria">
+        <div class="container">
+
+          <h2 class="h2 secao-titulo">
+            <span class="span">Principais</span> Categorias
+          </h2>
+
+          <ul class="lista">
+
+            <li class="lista-item">
+              <div class="card-categoria">
+
+                <figure class="card-banner img-holder" >
+                  <img src="imagens/categorias/categoriagato.png" alt="" class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-titulo">Gatos</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="lista-item">
+              <div class="card-categoria">
+
+                <figure class="card-banner img-holder" >
+                  <img src="imagens/categorias/categoriadog.png"  alt="" class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-titulo">Cachorro</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="lista-item">
+              <div class="card-categoria">
+
+                <figure class="card-banner img-holder">
+                  <img src="imagens/categorias/categoriapassaro.png"  alt="" class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-titulo">Passarinho</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="lista-item">
+              <div class="card-categoria">
+
+                <figure class="card-banner img-holder">
+                  <img src="imagens/categorias/categoriamedicamentos.png" alt="" class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-titulo">Medicamentos</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="lista-item">
+              <div class="card-categoria">
+
+                <figure class="card-banner img-holder" >
+                  <img src="imagens/category-5.jpg" alt="" class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-titulo">Medicamentos</a>
+                </h3>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+      <hr>
+
+
+
+
+      <!--Ofertas-->
+
+      <section class="secao oferta">
+        <div class="container">
+
+          <ul class="lista-grid">
+            <a href="https://api.whatsapp.com/send?phone=5521971682272&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20o%20banho%20tosa%20do%20meu%20Pet">
+            <li>
+              <div class="card-oferta bg-image img-holder"
+                style="background-image: url('imagens/CallToAction/CTA1.png'); --width: 540; --height: 374;">
+
+                <p class="card-legenda"></p>
+
+                <h3 class="h3 card-titulo">
+                   <span class="span"></span>
+                </h3>
+
+                
+
+              </div>
+            </li>
+          </a>
+            <a href="racao">
+            <li>
+              
+              
+              <div class="card-oferta bg-image img-holder"
+             
+                style="background-image: url('imagens/CallToAction/CTA2.png'); --width: 540; --height: 374; ">
+
+                <p class="card-legenda"></p>
+
+                <h3 class="h3 card-titulo">
+                   <span class="span"></span>
+                </h3>
+
+                
+
+              </div>
+           
+            </li>
+          </a>
+            <a href="https://api.whatsapp.com/send?phone=5521971682272&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20a%20vacina%20do%20meu%20Pet">
+            <li>
+              <div class="card-oferta bg-image img-holder"
+                style="background-image: url('imagens/CallToAction/CTA3.png'); --width: 540; --height: 374; ">
+
+                <p class="card-legenda"></p>
+
+                <h3 class="h3 card-titulo">
+                   <span class="span"></span>
+                </h3>
+
+                
+
+              </div>
+            </li>
+          </a>
+
+          </ul>
+
+        </div>
+      </section>
+      <hr>
+
+
+
+
+      <!--Produto-->
+
+      <section class="secao produto">
+        <div class="container">
+
+          <h2 class="h2 secao-titulo">
+            <span class="span">Mais</span> Vendidos
+          </h2>
+
+          <ul class="lista-grid">
+
+            <li>
+              <div class="card-produto">
+
+                <div class="card-banner img-holder" >
+                  <img src="imagens/produtos/product-1.jpg" 
+                    alt="" class="img-cover default">
+                  <img src="imagens/produtos/product-1_0.jpg"
+                    alt="" class="img-cover hover">
+
+                </div>
+
+                <div class="card-conteudo">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-titulo">Abacaxi</a>
+                  </h3>
+
+                  <data class="card-preco" value="15">R$15.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card-produto">
+
+                <div class="card-banner img-holder" >
+                  <img src="imagens/produtos/product-2.jpg"
+                    alt="" class="img-cover default">
+                  <img src="imagens/produtos/product-2_0.jpg"
+                    alt="" class="img-cover hover">
+                </div>
+
+                <div class="card-conteudo">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-titulo">Abacaxi</a>
+                  </h3>
+
+                  <data class="card-preco" value="45">R$45.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card-produto">
+
+                <div class="card-banner img-holder" >
+                  <img src="imagens/produtos/product-3.jpg"
+                    alt="" class="img-cover default">
+                  <img src="imagens/produtos/product-3_0.jpg"
+                    alt="" class="img-cover hover">
+
+                </div>
+
+                <div class="card-conteudo">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-titulo">Abacaxi</a>
+                  </h3>
+
+                  <data class="card-preco" value="45">R$45.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card-produto">
+
+                <div class="card-banner img-holder" >
+                  <img src="imagens/produtos/product-4.jpg"
+                    alt="" class="img-cover default">
+                  <img src="imagens/produtos/product-4_0.jpg"
+                    alt="" class="img-cover hover">
+
+                </div>
+
+                <div class="card-conteudo">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-titulo">Abacaxi</a>
+                  </h3>
+
+                  <data class="card-preco" value="49">R$49.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card-produto">
+
+                <div class="card-banner img-holder" >
+                  <img src="imagens/produtos/product-5.jpg"
+                    alt="" class="img-cover default">
+                  <img src="imagens/produtos/product-5_0.jpg"
+                    alt="" class="img-cover hover">
+                </div>
+
+                <div class="card-conteudo">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-titulo">Abacaxi</a>
+                  </h3>
+
+                  <data class="card-preco" value="85">R$85.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card-produto">
+
+                <div class="card-banner img-holder" >
+                  <img src="imagens/produtos/product-6.jpg"
+                    alt="" class="img-cover default">
+                  <img src="imagens/produtos/product-6_0.jpg"
+                    alt="" class="img-cover hover">
+                </div>
+
+                <div class="card-conteudo">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-titulo">Abacaxi</a>
+                  </h3>
+
+                  <data class="card-preco" value="85">R$85.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card-produto">
+
+                <div class="card-banner img-holder">
+                  <img src="imagens/produtos/product-7.jpg"
+                    alt="" class="img-cover default">
+                  <img src="imagens/produtos/product-7_0.jpg"
+                    alt="" class="img-cover hover">
+
+                </div>
+
+                <div class="card-conteudo">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-titulo">Abacaxi</a>
+                  </h3>
+
+                  <data class="card-preco" value="85">R$85.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card-produto">
+
+                <div class="card-banner img-holder">
+                  <img src="imagens/produtos/product-8.jpg"
+                    alt="" class="img-cover default">
+                  <img src="imagens/produtos/product-8_0.jpg"
+                    alt="" class="img-cover hover">
+                </div>
+
+                <div class="card-conteudo">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-titulo">Abacaxi</a>
+                  </h3>
+
+                  <data class="card-preco" value="55">R$55.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="secao servico" >
+        <div class="container">
+
+          <img src="imagens/service-image.png"  alt="" class="img">
+
+          <h2 class="h2 secao-titulo">
+            <span class="span">Tudo Que Seu Pet Precisa,</span> Quando Ele Precisa.
+          </h2>
+
+          <ul class="lista-grid">
+
+            <li>
+              <div class="card-servico">
+
+                <figure class="card-icon">
+                  <img src="imagens/service-icon-1.png" 
+                    alt="">
+                </figure>
+
+                <h3 class="h3 card-titulo">Temos Delivery!</h3>
+
+                <p class="card-texto">
+                  Após a confirmação do pagamento ja iniciaremos o processo para enviar o produto do seu amigão!
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card-servico">
+
+                <figure class="card-icon">
+                  <img src="imagens/service-icon-2.png" 
+                    alt="">
+                </figure>
+
+                <h3 class="h3 card-titulo">Garantia ou Reembolso</h3>
+
+                <p class="card-texto">
+                 A Unipet oferece 30 Dias de Garantia ou Reembolso caso o produto apresentar algum tipo de problema. Contate-nos via Whatsapp
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card-servico">
+
+                <figure class="card-icon">
+                  <img src="imagens/service-icon-3.png" 
+                    alt="">
+                </figure>
+
+                <h3 class="h3 card-titulo">Compra Segura</h3>
+
+                <p class="card-texto">
+                  Pagamento totalmente seguro e confiavel.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card-servico">
+
+                <figure class="card-icon">
+                  <img src="imagens/service-icon-4.png" 
+                    alt="">
+                </figure>
+
+                <h3 class="h3 card-titulo">Suporte 24/7</h3>
+
+                <p class="card-texto">
+                  Nossa equipe estará sempre aqui para ajudar você, qualquer dúvida contate-nos, brevemente será respondido.
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!--Gato-->
+
+      <section class="gato bg-image"  style="background-image: url('imagens/sectionindex/UNIPETSECTION.png')">
+        <div class="container">
+
+          <figure class="gato-banner">
+            <img src="imagens/cta-banner.png" alt="" class="w-100">
+          </figure>
+
+          <div class="gato-content">
+
+            <img src="" alt=""
+              class="img">
+
+            <h2 class="h2 secao-titulo"></h2>
+
+            <p class="secao-texto">
+              
+              <a href="" id="invisivel"></a>
+            </p>
+
+            
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!--Marcas-->
+
+      <section class="secao marca">
+        <div class="container">
+
+          <h2 class="h2 secao-titulo">
+            <span class="span">Marcas</span> Populares
+          </h2>
+
+          <ul class="lista">
+
+            <li class="lista-item">
+              <div class="card-marca img-holder">
+                <img src="imagens/marcas/brand-1.jpg" alt=""
+                  class="img-cover">
+              </div>
+            </li>
+
+            <li class="lista-item">
+              <div class="card-marca img-holder">
+                <img src="imagens/marcas/brand-2.jpg" alt=""
+                  class="img-cover">
+              </div>
+            </li>
+
+            <li class="lista-item">
+              <div class="card-marca img-holder">
+                <img src="imagens/marcas/brand-3.jpg" alt=""
+                  class="img-cover">
+              </div>
+            </li>
+
+            <li class="lista-item">
+              <div class="card-marca img-holder">
+                <img src="imagens/marcas/brand-4.jpg" alt=""
+                  class="img-cover">
+              </div>
+            </li>
+
+            <li class="lista-item">
+              <div class="card-marca img-holder">
+                <img src="imagens/marcas/brand-5.jpg" alt=""
+                  class="img-cover">
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+<!--POP-UP-->
+
+
+
+
+  <!--Rodape-->
+
+  <footer class="rodape" style="background-image: url('imagens/footer-bg.jpg')">
+
+    <div class="rodape-topo secao">
+      <div class="container">
+
+        <div class="rodape-marca">
+
+          <a href="#" class="logo">Unipet</a>
+
+          <p class="rodape-texto">
+            Se você tiver alguma dúvida, entre em contato conosco em <a href="mailto:unisuampet@gmail.com"
+              class="link">unisuampet@gmail.com</a>
+          </p>
+
+          <!--endereço e numero-->
+          <ul class="lista-contato">
+
+            <li class="item-contato">
+              <i class="icon-contato bi bi-geo-alt"></i>
+
+              <address class="address">
+                A Definir
+              </address>
+            </li>
+
+            <li class="item-contato">
+              <i class="icon-contato bi bi-telephone"></i>
+              
+              <a href="tel:+16234567891011" class="contact-link">(55+) 21 97168-2272</a>
+            </li>
+
+          </ul>
+
+
+          <!--Redes sociais-->
+          <ul class="lista-social">
+
+            <li>
+              <a href="https://www.instagram.com/unipetrj/" class="social-link">
+                <li class="social-icon" style="--cor-icon: #FB3997; --cor-icon2: #FECF12;">
+                  <span class="icon"><i class="bi bi-instagram"></i></span>
+                  <span class="icon-texto">Instagram</span>
+                </li>
+              </a>
+            </li>
+
+            
+
+            <li>
+              <a href="https://api.whatsapp.com/send?phone=5521971682272&text=Ol%C3%A1%2C%20gostaria%20de%20tirar%20algumas%20d%C3%BAvidas%20sobre%20a%20UniPet" class="social-link">
+                <li class="social-icon" style="--cor-icon: #13c552; --cor-icon2: #26a31a;">
+                  <span class="icon"><i class="bi bi-whatsapp"></i></span>
+                  <span class="icon-texto">Whatsapp</span>
+                </li>
+              </a>
+            </li>
+
+           
+          </ul>
+
+        </div>
+
+        <!--Informações-->
+        <ul class="rodape-lista">
+
+          <li>
+            <p class="rodape-lista-titulo">Corporativo</p>
+          </li>
+
+          <li>
+            <a href="#" class="rodape-link">Carreiras</a>
+          </li>
+
+          <li>
+            <a href="#" class="rodape-link">Quem Somos</a>
+          </li>
+
+          <li>
+            <a href="#" class="rodaper-link">Fale Conosco</a>
+          </li>
+
+          <li>
+            <a href="#" class="rodape-link">Perguntas Frequentes</a>
+          </li>
+
+          <li>
+            <a href="#" class="rodape-link">Fornecedores</a>
+          </li>
+
+          <li>
+            <a href="#" class="rodape-link">Programad e Afiliados</a>
+          </li>
+
+        </ul>
+
+        <ul class="rodape-lista">
+
+          <li>
+            <p class="rodape-lista-titulo">Informação</p>
+          </li>
+
+          <li>
+            <a href="#" class="rodape-link">Loja Online</a>
+          </li>
+
+          <li>
+            <a href="#" class="rodape-link">Politica de Privacidade</a>
+          </li>
+
+          <li>
+            <a href="#" class="rodape-link">Politica de Reembolso</a>
+          </li>
+
+          <li>
+            <a href="#" class="rodape-link">Politica de Envio</a>
+          </li>
+
+          <li>
+            <a href="#" class="rodape-link">Termos de Serviço</a>
+          </li>
+
+          <li>
+            <a href="#" class="rodape-link">Rastrear Pedidos</a>
+          </li>
+
+        </ul>
+
+        <ul class="rodape-lista">
+
+          <li>
+            <p class="rodape-lista-titulo">Serviços</p>
+          </li>
+
+          <li>
+            <a href="#" class="rodape-link">Tosa</a>
+          </li>
+
+          <li>
+            <a href="#" class="rodape-link">Adestramento de Cães</a>
+          </li>
+
+          <li>
+            <a href="#" class="rodape-link">Serviços Veterinários</a>
+          </li>
+
+          <li>
+            <a href="#" class="rodape-link">Unipet Seguros</a>
+          </li>
+
+          <li>
+            <a href="#" class="rodape-link">Adoção de Animais de Estimação</a>
+          </li>
+
+          <li>
+            <a href="#" class="rodape-link">Central de Recursos</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="rodape-inferior">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 Feito por <a href="#" class="copyright-link">João.</a>
+        </p>
+
+        <img src="imagens/payment.png" alt="" class="img">
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a id="link-topo" href="#">&#9650;</a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="java/darkmode.js"></script>
+
+  
+
 </body>
+
 </html>

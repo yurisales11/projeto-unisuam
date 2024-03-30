@@ -58,9 +58,9 @@ gap: 0.5rem;
 
 .container{
 
-  background: linear-gradient(180deg,#FEF7C9 50%,#d47234 50%);
+  background: linear-gradient(180deg,#FEF7C9 ,#d47234 );
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,9 +116,11 @@ gap: 0.5rem;
   height: 50%;
 }
 
-h1{
+.left h1{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   align-self: center;
   padding-bottom: 25px;
+  color:#0055ff ;
   
 }
 .left form{
@@ -165,7 +167,7 @@ form button:hover{
   justify-content: center;
   flex-direction: column;
   color:white;
-  background-image: url(../fotoslogin/cardimg.png);
+  background-image: url(../Imagens/fotoslogin/cardimagem.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -185,7 +187,11 @@ form button:hover{
   margin:20px 0px;
 }
 
-.right button{
+.right a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color:#ffffff;
   padding: 8px;
   margin-top: 240px;
@@ -198,10 +204,20 @@ form button:hover{
   transition: all .4s ease-in-out;
 }
 
-.right button:hover{
+.right a:hover{
   background-color:#ffffff ;
+
+}
+
+
+.right a:hover button{background-color: #ffffff;
+  border: 2px solid #ffffff;
+  transition: all .4s ease-in-out;
   color: #FF914D;
 }
+
+
+
 
 input{
   background-color: #DDDDDD;
@@ -209,3 +225,15 @@ input{
   padding: 10px;
   margin-bottom: 10px;
 }
+
+
+
+.btncadastre{
+  color: white;
+  border: 2px solid #FF914D;
+  font-weight: bold;
+  background-color: #FF914D;
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+}
+

@@ -1,0 +1,516 @@
+*{margin: 0;
+padding: 0;
+box-sizing: 0;}
+
+
+/* Menu Fixo*/
+.menu {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100px;
+    display: flex;
+   justify-content: space-between;
+}
+  
+  /* DIV LOGO*/
+  .unipetlogo{
+    
+    max-width: 35%;
+    width: 14%;
+    display: flex;
+    margin: 0px 11%;
+    align-items: center;
+    cursor:auto;
+   }
+    
+    /*LOGO*/
+  #logonav {
+    max-width: 100%;
+    display: flex;
+    margin: auto;
+  }
+  
+    .ambienteseguro{
+     
+        display: flex;
+        justify-content: center;
+    align-items: center;
+  gap: 0.5rem;
+  width: 25%;
+  }
+  
+  .ambienteseguro h1{
+    
+   
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(117, 117, 117);
+    font-size: 1.5rem;
+  
+  }
+  .linha-vertical {
+  
+        color: gray;
+        height: 30px;/*Altura da linha*/
+        border-left: 1px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+  }
+
+
+
+  body{height: 105vh;
+    background: linear-gradient(750deg,#FEF7C9 ,#d47234 );
+    background-repeat: no-repeat;}
+
+
+.container{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    }
+
+
+
+.form {
+border-radius: 20px;
+margin-top: 3%;
+height: 85vh;
+width: 60%;
+display: flex;
+align-items: center;
+background-image: url(../Imagens/fotocadastre-se/background\ \(11\).png);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center
+}
+
+
+.form-header{
+    display: flex;
+    margin-left: 10%;
+    margin-bottom: 1%;
+    
+}
+
+.title h1{
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+.form-header h1::after {
+    content: "";
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    margin:  auto;
+    position: absolute;
+    border-radius: 10px;
+    background: linear-gradient(300deg,#0565fe ,#ff6200 );
+}
+
+.input-group{
+   
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10%;
+    justify-content: space-between;
+ 
+}
+
+.input-box{
+    
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.6rem
+}
+
+.input-box input{
+margin: 0.0rem 0;
+padding: 0.8rem 1.2rem;
+border: none;
+border-radius: 6px;
+box-shadow: 1px 1px 6px black;
+width: 60%;
+display: flex;
+justify-content: space-between;
+}
+
+.input-box select{
+  margin: 0.1rem 0;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 1px 1px 6px black;
+  width: 66%;
+  display: flex;
+  justify-content: space-between;
+  }
+
+.input-box input:hover{
+    background-color: #e9e9e9;
+   
+}
+
+.input-box input.focus-visible {
+    outline: 1px solid black;
+}
+
+.input-box label{
+    padding: 5px 0px;
+    max-width: 70%;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: black;
+}
+
+.input-box input::placeholder{color: black;}
+
+
+
+.btnenviar{
+  background-color: #ff6200;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  width: 67%;
+  padding: 0px;
+  cursor: pointer;
+margin-bottom: 5%;}
+
+.btnlimpar{
+  background-color: #ff6200;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  width: 67%;
+  padding: 0px;
+  cursor: pointer;
+  margin-bottom: 5%;
+}
+
+button{
+  background-color: #fe7926;
+  color: white;
+ width: 100%;
+ padding: 10px;
+border: none;
+outline: none;
+font-size: 1rem;
+font-weight: 700;
+cursor: pointer;
+border-radius: 10px;}
+
+.btnenviar:hover{background-color: #b36534;
+transition: 0.2s ease-in-out;}
+
+.btnlimpar:hover{background-color:  #b36534;
+  transition: 0.2s ease-in-out;}
+
+button:hover{background-color: #b36534;
+  transition: 0.2s ease-in-out;}
+
+  @media screen and (max-width: 1024px){
+    body{height: 105vh;
+    
+      background: linear-gradient(750deg,#FEF7C9 ,#d47234 );
+      background-repeat: no-repeat;}
+
+       /* DIV LOGO*/
+  .unipetlogo{
+    
+    max-width: 35%;
+    width: 25%;
+    display: flex;
+    margin: 0px 11%;
+    align-items: center;
+    cursor:auto;
+   }
+    
+    /*LOGO*/
+  #logonav {
+    max-width: 100%;
+    display: flex;
+    margin: auto;
+  }
+  
+    .ambienteseguro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 35%;
+}
+  .ambienteseguro h1{
+  max-width: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(117, 117, 117);
+  font-size: 1.3rem;
+}  
+  .container{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    }
+
+  .form{
+   
+    border-radius: 30px;
+    margin-top: 3%;
+    height: 80vh;
+    width:90%;
+    display: flex;
+    align-items: center;
+    background-image: url(../Imagens/fotocadastre-se/background\ \(11\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .btnenviar{
+    background-color: #ff6200;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    width: 70%;
+    padding: 0px;
+    cursor: pointer;}
+  
+  .btnlimpar{
+    background-color: #ff6200;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    width: 70%;
+    padding: 0px;
+    cursor: pointer;
+  }
+  
+  button{
+    background-color: #fe7926;
+    color: white;
+   width: 100%;
+   padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 8px;}
+}
+
+
+  @media screen and (max-width: 768px){
+
+     /* DIV LOGO*/
+  .unipetlogo{
+    
+    max-width: 35%;
+    width: 24%;
+    display: flex;
+    margin: 0px 11%;
+    align-items: center;
+    cursor:auto;
+   }
+    
+    /*LOGO*/
+  #logonav {
+    max-width: 100%;
+    display: flex;
+    margin: auto;
+  }
+
+    body{height: 105vh;
+    
+      background: linear-gradient(750deg,#FEF7C9 ,#d47234 );
+      background-repeat: no-repeat;}
+  
+
+
+    .ambienteseguro{
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      width: 45%;
+}
+  
+
+.ambienteseguro h1{
+  max-width: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(117, 117, 117);
+  font-size: 1.3rem;
+
+}
+    
+  .form{
+    border-radius: 30px;
+    margin-top: 3%;
+    height: 90vh;
+    width:90%;
+    display: flex;
+    align-items: center;
+    background-image: url(../Imagens/fotocadastre-se/background\ \(11\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .btnenviar{
+    background-color: #ff6200;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    width: 72%;
+    padding: 0px;
+    cursor: pointer;}
+  
+  .btnlimpar{
+    background-color: #ff6200;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    width: 72%;
+    padding: 0px;
+    cursor: pointer;
+  }
+  
+  button{
+    background-color: #fe7926;
+    color: white;
+   width: 100%;
+   padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 8px;}
+}
+
+
+@media screen and (max-width: 500px){
+
+  body{height: 120vh;
+    
+    background: linear-gradient(750deg,#FEF7C9 ,#d47234 );
+    background-repeat: no-repeat;}
+
+/* DIV LOGO*/
+.unipetlogo{
+    
+  max-width: 35%;
+  width: 24%;
+  display: flex;
+  margin: 0px 11%;
+  align-items: center;
+  cursor:auto;
+ }
+  
+  /*LOGO*/
+#logonav {
+  max-width: 100%;
+  display: flex;
+  margin: auto;
+}
+
+
+  .ambienteseguro{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 45%;
+}
+
+
+.ambienteseguro h1{
+max-width: 100%;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: rgb(117, 117, 117);
+font-size: 1.3rem;
+
+}
+  
+.form{
+  border-radius: 30px;
+  margin-top: 3%;
+  height: 100vh;
+  width:90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../Imagens/fotocadastre-se/background\ \(11\).png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.input-box{
+    
+  width:50%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.6rem
+}
+
+.input-box input{
+  margin: 0.0rem 0;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 1px 1px 6px black;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  }
+  
+
+.btnenviar{
+  background-color: #ff6200;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  width: 72%;
+  padding: 0px;
+  cursor: pointer;}
+
+.btnlimpar{
+  background-color: #ff6200;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  width: 72%;
+  padding: 0px;
+  cursor: pointer;
+}
+
+button{
+  background-color: #fe7926;
+  color: white;
+ width: 100%;
+ padding: 10px;
+border: none;
+outline: none;
+font-size: 1rem;
+font-weight: 700;
+cursor: pointer;
+border-radius: 8px;}
+}
+
+
+
+
+  
+
