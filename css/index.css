@@ -78,7 +78,10 @@ body {
   line-height: 1.5;
 }
 
-
+hr {width: 95%;
+  margin: 0px auto;
+  border: 1px solid rgb(255, 145, 0);
+}
 
 /*-----------------------------------*\
 \*-----------------------------------*/
@@ -89,7 +92,8 @@ body {
   Reutilizado
 \*-----------------------------------*/
 
-.container { padding-inline: 15px; }
+.container {
+   padding-inline: 15px; }
 
 .secao { padding-block: var(--section-padding); }
 
@@ -142,6 +146,7 @@ body {
 .lista {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 30px;
   overflow-x: auto;
   scroll-snap-type: inline mandatory;
@@ -157,6 +162,7 @@ body {
 
 .lista-grid {
   display: grid;
+ 
   gap: 30px;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -179,44 +185,56 @@ body {
 nav {
   background-color:white;
   position: sticky;
+  top: 0;
   max-width: 100%;
+  
 }
+
+
 
 .containernav {
   display: flex;
   align-items: center;
+  position: sticky;
+  top: 0;
 }
 
 
 /* DIV LOGO*/
 
 .logoimg {
+  
   display: flex;
-  align-items: flex-end;
-  width: 25%;
-  margin: 40px;
+  justify-content: space-between;
+  width: 14%;
+  margin: 10px auto;
 }
 
 /*LOGO*/
 
 #logoimagem { 
-  height: 70px;
+  height: 80px;
 }
 
 /* DIV INPUT GEREAL */
 
 .areainput {
+  border: 1px solid black;
   display: flex;
-  height: 60px;     
+  border-radius: 50px;
+  height: 60px; 
+  width: 40%;    
 }
 
-.imglupa {
-  max-width: 8.5%;
+.imglupa {display: flex;
+  justify-content: center;
+max-width: 10%;
 }
 
 #lupaimagem {
-  display: flex;
-  max-width: 100%;
+  width: 50%;
+  margin: 0px auto;
+  
 }
 
 /* DIV Area de Login */
@@ -243,7 +261,7 @@ nav {
 /* Area de Login HOVER*/
 
 i:hover {
-  background-color:rgb(186, 186, 186);
+  background-color:rgb(252, 127, 17);
   max-width: 100%;
   transition: 0.3s;
   border-radius: 50px;
@@ -251,7 +269,8 @@ i:hover {
 }
 
 .areadeservico  {
-  justify-content: flex-start;
+  display: flex;
+  justify-content: center
 }
 
 .ul-dropdown {
@@ -288,19 +307,23 @@ button {
 .inputsearch {
   max-width: 100%;
   width: 100%;
-  border: none;
+  display: flex;
+  justify-content: center;
+
 }
 
 input {
-  max-width: 95%;
-  width: 95%;
+  background-color: transparent;
+  width: 100%;
   padding: 10px;
-  border: 1px solid rgb(148, 148, 148);
-  border-radius: 30px;
+  border: 0px solid rgb(148, 148, 148);
+  border-radius: 50px;
   height: 50px;
   outline: none;
-  text-align: center;
-  margin: 8px;
+  text-align: flex-start;
+  margin: 4px 0px;
+  
+  
 }
 
 
@@ -327,7 +350,7 @@ input {
 }
 
 .dificil:hover::after {
-  width: 9%;
+  width: 7%;
 }
 
 /* Menu Dropdown (Ração, Coleiras e Remedios)*/
@@ -371,26 +394,44 @@ input {
   justify-content: center;
   width: 100%;
   height: 65px;
-  background-color: #d4d4d5;
+  background: linear-gradient(575deg,#13e3f6 ,#d47234 );
   margin: 20px 0;
  }
 
-.mensagemcadastre-se {
-  gap: 5rem;
+.mensagemcadastre-se{
+  width: 35%;
+  justify-content: center;
+  align-items: center;
+  
+
+  
 }
 
 .mensagemcadastre-se a {
+  display: flex;
+  justify-content: center;
+  gap:1%;
   text-decoration: none;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: black;
-  font-size: 1.4rem;
-  font-weight: 500;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  font-weight: 800;
 }
 
-.mensagemcadastre-se span:hover {
+.mensagemcadastre-se i:hover{
   background-color:rgb(186, 186, 186);
+  padding: 0px;
   border-radius: 10px;
-  width: 50%;
+
+  
+ 
+  }
+
+.mensagemcadastre-se span:hover {
+  color: #d47234;
+  border-radius: 10px;
+  
+
 }
 
 /*BANNER*/
@@ -444,7 +485,7 @@ input {
   }
 }
 
-.carousell {
+.carousel {
   animation: scroll 10s infinite;
 }
 
@@ -457,11 +498,15 @@ input {
   Categorias
 \*-----------------------------------*/
 
-.card-categoria .card-banner { border-radius: 10px }
 
-.card-categoria .img-cover { transition: 0.5 ease; }
+.card-categoria .card-banner { border-radius: 10px;
+}
 
-.card-categoria:is(:hover, :focus-within) .img-cover { transform: scale(1.08); }
+.card-categoria .img-cover { transition: 2 ease;
+  border-radius: 30px; }
+
+.card-categoria:is(:hover, :focus-within) .img-cover { transform: scale(1.08); 
+  transition: .5s;}
 
 .card-categoria .card-titulo {
   margin-block-start: 15px;
@@ -481,16 +526,24 @@ input {
   Ofertas
 \*-----------------------------------*/
 
+
+
 .oferta .lista-grid {
   grid-template-columns: repeat(3, 1fr);
 }
 
 .card-oferta {
-  border-radius: 10px;
+  border-radius: 80px;
   padding: 20px;
   display: grid;
   align-content: center;
 }
+
+.card-oferta:hover{
+  scale: 1.1;
+  transition: .7s;
+}
+
 
 .card-oferta .card-legenda {
   font-size: 1.4rem;
@@ -520,7 +573,9 @@ input {
 
 .produto .img-cover.hover { display: none; }
 
-.card-produto { text-align: center; }
+.card-produto { text-align: center; 
+
+width: 80%;}
 
 .card-produto .card-banner {
   border: 1px solid rgb(232, 232, 232);
@@ -545,7 +600,11 @@ input {
 
 /*Flip imagem*/
 
-.card-produto .card-banner { position: relative; }
+.card-produto .card-banner { position: relative;
+ }
+
+.card-produto .img-holder:hover{scale: 1.1;
+transition: 0.5s;}
 
 .card-produto .card-action-btn,
 .card-produto .card-banner .hover {
@@ -559,7 +618,7 @@ input {
 }
   
 .card-produto:is(:hover, :focus-within) .default,
-.card-produto .hover { opacity: 0; }
+
   
 .card-produto .default,
 .card-produto:is(:hover, :focus-within) .hover { opacity: 1; }
