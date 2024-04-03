@@ -16,7 +16,11 @@
   <link rel="shortcut icon" href="imagens/favicon/icon-unipet.png" type="">
   <!--css link-->
   <link rel="stylesheet" href="css/index.css">
-
+  <link rel="stylesheet" href="css/sliderindex.css">
+  <link rel="stylesheet" href="css/modal.css">
+<!--javascript link-->
+  <script src="java/slide.js" defer></script>
+  <script src="java/modal.js" defer></script>
 
 </head>
 
@@ -43,15 +47,37 @@
         </div>
 
         <div class = "iconeslogin">
-          <div class = "iconlogin"><a href="login.html"><i class="bi bi-telephone-fill" style="font-size:20px; color: black;"></i></a></div>
+          <div class = "iconlogin"><a href="contato.html"><i class="bi bi-telephone-fill" style="font-size:20px; color: black;"></i></a></div>
+         
           <div class = "iconlogin"><a href="login.html"><i class="bi bi-heart" style="font-size:20px;color: black;"></i></a></div>
-          <div class = "iconlogin"><a href="login.html"><i class="bi bi-bag" style="font-size:20px;color: black;"></i></a></div>
+          <div class = "iconlogin"><button id="open-modal"><i class="bi bi-cart2" style="font-size:20px;color: black;"></i></button></div>
+          <div id="fade" class="hide"></div>
+          <div id="modal" class="hide">
+              <div class="modal-header">
+                  <h2>Carrinho</h2>
+                  <button id="close-modal"><i class="bi bi-x" style="font-size:40px;"></i></button>
+              </div>
+              <hr>
+              <div class="modal-body">
+                  <div class="container-modal">
+                  <div class = paragrafo1><p><b>Você ainda não tem</b></p></div>
+                  <div class = paragrafo1><p><b>produtos adicionados à sua sacola</b></p></div>
+                  
+      
+                  <div class="sacola-modal"> <i class="bi bi-cart2" style="font-size:40px;color: black;"></i></div>
+                  <div class = paragrafo1><p>Escolha tudo o que seu Pet precisa e adicione à</div>
+                  <div class = paragrafo1><p>sacola para comprar.</p></div>
+                  <div class = buttonmodal><button class="btnmodal">Entendi</button></div>
+                  </div>
+              
+              </div>
+              </div>
           <div class = "iconlogin"><a href="login.html"><i class="bi bi-person" style="font-size:20px;color: rgb(255, 157, 0);"></i></a></div>
           <div class="dark-mode">
-            <button id="btn-dark-mode">ok</button>
+          <button id="btn-dark-mode">ok</button>
           </div>
         </div>
-
+  
       </div>
 
       <div class = "areadeservico">
@@ -113,26 +139,70 @@
         </ul>
       </div>  
     </nav>
-
+  </header>
+  <header>
     <section class = "sectionmsg">
       <div class = mensagemcadastre-se>
         <a href="cadastre-se.html"><i class="bi bi-suit-heart-fill" style="font-size: 20px; color: rgb(252, 252, 252)";></i><span>Cadastre-se Agora! e Ganhe 20% de <B>DESCONTO</B></span></a>
       </div>
     </section>
+  
+    <section class = slider>
+      <div class = slider-content>
 
-    <div class="carousel-container">
-      <div class="carousell">
-          <img src="imagens/banner/1.png" alt="Image 1">
-          <img src="imagens/banner/2.png" alt="Image 1">
-          <img src="imagens/banner/3.png" alt="Image 1">
-          <img src="imagens/banner/5.png" alt="Image 1">
+        <input type="radio" name="btn-radio" id="radio1">
+        <input type="radio" name="btn-radio" id="radio2">
+        <input type="radio" name="btn-radio" id="radio3">
+        <input type="radio" name="btn-radio" id="radio4">
+
+        <div class = "slide-box primeiro">
+          <img class = "img-desktop" src="Imagens/banner/BANNER FELICIDADE DALMATA.png" alt="slide 1">
+          <img class = "img-mobile" src="Imagens/banner/5.png" alt="slide 1">
+        </div>
+
+        <div class = "slide-box ">
+          <img class = "img-desktop" src="Imagens/banner/3.png" alt="slide 1">
+          <img class = "img-mobile" src="Imagens/banner/1.png" alt="slide 1">
+        </div>
+
+        <div class = "slide-box ">
+          <img class = "img-desktop" src="Imagens/banner/1.png" alt="slide 1">
+          <img class = "img-mobile" src="Imagens/banner/2.png" alt="slide 1">
+        </div>
+
+        <div class = "slide-box ">
+          <img class = "img-desktop" src="Imagens/banner/2.png" alt="slide 1">
+          <img class = "img-mobile" src="Imagens/banner/3.png" alt="slide 1">
+        </div>
+
+        <div class ="nav-auto">
+          <div class = "auto-btn1"></div>
+          <div class = "auto-btn2"></div>
+          <div class = "auto-btn3"></div>
+          <div class = "auto-btn4"></div>
+        </div>
+
+        <div class ="nav-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+
+
+
+
+
       </div>
-    </div>
+     </section>
+
+    
     
   </header>
 
   <main>
     <article>
+
 
       <!--Categoria-->
 
@@ -149,7 +219,7 @@
               <div class="card-categoria">
 
                 <figure class="card-banner img-holder" >
-                  <img src="imagens/categorias/categoriadog.png" alt="" class="img-cover">
+                  <img src="imagens/categorias/cachorro.png" alt="" class="img-cover">
                 </figure>
 
                 <h3 class="h3">
@@ -163,7 +233,7 @@
               <div class="card-categoria">
 
                 <figure class="card-banner img-holder" >
-                  <img src="imagens/categorias/categoriagato.png"  alt="" class="img-cover">
+                  <img src="imagens/categorias/gato.png"  alt="" class="img-cover">
                 </figure>
 
                 <h3 class="h3">
@@ -177,7 +247,7 @@
               <div class="card-categoria">
 
                 <figure class="card-banner img-holder">
-                  <img src="imagens/categorias/categoriapassaro.png"  alt="" class="img-cover">
+                  <img src="imagens/categorias/passaro.png"  alt="" class="img-cover">
                 </figure>
 
                 <h3 class="h3">
@@ -191,7 +261,7 @@
               <div class="card-categoria">
 
                 <figure class="card-banner img-holder">
-                  <img src="imagens/categorias/categoriamedicamentos.png" alt="" class="img-cover">
+                  <img src="imagens/categorias/medicamentos.png" alt="" class="img-cover">
                 </figure>
 
                 <h3 class="h3">
@@ -577,12 +647,13 @@
       </section>
 
 
+      <hr>
 
 
 
       <!--Gato-->
 
-      <section class="gato bg-image"  style="background-image: url('imagens/sectionindex/UNIPETSECTION.png')">
+      <section class="gato bg-image"  style="background-image: url('imagens/sectionindex/bannercta.png')">
         <div class="container">
 
           <figure class="gato-banner">

@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: 0;
+}
+
+body{
+    padding: 1rem;
+}
+
+
+#open-modal{
+    
+}
+
+#close-modal{ 
+    background-color: white;
+    color: #FAA300;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    outline: none;
+    font-size: 1rem;
+    transition: 0.4s;
+    font-weight: 500;
+}
+
+
+button:hover{
+    opacity: 1;
+}
+
+#fade, 
+#modal{
+    transition: .5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+#fade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 5;
+}
+
+#modal {
+    position: fixed;
+    left: 78%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    z-index: 10;
+    width: 500px;
+    height: 500px;
+    max-width: 90%;
+    padding: 1.2rem;
+    border-radius: 1.0rem;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1px solid #ccc;
+    margin-bottom: 1rem;
+}
+
+.modal-body{
+    display: flex;
+    justify-content: center;
+    height: 75%;
+    width: 100%;
+}
+
+.modal-body p{
+    margin-bottom: 1rem;
+}
+
+#modal.hide,
+#fade.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal.hide {
+    top: 0;
+}
+
+hr{
+    margin-bottom: 10px;
+}
+
+.container-modal{display: block;
+    
+    width: 100%;
+
+   
+}
+
+.paragrafo1{display: flex;
+    justify-content: center;
+    margin: 0;
+    font-weight: 100;
+    font-size: 1rem;
+    line-height: 80%;
+    color: #000000;}
+
+.sacola-modal {
+    display:flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+
+
+
+.buttonmodal{
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items:center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 10%;
+    margin-top: 35%;
+}
+
+.btnmodal{width: 80%;
+         padding: 10px;
+         border: none;
+         cursor: pointer;
+         background-color: #fa7500;
+         border-radius: 10px;
+         color: white;
+         font-size: 1.2rem;
+}
+
+.btnmodal:hover{background-color: #f99418;
+        transition: 0.4s;}
