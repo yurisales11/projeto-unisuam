@@ -15,109 +15,61 @@
 
 </head>
 <body>
+    
     <!--Header-->
-    <header class="header">
-        <!--menu-->
-        <nav class = "navbar">
-            <div class = "containernav">
-                <div class= "logoimg"> 
-                    <a href="index.html"><img src="imagens/unipet.png" alt="imglogo" id ="logoimagem"></a>
-                </div>
-
-                <div class = "areainput">
-                    <div class = "imglupa">
-                        <button><img src="imagens/imagem-menu/lupapng.png" alt="imglupa" id = "lupaimagem"></button>
-                    </div>
-
-                    <div class = "inputsearch">
-                        <input type="text" placeholder="Digite aqui o que seu pet precisa!"></input>
-                    </div>
-                </div>
-
-                <div class = "iconeslogin">
-                    <div class = "iconlogin"><a href="login.html"><i class="bi bi-telephone-fill" style="font-size:20px; color: black;"></i></a></div>
-                    <div class = "iconlogin"><a href="login.html"><i class="bi bi-heart" style="font-size:20px;color: black;"></i></a></div>
-                    <div class = "iconlogin"><a href="login.html"><i class="bi bi-bag" style="font-size:20px;color: black;"></i></a></div>
-                    <div class = "iconlogin"><a href="login.html"><i class="bi bi-person" style="font-size:20px;color: rgb(255, 157, 0);"></i></a></div>
-                    <div class="dark-mode">
-                        <button id="btn-dark-mode">ok</button>
-                    </div>
-                </div>
+    <main>
+        <div class="catalogo-produto">
+            
+            <div>
+                <img class="produto-img" src="Imagens/produtos/racao-produto-1.jpg" alt="">
             </div>
 
-            <div class = "areadeservico">
-                <ul class="ul-dropdown">
-                    <li class="li-dropdown">
-                        <div class = "dificil"> 
-                            <a href="PaginaMenu/cahorro.html"><b>Cachorro</b></a>
-                        </div>
-                    
-                        <div class = "dropdown-menu">
-                            <a href="PaginaMenu/cahorro.html"><b>Ração</b></a> 
-                            <a href="PaginaMenu/cahorro.html"><b>Remédios</b></a>
-                            <a href="PaginaMenu/cahorro.html"><b>Coleira</b></a>
-                        </div>
-                    </li>
-                    
-                    <li class= "li-dropdown">
-                        <div class = "dificil"> 
-                            <a href="PaginaMenu/cahorro.html"><b>Gato</b></a>
-                        </div>
-                        
-                        <div class = "dropdown-menu">
-                            <a href="PaginaMenu/cahorro.html"><b>Ração</b></a>
-                            <a href="PaginaMenu/cahorro.html"><b>Remédios</b></a>
-                            <a href="PaginaMenu/cahorro.html"><b>Coleira</b></a>
-                        </div>
-                    </li>
+            <div class="thumbnail-container">
+                <button class="thumbnail-img-btn" onclick="showimg(0)">
+                    <img class="thumbnail-img" src="Imagens/produtos/racao-produto-2.jpg" alt="">
+                </button>
 
-                    <li class = "li-dropdown">           
-                        <div class = "dificil">
-                            <a href="PaginaMenu/cahorro.html"><b>Passarinho</b></a>
-                        </div>
-                        
-                        <div class = "dropdown-menu">
-                            <a href="PaginaMenu/cahorro.html"><b>Ração</b></a>
-                            <a href="PaginaMenu/cahorro.html"><b>Remédios</b></a>
-                            <a href="PaginaMenu/cahorro.html"><b>Coleira</b></a>
-                        </div>
-                    </li>
-
-                    <li class = "li-dropdown">
-                        <div class = "dificil"> 
-                            <a href="PaginaMenu/cahorro.html"><b>UniPet</b></a>
-                        </div>         
-                    </li>
-
-                    <li class = "li-dropdown">         
-                        <div class = "dificil">  
-                            <a href="PaginaMenu/cahorro.html"><b>Doação</b></a>
-                        </div>      
-                    </li>
-
-                    <li class = "li-dropdown">   
-                        <div class = "dificil">
-                            <a href="PaginaMenu/cahorro.html"><b>Recompra</b></a>
-                        </div>         
-                    </li>
-
-                </ul>
-            </div>  
-        </nav>
-
-        <section class = "sectionmsg">
-            <div class = mensagemcadastre-se>
-                <a href="cadastre-se.html"><i class="bi bi-suit-heart-fill" style="font-size: 20px; color: rgb(252, 252, 252)";></i><span>Cadastre-se Agora! e Ganhe 20% de <B>DESCONTO</B></span><a>
+                <button class="thumbnail-img-btn" onclick="showImage(1)">
+                    <img class="thumbnail-img" src="Imagens/produtos/racao-produto-3.jpg" alt="" >
+                </button>
+        
+                <button class="thumbnail-img-btn" onclick="showImage(2)">
+                    <img class="thumbnail-img" src="Imagens/produtos/racao-produto-4.jpg" alt="" >
+                </button>
+        
+                <button class="thumbnail-img-btn" onclick="showImage(3)">
+                    <img class="thumbnail-img" src="Imagens/produtos/racao-produto-5.jpg" alt="" >
+                </button>
             </div>
-        </section>
+        </div>
+
+        <div class="detalhes">
+            <p class="subtitulo">Ração Hills para Cães Filhotes de Mini e Pequeno Porte</p>
+            <h1 class="produto-titulo">Sabor Frango</h1>
+            <p class="descricao-produto">
+                - Indicada para cães filhotes; <br>
+                - Ideal para pets de raças pequenas e miniatura; <br>
+                - Alimentação completa que proporciona crescimento saudável e equilibrado; <br>
+                - Contém proteínas e fibras de alta qualidade; <br>
+                - Formulada com antioxidantes, ômega 3, vitaminas C e E; <br>
+                - Conta com níveis controlados de cálcio para desenvolvimento ósseo ideal; <br>
+                - Livre de corantes e saborizantes artificiais, <br>
+                - Disponível em embalagem de 800 g, 2,4 kg e 6 kg. <br>
+            </p>
+
+            <div class="preco-container">
+                <div class="preco-detalhes">
+                    <h1 class="preco-produto">R$169,99</h1>
+                </div>
+                <p class="preco-parcela">ou 2x de R$ 85,00 sem juros</p>
+            </div>
+
+        </div>
 
         
+    </main>
 
-
-
-
-
-    </header>
+    
 
     <!--javascript link-->
     <script src="java/darkmode.js"></script>
