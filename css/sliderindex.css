@@ -21,7 +21,7 @@ section.slider{
 .slide-box{
     width: 25%;
     height: auto;
-    position: relative;
+    
     text-align: center;
     transition: .8s;
 }

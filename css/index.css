@@ -548,7 +548,7 @@ width: 80%;}
 
 /*Flip imagem*/
 
-.card-produto .card-banner { position: relative;
+.card-produto .card-banner { 
  }
 
 .card-produto .img-holder:hover{scale: 1.1;
