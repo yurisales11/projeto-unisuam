@@ -1,0 +1,33 @@
+nav {
+    max-width: 100%;}
+    
+
+
+svg{max-width: 8%;
+    display: none;
+}
+
+
+.divmenu{background-color: green;
+max-width: 50%;}
+
+.titlecachorro{background-color: blue;
+max-width: 40%;}
+
+.svganimado{background-color: purple;
+max-width: 70%;
+width: 100%;
+
+
+
+}
+
+.divmenu:hover svg{display: flex;
+    transform: translateX(0px) scale(100%) rotate(0deg);
+    transition: all 0.4s cubic-bezier(0.42, 0.97, 0.52, 1.49);
+    width: 2rem;
+
+
+  
+
+}

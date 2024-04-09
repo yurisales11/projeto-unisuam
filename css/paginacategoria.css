@@ -1,0 +1,592 @@
+
+
+
+/*-----------------------------------*\
+  propriedade padrao
+\*-----------------------------------*/
+
+:root {
+
+    /**/
+    --body-bg: white;
+    --body-color: black;
+    
+  
+    /*espaçamento*/
+  
+    --section-padding: 40px;
+  
+  }
+  
+  [data-theme="dark"]{
+    --body-bg: black;
+    --body-color: white;
+  }
+  
+  /*-----------------------------------*\
+  \*-----------------------------------*/
+  
+  
+  
+  /*-----------------------------------*\
+    #RESET
+  \*-----------------------------------*/
+  
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  li { list-style: none; }
+  
+  a,
+  img,
+  span,
+  button,
+  ion-icon { display: block; }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  img { height: auto; }
+  
+  button {
+    background: none;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+  }
+  
+  ion-icon { pointer-events: none; }
+  
+  address { font-style: normal; }
+  
+  html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: var(--body-bg);
+    color: var(--body-color);
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+  
+  hr {width: 100%;
+    margin-top: 1.5%;
+    
+    border: 1px solid rgb(255, 145, 0);
+  }
+  
+  
+/*-----------------------------------*\
+\*-----------------------------------*/
+  
+
+
+/*-----------------------------------*\
+  Navbar
+\*-----------------------------------*/
+
+.navbar {background-color: rgb(255, 255, 255) ;
+    position: sticky;
+    top: 0;
+    max-width: 100%;
+    
+  }
+  
+
+  
+  
+  .containernav {
+    
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+  }
+  
+  
+  /* DIV LOGO*/
+  
+  .logoimg {
+    
+    display: flex;
+    justify-content: space-between;
+    width: 14%;
+    margin: 10px auto;
+  }
+  
+  /*LOGO*/
+  
+  #logoimagem { 
+    max-width: 100%;
+    height: 80px;
+  }
+  
+  /* DIV INPUT GEREAL */
+  
+  .areainput {
+    border: 1px solid black;
+    display: flex;
+    border-radius: 50px;
+    height: 60px; 
+    width: 40%;    
+  }
+  
+  .imglupa {display: flex;
+    justify-content: center;
+  max-width: 10%;
+  }
+  
+  #lupaimagem {
+    width: 50%;
+    margin: 0px auto;
+    
+  }
+  
+  /* DIV Area de Login */
+  
+  .iconeslogin {
+    display: flex;
+    gap: 1.3rem;
+    margin: auto;
+  }
+  
+  /*--Dark mode--*/
+  
+  .dark-mode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 21px;
+  }
+  
+  
+  
+  
+  
+  /* Area de Login HOVER*/
+  
+  i:hover {
+    background-color:rgb(252, 127, 17);
+    max-width: 100%;
+    transition: 0.3s;
+    border-radius: 50px;
+    padding: 6px;
+  }
+  
+  .areadeservico {
+    display: flex;
+    justify-content: center
+  }
+  
+  
+  .ul-dropdown {
+    display: flex;
+    margin:0px 25%;
+  }
+  
+  .ul-dropdown .li-dropdown a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0px auto;
+    padding: 15px 30px;
+  }
+  
+  .li-dropdown {
+    list-style: none;
+  }
+      
+  .ul-dropdown .li-dropdown a:hover {
+    color: rgb(255, 140, 0);
+    transition: 0.2s;
+  }
+    
+  /* BUTTON GERAL */
+  
+  button {
+    background-color:transparent; /* Torna o fundo transparente */
+    border: none;
+    cursor:pointer
+  }
+  
+  /* INPUT div */
+  .inputsearch {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+  input {
+    background-color: transparent;
+    width: 100%;
+    padding: 10px;
+    border: 0px solid rgb(148, 148, 148);
+    border-radius: 50px;
+    height: 50px;
+    outline: none;
+    text-align: flex-start;
+    margin: 4px 0px;
+    
+    
+  }
+  
+  
+  .dificil {
+    margin: 10px 0px;
+    width: 100%;
+    height: 41px;
+    cursor: pointer;
+  }
+  
+  
+  .dificil:hover a {
+    color:rgb(255, 140, 0)
+  }
+  
+  .dificil::after {
+    content: " ";
+    width: 0%;
+    height: 1.7px;
+    background-color: #FF914D;
+    position:absolute;
+    bottom: 0;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .dificil:hover::after {
+    width: 7%;
+  }
+  
+  /* Menu Dropdown (Ração, Coleiras e Remedios)*/
+  .dropdown-menu {
+    position: absolute;
+    box-shadow: 0.5px 0.5px 0.6px 0.6px rgb(239, 239, 239);
+    display: none;
+    background-color: white;
+    border-radius: 2%;
+    width: 14%;
+  }
+        
+  /* Menu Dropdown *A* (Ração, Coleiras e Remedios)*/
+  .dropdown-menu a {
+    font-size: small;
+    font-family:sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Courier, monospace;
+    display: block;
+    text-align: justify;
+    padding: 5%;
+    transition: 0.5s;
+  }
+  
+  /* Menu Dropdown *A* HOVER CORES (Ração, Coleiras e Remedios)*/
+  .dropdown-menu a:hover{
+    background-color:rgba(250, 209, 198, 0.835);
+    border-radius: 30px;
+    width: 100%;
+    transition: 0.5s;
+  }
+      
+  /* Menu Dropdown *A* HOVER APARECER (Ração, Coleiras e Remedios)*/
+  .dropdown:hover .dropdown-menu {
+    display:block;
+    margin-top: 3.2%; 
+    position: absolute !important 
+  }
+
+
+  .img-desktop{max-width: 100%;
+margin-bottom: 2%;}
+
+/*-----------------------------------*\
+  BODY
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+  Produto
+\*-----------------------------------*/
+
+.containerproduto{
+  
+}
+
+
+.secao-titulo {
+display: flex;
+justify-content: center;
+gap: .5rem;
+margin-bottom: 2%;}
+
+.produto .img-cover.hover { display: none; }
+
+.card-produto { border-radius: 12px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+   
+    box-shadow: 4px 4px 4px 4px rgb(175, 175, 175);
+
+width: 60%;}
+
+.card-produto img{width: 100%;}
+.card-produto .card-banner {
+
+  border-radius: 10px;
+  margin-block-end: 20px;
+}
+
+.card-produto .h3 {
+  --fs-3: 1.8rem;
+  margin-block: 8px 10px;
+}
+
+.card-produto .card-titulo { transition: 0.25s ease; }
+
+.card-produto .card-titulo:is(:hover, :focus) { color: #FF914D; }
+
+.card-produto .card-preco {
+  color: #FF914D;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.card-conteudo {
+  
+    width: 100%;
+}
+
+.btncomprar{
+
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;}
+
+.comprar{width: 60%;
+background-color: rgb(255, 132, 0);
+color: white;
+font-size: 1.8rem;
+border-radius: 8px;
+margin-bottom: 5%;
+}
+
+
+.comprar:hover{opacity: 0.9;}
+
+
+
+.lista {
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-left: 10%;
+    padding-block-end: 20px;
+    margin-block-end: -20px;
+    margin-bottom: 5%;
+  }
+  
+
+
+/*-----------------------------------*\
+  Rodape
+\*-----------------------------------*/
+
+.rodape {
+    background-color: rgb(41, 42, 46);
+    color: rgb(135, 135, 135);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    padding-block-start: 40px;
+  }
+  
+  .rodape .container {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+  }
+  
+  .rodape-topo {
+    padding-block-start: 120px;
+    border-block-end: 1px solid rgb(60, 61, 62);
+  }
+  
+  .rodape-topo .container {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
+  }
+  
+  .rodape .logo {
+    color: white;
+    margin-block-end: 10px;
+  }
+  
+  .rodape-texto {
+    font-size: 1.5rem;
+    margin-block-end: 25px;
+  }
+  
+  .rodape-texto .link {
+    display: inline-block;
+    color: #FF914D;
+  }
+  
+  .item-contato {
+    margin-block-end: 15px;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .icon-contato {
+    color: #FF914D;
+  }
+  
+  .lista-social {
+    display: flex;
+    position: relative;
+    gap: 2.5px;
+  }
+  
+  .social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 60px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: .2s;
+  
+  }
+  
+  .social-icon:hover {
+    width: 100px;
+  }
+  
+  .social-icon2:hover {
+    width: 82px;
+  }
+  
+  .social-icon span {
+    position: absolute;
+  }
+  
+  .social-icon .icon {
+    color: #FF914D;
+    font-size: 20px;
+    transition: .2S;
+  }
+  
+  .social-icon .icon-texto {
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+    padding-left: 15px;
+    transform: scale(0);
+    transition: .2s;
+    transition-delay: .1s;
+  }
+  
+  .social-icon:hover .icon-texto {
+    transform: scale(1);
+  }
+  
+  .social-icon:hover .icon {
+    transform: scale(0);
+  }
+  
+  .social-icon::before {
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(45deg, var(--cor-icon), var(--cor-icon2));
+    inset: 0;
+    opacity: 0;
+    border-radius: 60px;
+  }
+  
+  .social-icon:hover::before {
+    opacity: 1;
+  }
+  
+  /**.social-link {
+    transition: 0.25s ease;
+  }
+  
+  .social-link:is(:hover, :focus) {
+    background-color: #FF914D;
+    color: white;
+    width: 180px;
+  }
+  **/
+  
+  .rodape-lista-titulo {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding-block: 10px;
+  }
+  
+  .rodape-link {
+    padding-block: 4px;
+    transition: 0.25s ease;
+  }
+  
+  .rodape-link:is(:hover, :focus) { color: #FF914D; }
+  
+  .rodape-inferior { padding-block: 20px; }
+  
+  .copyright { margin-block-end: 10px; }
+  
+  .copyright-link { display: inline-block; }
+  
+  .rodape-inferior .img {
+    width: 100%;
+    max-width: max-content;
+  }
+  
+  .rodape-inferior .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /*-----------------------------------*\
+  \*-----------------------------------*/
+
+
+
+
+  /*-----------------------------------*\
+  Voltar para o Topo
+\*-----------------------------------*/
+
+#link-topo {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    background-color: #FF914D;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px #333;
+  }
+  
+
+
+
+
+
