@@ -77,7 +77,7 @@ body{
 form{
     background-color: rgb(255, 255, 255);
     max-width: 500px;
-    height: 450px;
+    height: 475px;
     padding: 40px;
     border-radius: 20px;
 }
@@ -106,10 +106,36 @@ form p{
     cursor: text;
 }
 
+.input-mensagem{
+   
+  height: 50px;
+ width: 100%;
+ border: 1px solid rgb(128, 128, 128);
+ border-radius: 10px;
+ margin-bottom: 4%;
+
+
+
+}
+
+.input-mensagem input{border: none;
+width: 90%;
+height: 48px;
+border-radius: 5px;
+margin: 0px 5px;
+
+
+outline: none;
+
+}
+   
+  
+
+
 .input{
     width: 100%;
     border: 0;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid #ff8000;
     padding: 5px;
     font-size: 17px;
     outline: 0;

@@ -70,18 +70,12 @@
   }
   
   body {
-    background-color: var(--body-bg);
-    color: var(--body-color);
+   
     font-size: 1.6rem;
     line-height: 1.5;
   }
   
-  hr {width: 95%;
-    margin: 0px auto;
-    border: 1px solid rgb(255, 145, 0);
-  }
-  
-  
+
   /*-----------------------------------*\
   \*-----------------------------------*/
 
@@ -94,22 +88,22 @@
   Navbar
 \*-----------------------------------*/
 
-.navbar {background-color: rgb(255, 255, 255) ;
-  position: sticky;
+.navbar {
+  background-color: rgb(255, 255, 255) ;
+  display: flex;
+  flex-direction: column;
+
   top: 0;
   max-width: 100%;
-  
 }
 
 
 
 
 .containernav {
-  
+ 
   display: flex;
   align-items: center;
-  position: sticky;
-  top: 0;
 }
 
 
@@ -132,16 +126,11 @@
 
 /* DIV INPUT GEREAL */
 
-.areainput {
-  border: 1px solid black;
-  display: flex;
-  border-radius: 50px;
-  height: 60px; 
-  width: 40%;    
-}
 
-.imglupa {display: flex;
-  justify-content: center;
+
+.imglupa {
+display: flex;
+justify-content: center;
 max-width: 10%;
 }
 
@@ -182,34 +171,7 @@ i:hover {
   padding: 6px;
 }
 
-.areadeservico {
-  display: flex;
-  justify-content: center
-}
 
-
-.ul-dropdown {
-  display: flex;
-  margin:0px 25%;
-}
-
-.ul-dropdown .li-dropdown a {
-  text-decoration: none;
-  color: black;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  margin: 0px auto;
-  padding: 15px 30px;
-}
-
-.li-dropdown {
-  list-style: none;
-}
-    
-.ul-dropdown .li-dropdown a:hover {
-  color: rgb(255, 140, 0);
-  transition: 0.2s;
-}
-  
 /* BUTTON GERAL */
 
 button {
@@ -221,11 +183,21 @@ button {
 /* INPUT div */
 .inputsearch {
   max-width: 100%;
-  width: 100%;
+  width:100%;
   display: flex;
   justify-content: center;
 
 }
+
+.areainput {
+  border: 1px solid black;
+  display: flex;
+  margin-top: 0.5%;
+  border-radius: 50px;
+  height: 60px; 
+  width: 40%;    
+}
+
 
 input {
   background-color: transparent;
@@ -242,67 +214,114 @@ input {
 }
 
 
-.dificil {
-  margin: 10px 0px;
+.areadeservico {max-width: 100%;
   width: 100%;
-  height: 41px;
-  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 
-.dificil:hover a {
-  color:rgb(255, 140, 0)
+.ul-dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+
 }
 
-.dificil::after {
+.ul-dropdown .li-dropdown a {display: flex;
+  margin-left: 25%;
+  
+
+  width: 100%;
+  padding: 0px 30px;
+  font-size: 1.7rem;
+
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0px auto;
+
+}
+
+.li-dropdown  {
+ 
+  background-color: green;
+  padding: 8px 0px;
+  max-width: 100%;
+
+  
+ 
+  list-style: none;
+}
+    
+.li-dropdown a:hover {
+  
+  color: rgb(255, 140, 0);
+  transition: 0.2s ease-in-out;
+}
+  
+
+.ul-dropdown{
+display: flex;
+justify-content: center;
+margin-left: 5%;
+width: 50%;}
+
+
+
+
+
+
+
+.li-dropdown::after {
   content: " ";
   width: 0%;
-  height: 1.7px;
-  background-color: #FF914D;
-  position:absolute;
-  bottom: 0;
-  transition: 0.5s ease-in-out;
+  height: 2px;
+  background-color: #ff7300;
+  transition: 0.2s;
+position: absolute;
+
+
 }
 
-.dificil:hover::after {
-  width: 7%;
+.li-dropdown:hover::after {display: flex;
+  width: 5.5%;
+
 }
 
 /* Menu Dropdown (Ração, Coleiras e Remedios)*/
 .dropdown-menu {
   position: absolute;
-  box-shadow: 0.5px 0.5px 0.6px 0.6px rgb(239, 239, 239);
-  display: none;
+  box-shadow: 0 0 5px 0px rgb(168, 168, 168);
+  border-radius: 5px;
   background-color: white;
-  border-radius: 2%;
-  width: 14%;
-}
-      
-/* Menu Dropdown *A* (Ração, Coleiras e Remedios)*/
-.dropdown-menu a {
-  font-size: small;
-  font-family:sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Courier, monospace;
-  display: block;
-  text-align: justify;
-  padding: 5%;
-  transition: 0.5s;
-}
+  display: none;
+  
+ }
 
-/* Menu Dropdown *A* HOVER CORES (Ração, Coleiras e Remedios)*/
-.dropdown-menu a:hover{
-  background-color:rgba(250, 209, 198, 0.835);
-  border-radius: 30px;
-  width: 100%;
-  transition: 0.5s;
-}
-    
+
+ .li-dropdown:hover .dropdown-menu a {
+  margin: 10px 0px;}
+  
+
+ .dropdown-menu a:hover {color: orange;}
+
+ 
+
 /* Menu Dropdown *A* HOVER APARECER (Ração, Coleiras e Remedios)*/
-.dropdown:hover .dropdown-menu {
-  display:block;
-  margin-top: 3.2%; 
-  position: absolute !important 
+.li-dropdown:hover  .dropdown-menu {display: flex;
+  flex-direction: column;
+  gap: 5%;
+  margin: 8px 0px;
+  width: 15%;
+  height: 290px;
 }
 
 
-.img-desktop{max-width: 100%;
-margin-bottom: 2%;}
+
+
+
+
