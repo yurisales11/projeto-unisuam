@@ -5,21 +5,21 @@
 
 :root {
 
-    /**/
-    --body-bg: white;
-    --body-color: black;
-    
+  /**/
+  --cor-primaria: white;
+  --cor-secundaria: rgb(0, 0, 0);
   
-    /*espaçamento*/
-  
-    --section-padding: 40px;
-  
-  }
-  
-  [data-theme="dark"]{
-    --body-bg: black;
-    --body-color: white;
-  }
+
+  /*espaçamento*/
+
+  --section-padding: 40px;
+
+}
+
+.dark-theme {
+  --cor-primaria: rgb(0, 0, 0);
+  --cor-secundaria: rgb(255, 255, 255);
+}
   
   /*-----------------------------------*\
   \*-----------------------------------*/
@@ -70,7 +70,6 @@
   }
   
   body {
-   
     font-size: 1.6rem;
     line-height: 1.5;
   }
@@ -79,20 +78,14 @@
   /*-----------------------------------*\
   \*-----------------------------------*/
 
-  
-/*-----------------------------------*\
-  Navbar
-\*-----------------------------------*/
-
 /*-----------------------------------*\
   Navbar
 \*-----------------------------------*/
 
 .navbar {
-  background-color: rgb(255, 255, 255) ;
+  background-color: var(--cor-primaria);
   display: flex;
   flex-direction: column;
-
   top: 0;
   max-width: 100%;
 }
@@ -101,7 +94,6 @@
 
 
 .containernav {
- 
   display: flex;
   align-items: center;
 }
@@ -110,7 +102,6 @@
 /* DIV LOGO*/
 
 .logoimg {
-  
   display: flex;
   justify-content: space-between;
   width: 14%;
@@ -126,8 +117,6 @@
 
 /* DIV INPUT GEREAL */
 
-
-
 .imglupa {
 display: flex;
 justify-content: center;
@@ -137,7 +126,6 @@ max-width: 10%;
 #lupaimagem {
   width: 50%;
   margin: 0px auto;
-  
 }
 
 /* DIV Area de Login */
@@ -147,19 +135,6 @@ max-width: 10%;
   gap: 1.3rem;
   margin: auto;
 }
-
-/*--Dark mode--*/
-
-.dark-mode {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 21px;
-}
-
-
-
-
 
 /* Area de Login HOVER*/
 
@@ -190,7 +165,7 @@ button {
 }
 
 .areainput {
-  border: 1px solid black;
+  border: 1px solid rgb(211, 211, 211);
   display: flex;
   margin-top: 0.5%;
   border-radius: 50px;
@@ -209,8 +184,6 @@ input {
   outline: none;
   text-align: flex-start;
   margin: 4px 0px;
-  
-  
 }
 
 
@@ -219,7 +192,6 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 
@@ -228,53 +200,35 @@ input {
   justify-content: center;
   align-items: center;
   width: 100%;
-  
-
 }
 
 .ul-dropdown .li-dropdown a {display: flex;
   margin-left: 25%;
-  
-
   width: 100%;
   padding: 0px 30px;
   font-size: 1.7rem;
-
-  color: black;
+  color: var(--cor-secundaria);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin: 0px auto;
-
 }
 
 .li-dropdown  {
- 
-  background-color: green;
   padding: 8px 0px;
   max-width: 100%;
-
-  
- 
   list-style: none;
 }
-    
+
 .li-dropdown a:hover {
-  
   color: rgb(255, 140, 0);
   transition: 0.2s ease-in-out;
 }
-  
 
-.ul-dropdown{
+.ul-dropdown {
 display: flex;
 justify-content: center;
 margin-left: 5%;
-width: 50%;}
-
-
-
-
-
-
+width: 50%;
+}
 
 .li-dropdown::after {
   content: " ";
@@ -282,14 +236,12 @@ width: 50%;}
   height: 2px;
   background-color: #ff7300;
   transition: 0.2s;
-position: absolute;
-
-
+  position: absolute;
 }
 
-.li-dropdown:hover::after {display: flex;
+.li-dropdown:hover::after {
+  display: flex;
   width: 5.5%;
-
 }
 
 /* Menu Dropdown (Ração, Coleiras e Remedios)*/
@@ -297,19 +249,18 @@ position: absolute;
   position: absolute;
   box-shadow: 0 0 5px 0px rgb(168, 168, 168);
   border-radius: 5px;
-  background-color: white;
-  display: none;
-  
- }
+  background-color: var(--cor-primaria);
+  display: none;  
+}
 
 
- .li-dropdown:hover .dropdown-menu a {
-  margin: 10px 0px;}
-  
+.li-dropdown:hover .dropdown-menu a {
+  margin: 10px 0px;
+}
 
- .dropdown-menu a:hover {color: orange;}
-
- 
+.dropdown-menu a:hover {
+  color: orange;
+}
 
 /* Menu Dropdown *A* HOVER APARECER (Ração, Coleiras e Remedios)*/
 .li-dropdown:hover  .dropdown-menu {display: flex;

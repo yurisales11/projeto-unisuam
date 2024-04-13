@@ -8,19 +8,17 @@
 :root {
 
   /**/
-  --body-bg: white;
-  --body-color: black;
-  
+  --cor-primaria: white;
+  --cor-secundaria: rgb(0, 0, 0);
 
   /*espaçamento*/
 
   --section-padding: 40px;
-
 }
 
-[data-theme="dark"]{
-  --body-bg: black;
-  --body-color: white;
+.dark-theme {
+  --cor-primaria: rgb(0, 0, 0);
+  --cor-secundaria: rgb(255, 255, 255);
 }
 
 /*-----------------------------------*\
@@ -72,14 +70,16 @@ html {
 }
 
 body {
-  background-color: var(--body-bg);
-  color: var(--body-color);
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
   font-size: 1.6rem;
   line-height: 1.5;
 }
 
 hr {width: 95%;
-  margin: 0px auto;
+  margin: auto;
+  margin-bottom: 2.5%;
+  margin-bottom: 2%;
   border: 1px solid rgb(255, 145, 0);
 }
 
@@ -94,7 +94,7 @@ hr {width: 95%;
 \*-----------------------------------*/
 
 .container {
-   padding-inline: 15px; }
+  padding-inline: 15px; }
 
 .secao { padding-block: var(--section-padding); }
 
@@ -108,15 +108,15 @@ hr {width: 95%;
 .h3 { line-height: 1.1; }
 
 .h2,
-.h3 { color: rgb(32, 33, 34); }
+.h3 { color: var(--cor-secundaria); }
 
 .h2 { font-size: 3.2rem; }
 
 .h3 { font-size: 2.4rem; }
 
 .btn {
-  background-color: black;
-  color: white;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-primaria);
   max-width: max-content;
   padding: 8px 25px;
   font-weight: 700;
@@ -163,7 +163,6 @@ hr {width: 95%;
 
 .lista-grid {
   display: grid;
- 
   gap: 30px;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -184,6 +183,7 @@ hr {width: 95%;
 \*-----------------------------------*/
 
 
+
 .sectionmsg {
   display: flex;
   align-items: center;
@@ -192,7 +192,7 @@ hr {width: 95%;
   height: 65px;
   background: linear-gradient(700deg,#41b0ff ,#242424 60%  );
   margin: 20px 0;
- }
+}
 
 .mensagemcadastre-se{
   width: 35%;
@@ -209,10 +209,10 @@ hr {width: 95%;
   gap:1%;
   text-decoration: none;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: rgb(255, 255, 255);
+  color: var(--cor-primaria);
   font-size: 2rem;
   font-weight: 800;
- 
+
 }
 
 .mensagemcadastre-se i:hover{
@@ -220,9 +220,6 @@ hr {width: 95%;
   padding: 3px;
   border-radius: 10px;
   transition: 0.7s;
-
-  
- 
   }
 
 .mensagemcadastre-se span:hover {
@@ -267,8 +264,6 @@ hr {width: 95%;
   Ofertas
 \*-----------------------------------*/
 
-
-
 .oferta .lista-grid {
   grid-template-columns: repeat(3, 1fr);
 }
@@ -293,13 +288,13 @@ hr {width: 95%;
 }
 
 .card-oferta .card-titulo {
-  color: black;
+  color: var(--cor-secundaria);
   margin-block: 5px 24px;
 }
 
 .card-oferta .btn { background-color: #FF914D; }
 
-.card-oferta .btn:is(:hover, :focus) { background-color: black; }
+.card-oferta .btn:is(:hover, :focus) { background-color: var(--cor-secundaria); }
 
 
 
@@ -319,7 +314,7 @@ hr {width: 95%;
 width: 80%;}
 
 .card-produto .card-banner {
-  border: 1px solid rgb(232, 232, 232);
+  border: 1px solid var(--cor-primaria);
   border-radius: 10px;
   margin-block-end: 20px;
 }
@@ -342,7 +337,7 @@ width: 80%;}
 /*Flip imagem*/
 
 .card-produto .card-banner { 
- }
+}
 
 .card-produto .img-holder:hover{scale: 1.1;
 transition: 0.5s;}
@@ -386,7 +381,9 @@ transition: 0.5s;}
   grid-template-columns: repeat(4, 1fr);
 }
 
-.card-servico { text-align: center; }
+.card-servico { text-align: center; 
+  margin-bottom: 25%;
+}
 
 .card-servico .h3 {
   font-size: 2.4rem;
@@ -442,8 +439,8 @@ transition: 0.5s;}
 }
 
 .gato .btn:is(:hover, :focus) {
-  background-color: white;
-  color: black;
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
 }
 
 
@@ -465,7 +462,7 @@ transition: 0.5s;}
 .marca .lista-item { min-width: 20%; }
 
 .marca .lista-item:not(:last-child) { 
-  border-inline-end: 1px solid rgb(232, 232, 232); 
+  border-inline-end: 1px solid rgb(184, 184, 184); 
 }
 
 .card-marca {
