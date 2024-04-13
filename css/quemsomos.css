@@ -218,9 +218,9 @@
     height: 250px;
     margin-top: 6%;
     justify-content: center;
-    background-color: rgb(245, 245, 245);
+  
     max-width: 100%;
-    width: 60%;
+    width: 55%;
     border-radius: 30px;}
 
    .containercard2{display: flex;
@@ -240,8 +240,67 @@ margin-bottom: 5%;}
 
     .containercard2:hover{opacity: 0.8;}
 
- 
 
+    .containerfinal{
+     display: flex;
+     flex-direction: column;
+     
+     max-width: 100%;
+     margin-left: 11%;}
+
+    .containerboxfinal{
+      max-width: 100%;
+    }
+
+    .containerboximgdescription{
+      display: flex;
+      max-width: 100%;}
+
+    .imgboxfinal{
+    max-width: 100%;
+  width: 35%;}
+
+    .imgboxfinal img{max-width: 100%;
+    width: 100%;
+  border-radius: 20px;}
+ 
+    .descripitionimg {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+      width: 30%;
+      margin: 10px 20px;
+      border-radius: 10px;
+    }
+
+
+    .descripitionimg h1{font-size: 2.4rem;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 2%;}
+    .descripitionimg p{font-size: 2.2rem;
+    text-align: center;}
+
+    .btnsaibamais{color: white;
+    width: 100%;
+  display: flex;
+justify-content: center;
+}
+
+.btnsaiba{
+  display: flex;
+  width: 100%;
+  background-color: rgb(255, 132, 0);
+  font-size: 1.8rem;
+  border-radius: 12px;
+  padding: 20px 20px;
+  text-align: center;
+  justify-content: center;}
+
+  .btnsaiba button {color: white;}
+
+.btnsaiba:hover{opacity: 0.8;}
 /*-----------------------------------*\
   Voltar para o Topo
 \*-----------------------------------*/

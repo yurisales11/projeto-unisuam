@@ -297,6 +297,18 @@ width: 70%;
 border-radius: 40px;
 margin-bottom: 2%}
 
+.videodescription{display: flex;
+       
+        
+  margin-left: 5%;
+  align-items: center;
+  max-width: 35%;
+}
+
+.videosrc{max-width: 100%;
+
+border-radius: 50px;}
+
 
  .boxbtnpgtfrequentes{
 display: flex;
