@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produto</title>
-
+    <title>Unipet - Promoção Pague 2 Leve 3</title>
+        <!-- Favicon -->
+    <link rel="shortcut icon" href="imagens/favicon/icon-unipet.png" type="">
     <!-- Link CSS -->
     <link rel="stylesheet" href="css/produto.css"> 
-    <link rel="stylesheet" href="css/stylepadrao.css">
+    <link rel="stylesheet" href="css/menufixo.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/footer.css">
+ 
 
     <!-- Link Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
@@ -16,102 +20,117 @@
 <body>
     
     
-    <!--Header-->
-    <header class="header">
-        <!--menu-->
-        <nav class = "navbar">
-            <div class = "containernav">
-        
-                <div class= "logoimg"> 
-                    <a href="index.html"><img src="imagens/unipet.png" alt="imglogo" id ="logoimagem"></a>
-                </div>
+  <!--Header-->
+  <header class="header">
+    <!--menu-->
+    <nav class = "navbar">
+      <div class = "containernav">
 
-                <div class = "areainput">
-                    <div class = "imglupa">
-                        <button id="btn-lupa"><img src="imagens/imagem-menu/lupapng.png" alt="imglupa" id = "lupaimagem"></button>
-                    </div>
+        <div class= "logoimg"> 
+          <a href="index.html"><img src="imagens/unipet.png" alt="imglogo" id ="logoimagem"></a>
+        </div>
 
-                    <div class = "inputsearch">
-                        <input id="input-texto" type="text" placeholder="Digite aqui o que seu pet precisa!"></input>
-                    </div>
-                </div>
+        <div class = "areainput">
+          <div class = "imglupa">
+            <button><img src="imagens/imagem-menu/lupapng.png" alt="imglupa" id = "lupaimagem"></button>
+          </div>
 
-                <div class = "iconeslogin">
-                    <div class = "iconlogin"><a href="login.html"><i class="bi bi-telephone-fill" style="font-size:20px; color: black;"></i></a></div>
-                    <div class = "iconlogin"><a href="login.html"><i class="bi bi-heart" style="font-size:20px;color: black;"></i></a></div>
-                    <div class = "iconlogin"><a href="login.html"><i class="bi bi-bag" style="font-size:20px;color: black;"></i></a></div>
-                    <div class = "iconlogin"><a href="login.html"><i class="bi bi-person" style="font-size:20px;color: rgb(255, 157, 0);"></i></a></div>
-                    <div class="dark-mode">
-                        <button id="btn-dark-mode">ok</button>
-                    </div>
-                </div>
+          <div class = "inputsearch">
+            <input type="text" placeholder="Digite aqui o que seu pet precisa!"></input>
+          </div>
+        </div>
+
+        <div class = "iconeslogin">
+          <div class = "iconlogin"><a href="contato.html"><i class="bi bi-telephone-fill" style="font-size:20px; color: black;"></i></a></div>
+          <div class = "iconlogin"><a href="login.html"><i class="bi bi-heart" style="font-size:20px;color: black;"></i></a></div>
+          <div class = "iconlogin"><button id="open-modal"><i class="bi bi-cart2" style="font-size:20px;color: black;"></i></button></div>
+          <div id="fade" class="hide"></div>
+          <div id="modal" class="hide">
+            <div class="modal-header">
+              <h2 class = titlemodal>Carrinho</h2>
+              <button id="close-modal"><i class="bi bi-x" style="font-size:40px;"></i></button>
             </div>
 
-            <div class = "areadeservico">
-                <ul class="ul-dropdown">
-                    <li class="li-dropdown">
-                        <div class = "dificil"> 
-                            <a href="PaginaMenu/cahorro.html"><b>Cachorro</b></a>
-                        </div>
-                        
-                        <div class = "dropdown-menu">
-                            <a href="PaginaMenu/cahorro.html"><b>Ração</b></a> 
-                            <a href="PaginaMenu/cahorro.html"><b>Remédios</b></a>
-                            <a href="PaginaMenu/cahorro.html"><b>Coleira</b></a>
-                        </div>
-                    </li>
-                    
-                    <li class= "li-dropdown">
-                        <div class = "dificil"> 
-                            <a href="PaginaMenu/cahorro.html"><b>Gato</b></a>
-                        </div>
-                                
-                        <div class = "dropdown-menu">
-                            <a href="PaginaMenu/cahorro.html"><b>Ração</b></a>
-                            <a href="PaginaMenu/cahorro.html"><b>Remédios</b></a>
-                            <a href="PaginaMenu/cahorro.html"><b>Coleira</b></a>
-                        </div>
-                    </li>
+              <hr class = hrmodal>
+      
+              <div class="modal-body">
+                <div class="container-modal">
+                  <div class = paragrafo1><p><b>Você ainda não tem</b></p></div>
+                  <div class = paragrafo1><p><b>produtos adicionados ao seu carrinho</b></p></div>
+                  <div class="sacola-modal"> <i class="bi bi-cart2" style="font-size:40px;color: black;"></i></div>
+                  <div class = paragrafo1><p>Escolha tudo o que seu Pet precisa e adicione ao</div>
+                  <div class = paragrafo1><p>seu carrinho para comprar.</p></div>
+                  <div class = buttonmodal><button class="btnmodal">Entendi</button></div>
+                </div>
+              </div>
+          </div>
 
-                    <li class = "li-dropdown">           
-                        <div class = "dificil">
-                            <a href="PaginaMenu/cahorro.html"><b>Passarinho</b></a>
-                        </div>
-                                
-                        <div class = "dropdown-menu">
-                            <a href="PaginaMenu/cahorro.html"><b>Ração</b></a>
-                            <a href="PaginaMenu/cahorro.html"><b>Remédios</b></a>
-                            <a href="PaginaMenu/cahorro.html"><b>Coleira</b></a>
-                        </div>
-                    </li>
-
-                    <li class = "li-dropdown">
-                        <div class = "dificil"> 
-                            <a href="PaginaMenu/cahorro.html"><b>UniPet</b></a>
-                        </div>         
-                    </li>
-
-                    <li class = "li-dropdown">         
-                        <div class = "dificil">  
-                            <a href="PaginaMenu/cahorro.html"><b>Doação</b></a>
-                        </div>      
-                    </li>
-
-                    <li class = "li-dropdown">   
-                        <div class = "dificil">
-                            <a href="PaginaMenu/cahorro.html"><b>Recompra</b></a>
-                        </div>         
-                    </li>
-                </ul>
-            </div>  
-        </nav>
-
-        <section class = "sectionmsg">
-            <div class = mensagemcadastre-se>
-                <a href="cadastre-se.html"><i class="bi bi-suit-heart-fill" style="font-size: 20px; color: rgb(252, 252, 252)";></i><span>Cadastre-se Agora! e Ganhe 20% de <B>DESCONTO</B></span></a>
+          <div class = "iconlogin"><a href="login.html"><i class="bi bi-person" style="font-size:20px;color: rgb(0, 0, 0);"></i></a></div>
+            <div>
+              <div>
+                <i id="icon-dark-mode" class="bi bi-moon-fill"></i>
+                <i class="bi bi-sun-fill"></i>
+              </div>    
             </div>
-        </section>
-    </header>
+          </div>
+      </div>
+
+     
+      <div class = "areadeservico">
+        <ul class="ul-dropdown">
+          <li class="li-dropdown">
+            <div class = "dificil"> 
+              <a href="PaginaMenu/todososprodutos.html"id = todososprodutos><b>Todos os Produtos</b></a>
+            </div>
+            <div class = "dropdown-menu">
+              <a href="PaginaMenu/cahorro.html"><b>Produtos para seu Dog</b></a> 
+              <a href="PaginaMenu/gato.html"><b>Produtos para seu Gato</b></a>
+              <a href="PaginaMenu/Aves.html"><b>Produtos para sua Ave</b></a>
+              <a href="PaginaMenu/medicamento.html"><b>Remédios para seu Amigo(a)</b></a>
+              <a href="PaginaMenu/todososprodutos.html"><b>Coleção UNIPET</b></a>
+            </div>
+          </li>
+
+          <li class="li-dropdown">
+            <div class = "dificil"> 
+              <a href="PaginaMenu/cahorro.html"id = cachorro><b>Cachorro</b></a>
+            </div>
+          </li>
+
+          <li class= "li-dropdown">
+            <div class = "dificil"> 
+              <a href="PaginaMenu/gato.html"id = gato><b>Gato</b></a>
+            </div>
+          </li>
+
+          <li class = "li-dropdown">           
+            <div class = "dificil">
+              <a href="PaginaMenu/Aves.html"id = pássaro><b>Pássaro</b></a>
+            </div>
+          </li>
+
+          <li class = "li-dropdown">
+            <div class = "dificil"> 
+              <a href="PaginaMenu/medicamento.html"id = remedios><b>Remédios</b></a>
+            </div>         
+          </li>
+
+          <li class = "li-dropdown">         
+            <div class = "dificil">  
+              <a href="PaginaMenu/Doação.html"id = doação><b>Doação</b></a>
+            </div>      
+          </li>
+
+          <li class = "li-dropdown">   
+            <div class = "dificil">
+              <a href="PaginaMenu/Quem Somos.html"id = unipet><b>Unipet</b></a>
+            </div>         
+          </li>
+        </ul>
+      </div>  
+    </nav>
+  </header>
+
 
 
 
@@ -120,42 +139,41 @@
         <section class="container-produto">
             <div class="produto-container">
                 <div class="produto-slider">
-                    <img class="produto-img" src="Imagens/produtos/racao-produto-1.jpg" id="MainImg" alt="">
+                    <img class="produto-img" src="Imagens/produtos/gato/1.png" id="MainImg" alt="">
                     <button class="nav-btn nav-btn-left" onclick="Imagem_Anterior()">&#10094;</button>
                     <button class="nav-btn nav-btn-right" onclick="Proxima_Imagem()">&#10095;</button>
                 </div>
                 <div class="thumbnail-container">
                     <button class="thumbnail-img-btn" onclick="Mostrar_Imagem(0)">
-                        <img class="thumbnail-img" src="Imagens/produtos/racao-produto-1.jpg" alt="">
+                        <img class="thumbnail-img" src="Imagens/produtos/gato/1.png" alt="">
                     </button>
                     <button class="thumbnail-img-btn" onclick="Mostrar_Imagem(1)">
-                        <img class="thumbnail-img" src="Imagens/produtos/racao-produto-2.jpg" alt="">
+                        <img class="thumbnail-img" src="Imagens/produtos/gato/2.png" alt="">
                     </button>
                     <button class="thumbnail-img-btn" onclick="Mostrar_Imagem(2)">
-                        <img class="thumbnail-img" src="Imagens/produtos/racao-produto-3.jpg" alt="">
+                        <img class="thumbnail-img" src="Imagens/produtos/gato/3.png" alt="">
                     </button>
                     <button class="thumbnail-img-btn" onclick="Mostrar_Imagem(3)">
-                        <img class="thumbnail-img" src="Imagens/produtos/racao-produto-4.jpg" alt="">
+                        <img class="thumbnail-img" src="Imagens/produtos/gato/4.png" alt="">
                     </button>
                     <button class="thumbnail-img-btn" onclick="Mostrar_Imagem(4)">
-                        <img class="thumbnail-img" src="Imagens/produtos/racao-produto-5.jpg" alt="">
+                        <img class="thumbnail-img" src="Imagens/produtos/gato/5.png" alt="">
                     </button>
                 </div>
             </div>
             <div class="detalhes">
-                <p class="subtitulo">Ração Hills para Cães Filhotes de Mini e Pequeno Porte</p>
-                <h1 class="produto-titulo">Sabor Frango</h1>
+                <p class="subtitulo">
+                   Promoção Especial Pague 2 e Leve 3</p>
+                <h1 class="produto-titulo">Sabor Carne</h1>
                 
                 <button class="fav-btn" onclick="Btn_Favorito()"><i class="bi bi-heart"></i></button>
 
                 <div class="preco-container">
                     <div class="preco-detalhes">
-                        <h1 class="preco-produto">R$169,99</h1>
-                        <p class="preco-parcela">ou 2x de R$ 85,00 sem juros</p>
+                        <h1 class="preco-produto">R$149,90</h1>
+                        <p class="preco-parcela">ou 2x de R$ 74,95 sem juros</p>
                         <select name="opcao-produto" id="select-produto">
-                            <option value="">800 g   R$ 65,99</option>
-                            <option value="">2,5 Kg   R$ 169,99</option>
-                            <option value="">6 Kg  R$354,99</option>
+                            <option value="">10kg</option>
                         </select>
                         
                         <!-- botao de quantidade -->
@@ -175,27 +193,26 @@
             <div class="descricao-container">
                 <h2 class="descricao-titulo">Descrição</h2>
                 <li class="texto-descricao">
-                    - Indicada para cães;
+                    - Indicada para gatos adultos a partir de 1 ano de idade;
                     <br>
-                    - Ração super premium para cães adultos de raças grandes e gigantes; 
+                    - Ração premium 100% completa e balanceada; 
                     <br>
-                    - Proteínas de alta qualidade para uma condição corpórea ideal; 
+                    - Nuggets crocantes com recheio macio e saboroso;
                     <br>
-                    - Fibras de alta qualidade, ácidos graxos e antioxidantes que ajudam a manter a pele, pelagem e digestão saudáveis; 
+                    - Com prebióticos que contribuem para digestão saudável;
                     <br>
-                    - Contém proteínas de alta qualidade para uma condição corpórea ideal, mantendo seu cão saudável e em ótima forma física; 
+                    - Desenvolvida nutricionalmente em conjunto com veterinários;
                     <br>
-                    - Complexo exclusivo de ácidos graxos ômega-6, vitamina E e outros nutrientes; 
+                    - Com múltiplas fibras para promover a saúde gastrointestinal;
                     <br>
-                    - Auxilia a manter a saúde da pele e a beleza da pelagem; 
+                    - Controle de minerais para manter o trato urinário saudável;
                     <br>
-                    - Complexo com vitaminas C + E – antioxidantes comprovados; 
+                    - Vitaminas e antioxidantes que ajudam o sistema imunológico;
                     <br>
-                    - Ingredientes de alta qualidade de fácil digestão; 
+                    - Ômega 6 e zinco para manter a pele e pelo saudáveis;
                     <br>
-                    - Sem corantes e saborizantes artificiais para uma refeição nutritiva e saborosa; 
-                    <br>
-                    - Disponível em embalagem de 12kg.
+                    - Disponível em embalagens de 500 g, 900 g, 2,7 kg, 10,1 kg, leve 10,1kg 
+               
                 </li>
             </div>
         </section>
@@ -218,7 +235,7 @@
                 <ul>
                     <li class="especificaçao-li" style="background-color: rgb(223, 223, 223);">
                         <span class="spec-key">Pet</span>
-                        <span class="spec-valor">Cachorros</span>
+                        <span class="spec-valor">Gatos</span>
                     </li>
                 </ul>
                 <ul>
@@ -230,13 +247,13 @@
                 <ul>
                     <li class="especificaçao-li" style="background-color: rgb(223, 223, 223);">
                         <span class="spec-key">Sabor</span>
-                        <span class="spec-valor">Frango</span>
+                        <span class="spec-valor">Carne</span>
                     </li>
                 </ul>
                 <ul>
                     <li class="especificaçao-li" >
                         <span class="spec-key">Tipo</span>
-                        <span class="spec-valor">Ração seca</span>
+                        <span class="spec-valor">Ração Seca</span>
                     </li>
                 </ul>
                 <ul>
@@ -248,7 +265,7 @@
                 <ul>
                     <li class="especificaçao-li" >
                         <span class="spec-key">Apresentação</span>
-                        <span class="spec-valor1">Disponível em embalagem de 12kg.</span>
+                        <span class="spec-valor1">Disponível em embalagem de 10,1kg.</span>
                     </li>
                 </ul>
 
@@ -419,5 +436,6 @@
     <!-- Link JavaScript -->
     <script src="java/produto.js"></script>
     <script src="java/darkmode.js"></script>
+    <script src="java/modal.js"></script>
 </body>
 </html>

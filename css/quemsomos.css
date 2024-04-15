@@ -76,9 +76,11 @@
     line-height: 1.5;
   }
   
-  hr {width: 95%;
+  hr {width: 85%;
     margin: 0px auto;
     border: 1px solid rgb(255, 145, 0);
+    margin-top: 1%;
+    margin-bottom: 2%;
   }
   
   img{max-width: 100%;}
@@ -162,8 +164,7 @@
 
     .contentimg2{max-width: 100%;
         margin-top: 5%;
-      
-        margin-left: 10%;
+        margin-left: 5%;
         
         
     }
@@ -184,7 +185,7 @@
         height: 250px;
         margin-top: 6%;
         justify-content: center;
-        background-color: rgb(245, 245, 245);
+        
         max-width: 100%;
         width: 60%;
         border-radius: 30px;}
@@ -218,23 +219,22 @@
     height: 250px;
     margin-top: 6%;
     justify-content: center;
-  
     max-width: 100%;
     width: 55%;
-    border-radius: 30px;}
+    border-radius: 25px;}
 
    .containercard2{display: flex;
     flex-direction: column; 
     margin-left: 11%;
     height: 200px;
-    margin-top: 6%;
+    margin-top: 4%;
     text-align: center;
     justify-content: center;
-    background: linear-gradient(130deg,#e78a00 40% ,#ffaf6e  );
+    
     max-width: 100%;
     width: 20%;
-    border-radius: 30px;
-margin-bottom: 5%;}
+    border-radius: 15px;
+  margin-bottom: 5%;}
 
     .containercard2 h1{color: white;}
 
@@ -244,9 +244,8 @@ margin-bottom: 5%;}
     .containerfinal{
      display: flex;
      flex-direction: column;
-     
      max-width: 100%;
-     margin-left: 11%;}
+    }
 
     .containerboxfinal{
       max-width: 100%;
@@ -254,7 +253,11 @@ margin-bottom: 5%;}
 
     .containerboximgdescription{
       display: flex;
-      max-width: 100%;}
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 100%;
+    }
 
     .imgboxfinal{
     max-width: 100%;
@@ -296,7 +299,9 @@ justify-content: center;
   border-radius: 12px;
   padding: 20px 20px;
   text-align: center;
-  justify-content: center;}
+  justify-content: center;
+  margin-bottom: 10%;
+margin-top: 5%;}
 
   .btnsaiba button {color: white;}
 

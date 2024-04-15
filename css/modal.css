@@ -93,7 +93,9 @@ button:hover{
 
 
 
-.hrmodal{margin-bottom: 5%;}
+.hrmodal{margin-bottom: 5%;
+width: 100%;
+}
 
 .container-modal{display: block;
    

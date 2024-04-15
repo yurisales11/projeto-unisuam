@@ -1,9 +1,9 @@
 .container-produto {
-  width: 80%;
   display: flex;
   justify-content: space-evenly;
   padding-top: 3.5%;
-  margin: 0 auto;
+  margin-left: 20%;
+  
 
 }
 
@@ -12,13 +12,13 @@
   
 }
 
-.subtitulo {
-  color: orange;
+.subtitulo {font-size: 1.8rem;
+
 }
 
 .produto-titulo {
   width: 80%;
-  color: blueviolet;
+  
 }
 
 
@@ -26,7 +26,7 @@
 #select-produto {
   display: block;
   margin-bottom: 15px;
-  background-color: yellow;
+ 
   width: 15%; 
   height: 40px;
   border-radius: 6px;
@@ -34,7 +34,7 @@
 
 .preco-parcela {
   font-weight: 600;
-  color: red;
+  color: rgb(255, 136, 0);
 }
 
 
@@ -46,17 +46,17 @@
 
 .quantity-input {
   border: 1px solid rgb(204, 204, 204);
-  width: 44%;
+  width: 36%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 25px;
 }
 
 .quantity-input button {
   background-color: transparent;
   border: none;
-  color: #d37801;
+  color: #ff6200;
   font-size: 25px;
   margin-left: 10px;
   margin-right: 10px;
@@ -65,11 +65,11 @@
 }
 
 .quantity-input button:hover {
-  color: rgb(33, 0, 180);
+  color: rgb(0, 234, 246);
 }
 
 .quantity-input input {
-  width: 35%; 
+  width: 25%; 
   text-align: center;
   padding-left: 15px;
 }
@@ -78,7 +78,7 @@
 
 /* botão carrinho */
 .btn-add { display: inline;
-  background-color: #e49929;
+  background-color: #ff7b00;
   color: bisque;
   width: 36%;
   height: 40px;
@@ -90,12 +90,12 @@
 }
 
 .btn-add:hover {
-  background-color: #a8009a;
+  background-color: #58d0ff;
   transition: 0.5s ease;
 }
 
 .produto-slider {
-  position: relative;
+  
 }
 
 .produto-slider img {
@@ -121,9 +121,19 @@
 }
 
 .nav-btn-left {
-  left: 0;
+  
+  margin-left: 0%;
   
 }
+
+.nav-btn-right {
+  
+  margin-left: 22%;
+  
+}
+
+
+
 
 
 
@@ -177,8 +187,8 @@
 /* descrição */
 .descricao-container {
   border-top: 1px solid rgb(219, 219, 219);
-  width: 95%;
-  margin-left: 2.5%;
+  width: 65%;
+  margin-left: 20%;
   margin-top: 5%;
 }
 
@@ -198,8 +208,8 @@
 /* especificações */
 .container-espec {
   border-top: 1px solid rgb(219, 219, 219);
-  width: 95%;
-  margin-left: 2.5%;
+  width: 65%;
+  margin-left: 20%;
   margin-top: 5%;
 }
 

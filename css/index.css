@@ -76,10 +76,10 @@ body {
   line-height: 1.5;
 }
 
-hr {width: 95%;
+hr {width: 85%;
   margin: auto;
   margin-bottom: 2.5%;
-  margin-bottom: 2%;
+  margin-top: 2%;
   border: 1px solid rgb(255, 145, 0);
 }
 
