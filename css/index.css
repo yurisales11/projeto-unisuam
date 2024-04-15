@@ -336,8 +336,8 @@ width: 80%;}
 
 /*Flip imagem*/
 
-.card-produto .card-banner { 
-}
+/*.card-produto .card-banner { 
+}*/
 
 .card-produto .img-holder:hover{scale: 1.1;
 transition: 0.5s;}

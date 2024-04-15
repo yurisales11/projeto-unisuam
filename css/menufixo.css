@@ -71,7 +71,7 @@
   }
   
 
-  body {background-color: var(--secundary-color);
+  body {background-color: var(--cor-primaria);
     transition: 0.4s;
     font-size: 1.6rem;
     line-height: 1.5;
@@ -210,12 +210,7 @@ input {
   width: 100%;
   padding: 0px 30px;
   font-size: 1.7rem;
-
-
- 
-
   color: var(--cor-secundaria);
-
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin: 0px auto;
 }
@@ -227,8 +222,6 @@ input {
 }
 
 .li-dropdown a:hover {
-
-
   color: rgb(255, 140, 0);
   transition: 0.2s ease-in-out;
 }
@@ -248,10 +241,7 @@ width: 50%;
   border-radius: 5px;
   display: none;
   background-color: var(--cor-primaria);
-   
 }
-
-
 
 .li-dropdown:hover .dropdown-menu a {
   margin: 10px 0px;
@@ -269,6 +259,7 @@ width: 50%;
   width: 15%;
   height: 290px;
   
+
 }
 
 
@@ -533,5 +524,6 @@ width: 6%;
 }
 
 }
+
 
 

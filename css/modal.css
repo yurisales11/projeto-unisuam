@@ -5,9 +5,7 @@
     box-sizing: 0;
 }
 
-body{
-    
-}
+
 
 .titlemodal {padding-left: 3%;}
 
@@ -93,17 +91,17 @@ button:hover{
 
 
 
+
 .hrmodal{margin-bottom: 5%;
 width: 100%;
 }
 
-.container-modal{display: block;
-   
-    margin-top: 5%;
-   
-    
-    width: 100%;
+.hrmodal{margin-bottom: 5%;}
 
+
+.container-modal{display: block;
+    margin-top: 5%;   
+    width: 100%;
 }
 
 .paragrafo1{display: flex;
@@ -113,7 +111,7 @@ width: 100%;
     font-size: 1.7rem;
     line-height: 80%;
     color: #000000;
-    }
+}
 
 .sacola-modal {
     display:flex;
@@ -136,16 +134,15 @@ width: 100%;
 }
 
 .btnmodal{width: 80%;
-         padding: 10px;
-         border: none;
-         cursor: pointer;
-         background-color: #fa7500;
-         border-radius: 10px;
-         color: white;
-         font-size: 1.7rem;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #fa7500;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.7rem;
 }
 
 .btnmodal:hover{background-color: #f99418;
-        transition: 0.4s;}
-
-    
+    transition: 0.4s;
+}   
