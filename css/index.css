@@ -167,7 +167,8 @@ hr {width: 85%;
   grid-template-columns: repeat(4, 1fr);
 }
 
-.w-100 { width: 100%; }
+.w-100 { width: 100%;
+}
 
 .logo {
   font-size: 3rem;
@@ -195,7 +196,9 @@ hr {width: 85%;
 }
 
 .mensagemcadastre-se{
-  width: 35%;
+  width: 100%;
+  text-align: center;
+
   justify-content: center;
   align-items: center;
   
@@ -211,7 +214,7 @@ hr {width: 85%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: var(--cor-primaria);
   font-size: 2rem;
-  font-weight: 800;
+  font-weight: 600;
 
 }
 
@@ -364,8 +367,43 @@ transition: 0.5s;}
 /*-----------------------------------*\
 \*-----------------------------------*/
 
+.boximgtudoqueseupetprecisa{
+display: flex;
+justify-content: center;}
+
+.imgtudoqueseupetprecisa{max-width: 100%;
+margin-bottom: 5%;
+border-radius: 35px;}
 
 
+.imgsection{
+display: flex;
+justify-content: center;}
+
+.imgsection img{max-width: 100%;
+border-radius: 35px;
+width: 65%;}
+
+.btncontato{
+  width: 100%;
+margin-top: 2%;
+display: flex;
+justify-content: center;
+}
+
+.btnconosco{width: 30%;
+  background-color: rgb(255, 132, 0);
+  color: white;
+  font-size: 1.8rem;
+  border-radius: 12px;
+  margin-bottom: 5%;
+  padding: 20px 20px;
+  border: none;
+  font: bold;
+  text-align: center;
+cursor: pointer;}
+
+.btnconosco:hover {opacity: 0.8;}
 /*-----------------------------------*\
   Serviço
 \*-----------------------------------*/
@@ -411,17 +449,22 @@ transition: 0.5s;}
 
 
 
-.gato { background-position: 75%; }
+.gato bg-image { 
+ }
 
-.gato-banner { display: block; }
+.gato-banner {}
+
+.gato-banner img{
+ 
+}
 
 .gato .container  {margin-top: 2%;
   display: grid;
   grid-template-columns: 1fr 0.75fr;
-  align-items: flex-end;
+  
 }
 
-.gato .img { width: 250px;}
+
 
 .gato .h2 {font-size: 3.2rem;}
 
@@ -481,171 +524,6 @@ transition: 0.5s;}
   Rodape
 \*-----------------------------------*/
 
-.rodape {
-  background-color: rgb(41, 42, 46);
-  color: rgb(135, 135, 135);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: top;
-  padding-block-start: 40px;
-}
-
-.rodape .container {
-  max-width: 1200px;
-  width: 100%;
-  margin-inline: auto;
-}
-
-.rodape-topo {
-  padding-block-start: 120px;
-  border-block-end: 1px solid rgb(60, 61, 62);
-}
-
-.rodape-topo .container {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
-}
-
-.rodape .logo {
-  color: white;
-  margin-block-end: 10px;
-}
-
-.rodape-texto {
-  font-size: 1.5rem;
-  margin-block-end: 25px;
-}
-
-.rodape-texto .link {
-  display: inline-block;
-  color: #FF914D;
-}
-
-.item-contato {
-  margin-block-end: 15px;
-  color: white;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.icon-contato {
-  color: #FF914D;
-}
-
-.lista-social {
-  display: flex;
-  position: relative;
-  gap: 2.5px;
-}
-
-.social-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 60px;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  transition: .2s;
-
-}
-
-.social-icon:hover {
-  width: 100px;
-}
-
-.social-icon2:hover {
-  width: 82px;
-}
-
-.social-icon span {
-  position: absolute;
-}
-
-.social-icon .icon {
-  color: #FF914D;
-  font-size: 20px;
-  transition: .2S;
-}
-
-.social-icon .icon-texto {
-  color: white;
-  font-size: 18px;
-  padding: 5px;
-  padding-left: 15px;
-  transform: scale(0);
-  transition: .2s;
-  transition-delay: .1s;
-}
-
-.social-icon:hover .icon-texto {
-  transform: scale(1);
-}
-
-.social-icon:hover .icon {
-  transform: scale(0);
-}
-
-.social-icon::before {
-  content: '';
-  position: absolute;
-  background-image: linear-gradient(45deg, var(--cor-icon), var(--cor-icon2));
-  inset: 0;
-  opacity: 0;
-  border-radius: 60px;
-}
-
-.social-icon:hover::before {
-  opacity: 1;
-}
-
-/**.social-link {
-  transition: 0.25s ease;
-}
-
-.social-link:is(:hover, :focus) {
-  background-color: #FF914D;
-  color: white;
-  width: 180px;
-}
-**/
-
-.rodape-lista-titulo {
-  color: white;
-  font-size: 1.8rem;
-  font-weight: 700;
-  padding-block: 10px;
-}
-
-.rodape-link {
-  padding-block: 4px;
-  transition: 0.25s ease;
-}
-
-.rodape-link:is(:hover, :focus) { color: #FF914D; }
-
-.rodape-inferior { padding-block: 20px; }
-
-.copyright { margin-block-end: 10px; }
-
-.copyright-link { display: inline-block; }
-
-.rodape-inferior .img {
-  width: 100%;
-  max-width: max-content;
-}
-
-.rodape-inferior .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/*-----------------------------------*\
-\*-----------------------------------*/
-
 
 
 /*-----------------------------------*\
@@ -667,8 +545,45 @@ transition: 0.5s;}
 /*-----------------------------------*\
 \*-----------------------------------*/
 
+@media screen and (max-width: 1200px)
+{
+  .lista{display: flex;
+  flex-wrap: wrap;}
 
 
+  .lista-grid{
+    width: 100%;
+    display: flex;
+   flex-wrap: wrap;
+    justify-content: center;
+
+  }
+  .lista-grid a{width: 45%;
+  }
+
+
+}
+
+@media screen and (max-width: 768px)
+{
+  .lista{display: flex;
+  flex-wrap: wrap;}
+
+
+  .lista-grid{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+
+  }
+  .lista-grid a{width: 70%;
+  }
+
+
+}
 
 
 /*-----------------------------------*\

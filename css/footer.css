@@ -4,12 +4,14 @@
 
 .rodape {
     background-color: rgb(41, 42, 46);
-    color: rgb(135, 135, 135);
+    color: rgb(255, 255, 255);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: top;
     padding-block-start: 40px;
     margin-top: 2%;
+    max-width: 100%;
+    width: 100%;
   }
   
   .rodape .container {
@@ -21,6 +23,7 @@
   .rodape-topo {
     padding-block-start: 120px;
     border-block-end: 1px solid rgb(60, 61, 62);
+    max-width: 100%;
   }
   
   .rodape-topo .container {
@@ -144,6 +147,7 @@
   .rodape-link {
     padding-block: 4px;
     transition: 0.25s ease;
+    width: 100%;
   }
   
   .rodape-link:is(:hover, :focus) { color: #FF914D; }

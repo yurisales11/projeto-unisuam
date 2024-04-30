@@ -348,3 +348,197 @@ justify-content: center;}
   /*-----------------------------------*\
   \*-----------------------------------*/
   
+
+  @media screen and (max-width: 1200px)  {
+    .container{}
+
+    .videodescription{display: flex;
+     
+        
+      margin-left: 5%;
+      align-items: center;
+      max-width: 50%;
+    }
+    
+    .videosrc{max-width: 100%;
+    
+    border-radius: 50px;}
+
+    .btncomprar{
+
+      width: 100%;
+      display: flex;
+      
+     }
+      
+      .comprar{width: 80%;
+      background-color: rgb(255, 132, 0);
+      color: white;
+      font-size: 1.8rem;
+      border-radius: 12px;
+      margin-bottom: 5%;
+      padding: 20px 20px;
+      margin-left: 6%;
+      margin-top: 5%;
+      text-align: center;
+      }
+
+      .containerbox3 h1{font-size: 2.8rem;
+        color: rgb(32, 28, 28);}
+        
+        .containerbox3 p{font-size: 1.6rem;
+        color: #343232;
+        margin-bottom: 2%;}
+    
+    .containerbox3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color:rgb(168, 204, 255);
+    max-width: 100%;
+    width: 100%;
+    border-radius: 30px;}
+
+    .boxbtnpgtfrequentes{
+      display: flex;
+      justify-content: center;}
+      
+      
+      .btnpgtfrequentes{ width: 50%;
+          background-color: #59D5E0;
+          color: white;
+          justify-content: center;
+          font-size: 1.8rem;
+          border-radius: 12px;
+          margin-bottom: 2%;
+          margin-top: 2%;
+          padding: 20px 20px;
+          text-align: center;
+          }
+     
+  }
+
+  @media screen and (max-width: 768px)  {
+    .container{display: flex;
+    flex-direction: column;
+ }
+
+
+  .containerheaddescription{
+    display: flex;
+    
+   
+    margin-left: 10%;
+    padding: 60px 0px;
+    max-width: 80%;}
+
+
+    .contentimg{
+    display: flex;
+  justify-content: center;}
+
+
+    .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;}
+
+    .description h1{color: rgb(0, 0, 0);
+    font-size: 22px;
+    margin-top: 2%;
+    font-weight: 600;
+    margin-left: 6%;
+    line-height: 1.5;
+    }
+
+    .description h4{color: rgb(34, 34, 34);
+        font-size: 20px;
+        font-weight: 100;
+        margin-left: 6%;
+        line-height: 1.5;
+        }
+
+    .videodescription{display: flex;
+     
+        justify-content: center;
+      margin-left: 10%;
+      align-items: center;
+      max-width: 80%;
+    }
+    
+    .videosrc{max-width: 100%;
+      width: 100%;
+    
+    border-radius: 50px;}
+
+    .btncomprar{
+
+      width: 100%;
+      display: flex;
+      
+     }
+      
+      .comprar{width: 100%;
+      background-color: rgb(255, 132, 0);
+      color: white;
+      font-size: 1.8rem;
+      border-radius: 12px;
+      margin-bottom: 5%;
+      padding: 20px 20px;
+      margin-left: 6%;
+      margin-top: 5%;
+      text-align: center;
+      }
+     
+      .imgbox{
+        max-width: 100%;
+       align-items: center;
+    display: flex;
+    justify-content: center;}
+    
+    .imgbox a {display: flex;
+    justify-content: center;
+  align-items: center;}
+    
+    .imgbox img{max-width: 100%;
+    width: 100%;
+    border-radius: 40px;
+    margin-bottom: 2%}
+
+      .containerbox3 h1{font-size: 2.8rem;
+        color: rgb(32, 28, 28);}
+        
+        .containerbox3 p{font-size: 1.6rem;
+        color: #343232;
+        margin-bottom: 2%;}
+    
+    .containerbox3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color:rgb(168, 204, 255);
+    max-width: 100%;
+    width: 100%;
+    border-radius: 30px;}
+
+     .boxbtnpgtfrequentes{
+      display: flex;
+      justify-content: center;}
+      
+      
+      .btnpgtfrequentes{ width: 50%;
+          background-color: #59D5E0;
+          color: white;
+          justify-content: center;
+          font-size: 1.8rem;
+          border-radius: 12px;
+          margin-bottom: 2%;
+          margin-top: 2%;
+          padding: 20px 20px;
+          text-align: center;
+          }
+    
+  }
+  

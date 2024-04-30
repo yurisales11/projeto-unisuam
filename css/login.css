@@ -3,6 +3,8 @@
   padding:0;
 }
 
+img{max-width: 100%;}
+
 /* Menu Fixo*/
 .menu {
   background-color: rgb(255, 255, 255);
@@ -14,22 +16,19 @@
 }
 
 /* DIV LOGO*/
-.unipetlogo{
-  
-  max-width: 35%;
+
+.logoimg {
+  display: flex;
+  justify-content: space-between;
   width: 14%;
-  display: flex;
-  margin: 0px 11%;
-  align-items: center;
-  cursor:auto;
- }
-  
-  /*LOGO*/
-#logonav {
-max-width: 100%;
-  display: flex;
-  
-  margin: auto;
+  margin: 10px auto;
+}
+
+/*LOGO*/
+
+#logonav { 
+  max-width: 100%;
+  height: 80px;
 }
 
   .ambienteseguro{
@@ -58,7 +57,7 @@ gap: 0.5rem;
 
 .container{
 
-  background: linear-gradient(800deg,#fed69a ,#ffb384 );
+  background: linear-gradient(800deg,#fcf2e3 ,#fdd9c3 );
   width: 100%;
   height: 90vh;
   display: flex;
@@ -220,12 +219,15 @@ form button:hover{
 
 
 input{
-  background-color: #DDDDDD;
+
   border:none;
   padding: 10px;
   margin-bottom: 10px;
+  
 }
 
+#email, #senha{border: 2px solid #d0d0d0;
+border-radius: 10px;}
 
 
 .btncadastre{
@@ -237,3 +239,109 @@ input{
   cursor: pointer;
 }
 
+
+@media screen and (max-width: 1550px)
+{
+  .login{
+    position: relative;
+    width: 60%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 40px;
+  }
+ 
+}
+
+
+@media screen and (max-width: 1320px)
+{
+  .login{
+    position: relative;
+    width: 70%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 40px;
+  }
+ 
+}
+
+@media screen and (max-width: 1200px)
+{
+  .login{
+    position: relative;
+    width: 80%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 40px;
+  }
+ 
+}
+
+
+@media screen and (max-width: 768px)
+{
+
+  .container{
+
+    background: linear-gradient(800deg,#fcf2e3 ,#fdd9c3 );
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    
+   justify-content: flex-start;
+
+  
+  }
+  
+  .login{
+    position: relative;
+    width: 200%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 40px;
+  }
+ 
+}
+
+
+
+
+
+
+@media screen and (min-width: 500px)
+{
+  /* DIV LOGO*/
+
+.logoimg {
+
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 10px auto;
+}
+
+/*LOGO*/
+
+#logonav { 
+  max-width: 100%;
+  height: 80px;
+}
+
+
+}

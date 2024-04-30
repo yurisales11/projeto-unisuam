@@ -13,22 +13,21 @@ box-sizing: 0;}
 }
   
   /* DIV LOGO*/
-  .unipetlogo{
-    
-    max-width: 35%;
-    width: 14%;
-    display: flex;
-    margin: 0px 11%;
-    align-items: center;
-    cursor:auto;
-   }
-    
-    /*LOGO*/
-  #logonav {
-    max-width: 100%;
-    display: flex;
-    margin: auto;
-  }
+
+.logoimg {
+  display: flex;
+  justify-content: space-between;
+  width: 14%;
+  margin: 10px auto;
+}
+
+/*LOGO*/
+
+#logonav { 
+  max-width: 100%;
+  height: 80px;
+}
+
   
     .ambienteseguro{
      
@@ -509,6 +508,29 @@ cursor: pointer;
 border-radius: 8px;}
 }
 
+
+
+@media screen and (min-width: 250px)
+{
+  /* DIV LOGO*/
+
+.logoimg {
+
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 10px auto;
+}
+
+/*LOGO*/
+
+#logonav { 
+  max-width: 100%;
+  height: 80px;
+}
+
+
+}
 
 
 

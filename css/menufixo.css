@@ -203,6 +203,7 @@ input {
   justify-content: center;
   align-items: center;
   width: 100%;
+  
 }
 
 .ul-dropdown .li-dropdown a {display: flex;
@@ -230,7 +231,8 @@ input {
 display: flex;
 justify-content: center;
 margin-left: 5%;
-width: 50%;
+width: 80%;
+
 }
 
 
@@ -254,10 +256,10 @@ width: 50%;
 /* Menu Dropdown *A* HOVER APARECER (Ração, Coleiras e Remedios)*/
 .li-dropdown:hover  .dropdown-menu {display: flex;
   flex-direction: column;
-  gap: 5%;
+  
   margin: 8px 0px;
-  width: 15%;
-  height: 290px;
+  
+  background-color: white;
   
 
 }
@@ -391,14 +393,648 @@ width: 50%;
  
 }
 
+.header-mobile{display: none;}
+
+
+
+@media screen and (max-width: 1600px)
+{/*AFFTER HOVER todos os produtos*/
+
+.li-dropdown .dificil #todososprodutos::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #ff7300;
+  transition: 0.2s;
+  position: absolute;
+  margin-top: 2%;
+  margin-left: -1%;
+}
+
+.li-dropdown .dificil #todososprodutos:hover::after {
+  display: flex;
+  width: 11%;
+}
+/*AFFTER HOVER cachorro*/
+
+.li-dropdown .dificil #cachorro::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #ff7300;
+  transition: 0.2s;
+  position: absolute;
+  margin-top: 1.5%;
+  margin-left: -1%;
+}
+
+.li-dropdown .dificil #cachorro:hover::after {
+  display: flex;
+  width: 6.2%;
+}
+/*AFFTER HOVER gato*/
+
+.li-dropdown .dificil #gato::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #ff7300;
+  transition: 0.2s;
+  position: absolute;
+  margin-top: 1.5%;
+  margin-left: -1%;
+}
+
+.li-dropdown .dificil #gato:hover::after {
+  display: flex;
+  width: 4.3%;
+}
+/*AFFTER HOVER pássaro*/
+
+.li-dropdown .dificil #pássaro::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #ff7300;
+  transition: 0.2s;
+  position: absolute;
+  margin-top: 1.5%;
+  margin-left: -1%;
+}
+
+.li-dropdown .dificil #pássaro:hover::after {
+  display: flex;
+  width: 5.5%;
+}
+/*AFFTER HOVER remedios*/
+
+.li-dropdown .dificil #remedios::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #ff7300;
+  transition: 0.2s;
+  position: absolute;
+  margin-top: 1.5%;
+  margin-left: -1%;
+}
+
+.li-dropdown .dificil #remedios:hover::after {
+  display: flex;
+  width: 6.5%;
+}
+/*AFFTER HOVER doação*/
+
+.li-dropdown .dificil #doação::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #ff7300;
+  transition: 0.2s;
+  position: absolute;
+  margin-top: 1.5%;
+  margin-left: -1%;
+}
+
+.li-dropdown .dificil #doação:hover::after {
+  display: flex;
+  width:5.3%;
+}
+
+/*AFFTER HOVER unipet*/
+.li-dropdown .dificil #unipet::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #ff7300;
+  transition: 0.2s;
+  position: absolute;
+  margin-top: 1.5%;
+  margin-left: -1%;
+}
+
+.li-dropdown .dificil #unipet:hover::after {
+  display: flex;
+  width: 5.3%;
+}}
+
+
+@media screen and (max-width: 1480px)
+{/*AFFTER HOVER todos os produtos*/
+
+.li-dropdown .dificil #todososprodutos::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #ff7300;
+  transition: 0.2s;
+  position: absolute;
+  margin-top: 2.3%;
+  margin-left: -1%;
+}
+
+.li-dropdown .dificil #todososprodutos:hover::after {
+  display: flex;
+  width: 13%;
+}
+/*AFFTER HOVER cachorro*/
+
+.li-dropdown .dificil #cachorro::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #ff7300;
+  transition: 0.2s;
+  position: absolute;
+  margin-top: 1.8%;
+  margin-left: -1%;
+}
+
+.li-dropdown .dificil #cachorro:hover::after {
+  display: flex;
+  width: 7%;
+}
+/*AFFTER HOVER gato*/
+
+.li-dropdown .dificil #gato::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #ff7300;
+  transition: 0.2s;
+  position: absolute;
+  margin-top: 1.8%;
+  margin-left: -1%;
+}
+
+.li-dropdown .dificil #gato:hover::after {
+  display: flex;
+  width: 4.6%;
+}
+/*AFFTER HOVER pássaro*/
+
+.li-dropdown .dificil #pássaro::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #ff7300;
+  transition: 0.2s;
+  position: absolute;
+  margin-top: 1.8%;
+  margin-left: -1%;
+}
+
+.li-dropdown .dificil #pássaro:hover::after {
+  display: flex;
+  width: 6%;
+}
+/*AFFTER HOVER remedios*/
+
+.li-dropdown .dificil #remedios::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #ff7300;
+  transition: 0.2s;
+  position: absolute;
+  margin-top: 1.8%;
+  margin-left: -1%;
+}
+
+.li-dropdown .dificil #remedios:hover::after {
+  display: flex;
+  width: 7%;
+}
+/*AFFTER HOVER doação*/
+
+.li-dropdown .dificil #doação::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #ff7300;
+  transition: 0.2s;
+  position: absolute;
+  margin-top: 1.8%;
+  margin-left: -1%;
+}
+
+.li-dropdown .dificil #doação:hover::after {
+  display: flex;
+  width: 6%;
+}
+
+/*AFFTER HOVER unipet*/
+.li-dropdown .dificil #unipet::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #ff7300;
+  transition: 0.2s;
+  position: absolute;
+  margin-top: 1.8%;
+  margin-left: -1%;
+}
+
+.li-dropdown .dificil #unipet:hover::after {
+  display: flex;
+  width: 5.3%;
+}}
+
+
+
+@media screen and (max-width: 1480px)
+{/*AFFTER HOVER todos os produtos*/
+
+.li-dropdown .dificil #todososprodutos::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #ff7300;
+  transition: 0.2s;
+  position: absolute;
+  margin-top: 2.4%;
+  margin-left: -1%;
+}
+
+.li-dropdown .dificil #todososprodutos:hover::after {
+  display: flex;
+  width: 14%;
+}
+/*AFFTER HOVER cachorro*/
+
+.li-dropdown .dificil #cachorro::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #ff7300;
+  transition: 0.2s;
+  position: absolute;
+  margin-top: 2%;
+  margin-left: -1%;
+}
+
+.li-dropdown .dificil #cachorro:hover::after {
+  display: flex;
+  width: 8%;
+}
+/*AFFTER HOVER gato*/
+
+.li-dropdown .dificil #gato::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #ff7300;
+  transition: 0.2s;
+  position: absolute;
+  margin-top: 2%;
+  margin-left: -1%;
+}
+
+.li-dropdown .dificil #gato:hover::after {
+  display: flex;
+  width: 5%;
+}
+/*AFFTER HOVER pássaro*/
+
+.li-dropdown .dificil #pássaro::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #ff7300;
+  transition: 0.2s;
+  position: absolute;
+  margin-top: 2%;
+  margin-left: -1%;
+}
+
+.li-dropdown .dificil #pássaro:hover::after {
+  display: flex;
+  width: 6.8%;
+}
+/*AFFTER HOVER remedios*/
+
+.li-dropdown .dificil #remedios::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #ff7300;
+  transition: 0.2s;
+  position: absolute;
+  margin-top: 2%;
+  margin-left: -1%;
+}
+
+.li-dropdown .dificil #remedios:hover::after {
+  display: flex;
+  width: 7.8%;
+}
+/*AFFTER HOVER doação*/
+
+.li-dropdown .dificil #doação::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #ff7300;
+  transition: 0.2s;
+  position: absolute;
+  margin-top: 2%;
+  margin-left: -1%;
+}
+
+.li-dropdown .dificil #doação:hover::after {
+  display: flex;
+  width: 7%;
+}
+
+/*AFFTER HOVER unipet*/
+.li-dropdown .dificil #unipet::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #ff7300;
+  transition: 0.2s;
+  position: absolute;
+  margin-top: 2%;
+  margin-left: -1%;
+}
+
+.li-dropdown .dificil #unipet:hover::after {
+  display: flex;
+  width: 6%;
+}}
+
+
+
 @media screen and (max-width: 1200px)
 {
+  .header-desktop{display:none;}
+
+
+  .header-mobile{display: block;}
 
   .navbar {
-    
+    max-width: 100%;
+  }
   
   
-    
+.containernav {
+  display: flex;
+  flex-direction: column;
+  
+
+}
+
+/* BUTTON GERAL */
+
+button {
+  background-color:transparent; /* Torna o fundo transparente */
+  border: none;
+  cursor:pointer
+}
+
+/* INPUT div */
+.inputsearch {
+  max-width: 100%;
+  width:100%;
+  display: flex;
+  justify-content: center;
+ 
+
+}
+
+.areainput {
+  border: 1px solid rgb(211, 211, 211);
+  display: flex;
+  margin-top: 0.5%;
+  border-radius: 50px;
+  height: 60px; 
+  width: 85%;   
+  margin-top: 0%; 
+}
+
+
+input {
+  background-color: transparent;
+  width: 100%;
+  padding: 10px;
+  border: 0px solid rgba(176, 25, 25, 0.27);
+  border-radius: 50px;
+  height: 50px;
+  outline: none;
+  text-align: flex-start;
+  margin: 4px 0px;
+}
+
+
+.areadeservico {max-width: 100%;
+  width: 100%;
+  display: flex;
+
+  justify-content: flex-start;
+ 
+
+}
+.iconeslogin{display: none;}
+  
+  /* DIV LOGO*/
+
+.containertop {
+  
+ 
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+ justify-content: space-between;
+  width: 100%;
+  
+}
+
+
+
+/*LOGO*/
+
+#logoimagem { 
+  max-width: 100%;
+  width: 100%;
+  height: 80px;
+}
+
+/* DIV INPUT GEREAL */
+
+.imglupa {
+display: flex;
+justify-content: center;
+max-width: 10%;
+}
+
+#lupaimagem {
+  width: 40%;
+  margin: 0px auto;
+}
+
+
+
+.mobile-menu-icon{
+  
+display: flex;
+max-width: 100%;
+width: 20%;
+
+}
+
+.mobile-menu-icon img{
+  width: 100%;
+ 
+}
+.mobile-menu{
+  display: none;
+  max-width: 100%;
+  width: 20%;
+  
+}
+
+
+
+.open{
+display: block;
+background-color: rgb(255, 255, 255);
+position: fixed;
+top: 0;
+bottom: 0;
+border-radius: 35px;
+width: 40%;
+
+
+}
+
+.titulomobile{background-color: rgb(225, 224, 224);
+height: 35px;
+display: flex;
+align-items: center;}
+
+.titulomobile p {font-size: bold;
+font-size: 2rem;
+color: black;
+padding: 0px 25px;}
+
+.li-dropdown{
+  padding: 0px 25px;
+font-size: 2rem;}
+
+.areautilidades{
+display: flex;
+flex-direction: column;
+padding: 0px 25px;}
+
+.areacontraste{
+  display: flex;
+  flex-direction: column;
+  padding: 0px 25px;}
+.ul-dropdown{
+  display: none;
+  
+}
+
+
+.iconmobile{
+display: flex;
+justify-content: center;
+width: 25%;}
+
+
+.iconmobile2{
+display: flex;
+width: 25%;
+justify-content: center;
+align-items: center;
+gap: 3%;
+}
+
+
+
+ .li-dropdown .dificil #todososprodutos::after {
+  display: none;
+}
+
+.li-dropdown .dificil #todososprodutos:hover::after {
+  display: none;
+}
+/*AFFTER HOVER cachorro*/
+
+.li-dropdown .dificil #cachorro::after {
+  display: none;
+}
+
+.li-dropdown .dificil #cachorro:hover::after {
+  display: none;
+}
+/*AFFTER HOVER gato*/
+
+.li-dropdown .dificil #gato::after {
+  display: none;
+}
+
+.li-dropdown .dificil #gato:hover::after {
+  display: none;
+}
+/*AFFTER HOVER pássaro*/
+
+.li-dropdown .dificil #pássaro::after {
+  display: none;
+}
+
+.li-dropdown .dificil #pássaro:hover::after {
+  display: none;
+}
+/*AFFTER HOVER remedios*/
+
+.li-dropdown .dificil #remedios::after {
+  display: none;
+}
+
+.li-dropdown .dificil #remedios:hover::after {
+  display: none;
+}
+/*AFFTER HOVER doação*/
+
+.li-dropdown .dificil #doação::after {
+  display: none;
+}
+
+.li-dropdown .dificil #doação:hover::after {
+  display: none;
+}
+
+/*AFFTER HOVER unipet*/
+.li-dropdown .dificil #unipet::after {
+  display: none;
+}
+
+.li-dropdown .dificil #unipet:hover::after {
+  display: none;
+}
+
+.arealoginmobile{background-color: green;
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0px 20px;
+  align-items: center;}
+
+}
+
+
+
+
+
+@media screen and (max-width: 768px)
+{
+  .header-desktop{display:none;}
+
+
+  .header-mobile{display: block;}
+
+  .navbar {
     max-width: 100%;
   }
   
@@ -464,13 +1100,18 @@ input {
   
   /* DIV LOGO*/
 
-.logoimg {
-  display: flex;
+.containertop {
+  
+ 
   max-width: 100%;
-justify-content: center;
+  display: flex;
+  align-items: center;
+ justify-content: space-between;
   width: 100%;
   
 }
+
+
 
 /*LOGO*/
 
@@ -489,16 +1130,18 @@ max-width: 10%;
 }
 
 #lupaimagem {
-  width: 40%;
+  width: 60%;
   margin: 0px auto;
 }
 
-.mobile-menu-icon{display: block;
+
+
+.mobile-menu-icon{display: flex;
   
 max-width: 100%;
-margin-top: -5.2%;
 
-width: 6%;
+
+width: 23%;
 
 }
 
@@ -514,16 +1157,35 @@ width: 6%;
 }
 
 
-
-.open{display: block;}
+  .open{
+  display: block;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  border-radius: 35px;
+  width: 40%; 
+  }
+  
 
 .ul-dropdown{
   display: none;
-  
- 
-}
 
 }
+
+
+.iconmobile{
+display: flex;
+justify-content: center;
+width: 25%;}
+}
+
+.iconmobile2{
+display: flex;
+width: 25%;
+justify-content: center;
+align-items: center;
+gap: 3%;}
 
 
 
