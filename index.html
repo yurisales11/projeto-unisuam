@@ -139,7 +139,7 @@
       </div>  
     </nav>
     </header>
-     <!--Header Mobile-->
+  <!--Header Mobile-->
   <!--menu-->
   <header class="header-mobile">
     <nav class = "navbar">
@@ -149,9 +149,9 @@
 
           <div class = "mobile-menu-icon">
             <button onclick ="menuShow()"><img class = imgicon src="Imagens/menumobile/menuiconmobile.png" alt=""></button>
-           </div>
+          </div>
 
-           <div class = "iconlogin"><a href="login.html"><i class="bi bi-person" style="font-size:35px;color: rgb(0, 0, 0);"></i></a></div>
+          <div class = "iconlogin"><a href="login.html"><i class="bi bi-person" style="font-size:35px;color: rgb(0, 0, 0);"></i></a></div>
           </div>
 
 
@@ -233,12 +233,12 @@
         <ul class="mobile-menu">
           <div class = arealoginmobile>
             <div class = "iconlogin"><a href="login.html"><i class="bi bi-person" style="font-size:30px;color: rgb(0, 0, 0);"></i></a></div>
-             <p>Olá, Faça seu login.</p>
-             <button id="close-modal"><i class="bi bi-x" style="font-size:40px;" ></i></button>
+              <p>Olá, Faça seu login.</p>
+              <button id="close-modal"><i class="bi bi-x" style="font-size:40px;" ></i></button>
             </div>
-             
-             <div class = titulomobile><p>Tudo que seu pet precisa</p></div>
-             
+            
+              <div class = titulomobile><p>Tudo que seu pet precisa</p></div>
+            
           <li class="li-dropdown">     
             <div class = "dificil"> 
               <a href="PaginaMenu/todososprodutos.html" id = todososprodutos><b>Todos os Produtos</b></a>
@@ -253,7 +253,7 @@
           </li>
           <div class =titulomobile><p>Departamentos</p></div>
           <li class="li-dropdown">
-             
+            
             <div class = "dificil"> 
               <a href="PaginaMenu/cahorro.html"id = cachorro><b>Cachorro</b></a>
             </div>
@@ -300,7 +300,7 @@
                 <i id="icon-dark-mode" class="bi bi-moon-fill"></i>
                 <i class="bi bi-sun-fill"></i>
               </div>    
-         
+              
           </div>
           
         </ul>
@@ -309,7 +309,7 @@
     </header>
 
 
-   
+
 
 
     <section class = "sectionmsg">
@@ -373,19 +373,18 @@
       <!--Categoria-->
       <section class="secao categoria">
         <div class="container">
-
           
           <h2 class="h2 secao-titulo">
             <hr>
             <span class="span">Principais</span> Categorias
           </h2>
 
-          <ul class="lista">
+          <ul class="lista lista-item-categoria">
             <li class="lista-item">
               <div class="card-categoria">
-                <figure class="card-banner img-holder" >
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
                   <a href="PaginaMenu/cahorro.html">
-                  <img src="imagens/categorias/cachorro.png" alt="" class="img-cover">
+                  <img src="imagens/categorias/cachorro.png"  alt="" class="img-cover">
                 </figure>
                 <h3 class="h3">
                   <a href="PaginaMenu/cahorro.html" class="card-titulo">Cachorro</a>
@@ -395,7 +394,7 @@
 
             <li class="lista-item">
               <div class="card-categoria">
-                <figure class="card-banner img-holder" >
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
                   <a href="PaginaMenu/gato.html">
                   <img src="imagens/categorias/gato.png"  alt="" class="img-cover">
                 </a>
@@ -408,7 +407,7 @@
 
             <li class="lista-item">
               <div class="card-categoria">
-                <figure class="card-banner img-holder">
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
                   <a href="PaginaMenu/Aves.html">
                   <img src="imagens/categorias/passaro.png"  alt="" class="img-cover">
                   </a>
@@ -421,13 +420,26 @@
 
             <li class="lista-item">
               <div class="card-categoria">
-                <figure class="card-banner img-holder">
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
                   <a href="PaginaMenu/medicamento.html">
-                  <img src="imagens/categorias/medicamentos.png" alt="" class="img-cover">
+                  <img src="imagens/categorias/categoriadog.png"  alt="" class="img-cover">
                 </a>
                 </figure>
                 <h3 class="h3">
-                  <a href="PaginaMenu/medicamento.html" class="card-titulo">Medicamentos</a>
+                  <a href="PaginaMenu/medicamento.html" class="card-titulo">cao</a>
+                </h3>
+              </div>
+            </li>
+
+            <li class="lista-item">
+              <div class="card-categoria">
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <a href="PaginaMenu/medicamento.html">
+                  <img src="imagens/categorias/medicamentos.png"  alt="" class="img-cover">
+                </a>
+                </figure>
+                <h3 class="h3">
+                  <a href="PaginaMenu/medicamento.html" class="card-titulo">Remedios</a>
                 </h3>
               </div>
             </li>
@@ -485,12 +497,12 @@
             <span class="span">Mais</span> Vendidos
           </h2>
 
-          <ul class="lista">
-            <a href="goldenformula.html">
+          <ul class="lista-grid">
+            
               <li>
                 <div class="card-produto">
                   <div class="card-banner img-holder" >
-                    <img src="imagens/produtos/produto01.png" alt="" class="img-cover default">
+                    <a href="goldenformula.html"><img src="imagens/produtos/produto01.png" alt="" class="img-cover default"></a>
                   </div>
 
                   <div class="card-conteudo">
@@ -501,13 +513,11 @@
                   </div>
                 </div>
               </li>
-            </a>
-
-            <a href="whiskas.html">
+        
               <li>
                 <div class="card-produto">
                   <div class="card-banner img-holder" >
-                    <img src="imagens/produtos/produto02.png" alt="" class="img-cover default">
+                    <a href="whiskas.html"><img src="imagens/produtos/produto02.png" alt="" class="img-cover default"></a>
                   </div>
                   <div class="card-conteudo">
                     <h3 class="h3">
@@ -517,13 +527,11 @@
                   </div>
                 </div>
               </li>
-            </a>
 
-            <a href="biotronnativo.html">
               <li>
                 <div class="card-produto">
                   <div class="card-banner img-holder" >
-                    <img src="imagens/produtos/produto03.png" alt="" class="img-cover default">
+                    <a href="biotronnativo.html"><img src="imagens/produtos/produto03.png" alt="" class="img-cover default"></a>
                   </div>
                   <div class="card-conteudo">
                     <h3 class="h3">
@@ -533,12 +541,11 @@
                   </div>
                 </div>
               </li>
-            </a>
 
-            <a href="simparic.html">
               <li>
                 <div class="card-produto">
                   <div class="card-banner img-holder" >
+
                     <a href="simparic.html"><img src="imagens/produtos/produto04.png" alt="" class="img-cover default"></a>
                   </div>
                   <div class="card-conteudo">
@@ -549,7 +556,6 @@
                   </div>
                 </div>
               </li>
-            </a>
 
             <!--OUTROS 4 PRODUTOS--
             <li>
@@ -658,9 +664,12 @@
         <div class="container">
           <div class = boximgtudoqueseupetprecisa>
             <a href="PaginaMenu/todososprodutos.html">
-          <img src="Imagens/sectionindex/querocomprarunipet.png" class =imgtudoqueseupetprecisa  alt="" class="img">
-         </a>
-        </div>
+              <img src="Imagens/sectionindex/querocomprarunipet.png" class =imgtudoqueseupetprecisa  alt="" class="img">
+            </a>
+          </div>
+
+          <img src="Imagens/service-image.png" class="img" alt="">
+
             <h2 class="h2 secao-titulo">
               <span class="span">Tudo Que Seu Pet Precisa,</span> Quando Ele Precisa.
             </h2>
@@ -753,31 +762,31 @@
           </h2>
           <ul class="lista">
             <li class="lista-item">
-              <div class="card-marca img-holder">
+              <div class="card-marca img-holder" style="--width: 150; --height: 150;">
                 <img src="imagens/marcas/brand-1.jpg" alt="" class="img-cover">
               </div>
             </li>
 
             <li class="lista-item">
-              <div class="card-marca img-holder">
+              <div class="card-marca img-holder" style="--width: 150; --height: 150;">
                 <img src="imagens/marcas/brand-2.jpg" alt="" class="img-cover">
               </div>
             </li>
 
             <li class="lista-item">
-              <div class="card-marca img-holder">
+              <div class="card-marca img-holder" style="--width: 150; --height: 150;">
                 <img src="imagens/marcas/brand-3.jpg" alt="" class="img-cover">
               </div>
             </li>
 
             <li class="lista-item">
-              <div class="card-marca img-holder">
+              <div class="card-marca img-holder" style="--width: 150; --height: 150;">
                 <img src="imagens/marcas/brand-4.jpg" alt="" class="img-cover">
               </div>
             </li>
 
             <li class="lista-item">
-              <div class="card-marca img-holder">
+              <div class="card-marca img-holder" style="--width: 150; --height: 150;">
                 <img src="imagens/marcas/brand-5.jpg" alt="" class="img-cover">
               </div>
             </li>
@@ -795,7 +804,7 @@
 
   <!--Rodape-->
 
-  <footer class="rodape" style="background-image: url('imagens/footer-bg.jpg')">
+  <footer class="rodape" style="background-image: url('Imagens/footer-bg.jpg')">
 
     <div class="rodape-topo secao">
       <div class="container">
@@ -852,7 +861,7 @@
               </a>
             </li>
 
-           
+          
           </ul>
 
         </div>
@@ -964,7 +973,7 @@
           &copy; 2024 Feito por <a href="#" class="copyright-link">João.</a>
         </p>
 
-        <img src="imagens/payment.png" alt="" class="img">
+        <img src="imagens/payment.png"  width="397" height="32" alt="" class="img">
 
       </div>
     </div>
