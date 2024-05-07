@@ -215,6 +215,14 @@
 
 }
 
+@media (max-width: 560px) {
+
+  #pagamento-img {
+    width: 75%;
+  }
+
+}
+
 @media (min-width: 768px) {
 
   /*Rodape*/
@@ -250,7 +258,17 @@
 }
 
 
+@media (max-width: 1200px) {
 
+  .rodape-topo {
+    margin-left: 25px;
+  }
+
+  .rodape-inferior {
+    margin-left: 25px;
+  }
+
+}
 
 
 
