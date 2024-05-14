@@ -22,10 +22,12 @@ section.slider{
 .slide-box{
     width: 25%;
     height: auto;
-
+  
     text-align: center;
     transition: .8s;
 }
+
+.slide-box a{}
 
 .slide-box img{
    

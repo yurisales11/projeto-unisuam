@@ -56,7 +56,7 @@ box-sizing: 0;}
 
 
 
-  body{height: 105vh;
+  body{height: 120vh;
     background: linear-gradient(750deg,#FEF7C9 ,#d47234 );
     background-repeat: no-repeat;}
 
@@ -211,8 +211,26 @@ transition: 0.2s ease-in-out;}
 button:hover{background-color: #b36534;
   transition: 0.2s ease-in-out;}
 
+  @media screen and (max-width: 1440px){
+    .form {
+      border-radius: 20px;
+      margin-top: 3%;
+      height: 95vh;
+      width: 60%;
+      display: flex;
+      align-items: center;
+      background-image: url(../Imagens/fotocadastre-se/background\ \(11\).png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center
+    }
+
+  }
+
+
+  
   @media screen and (max-width: 1024px){
-    body{height: 105vh;
+    body{height: 120vh;
     
       background: linear-gradient(750deg,#FEF7C9 ,#d47234 );
       background-repeat: no-repeat;}
@@ -254,19 +272,19 @@ button:hover{background-color: #b36534;
     justify-content: center;
     }
 
-  .form{
-   
-    border-radius: 30px;
-    margin-top: 3%;
-    height: 80vh;
-    width:90%;
-    display: flex;
-    align-items: center;
-    background-image: url(../Imagens/fotocadastre-se/background\ \(11\).png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-  }
+    .form {
+      border-radius: 20px;
+      margin-top: 3%;
+      height: 100vh;
+      width: 80%;
+      display: flex;
+      align-items: center;
+      background-image: url(../Imagens/fotocadastre-se/background\ \(11\).png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center
+    }
+
 
   .btnenviar{
     background-color: #ff6200;
@@ -323,7 +341,7 @@ button:hover{background-color: #b36534;
     margin: auto;
   }
 
-    body{height: 105vh;
+    body{height: 120vh;
     
       background: linear-gradient(750deg,#FEF7C9 ,#d47234 );
       background-repeat: no-repeat;}
@@ -347,19 +365,21 @@ button:hover{background-color: #b36534;
   font-size: 1.3rem;
 
 }
-    
-  .form{
-    border-radius: 30px;
-    margin-top: 3%;
-    height: 90vh;
-    width:90%;
-    display: flex;
-    align-items: center;
-    background-image: url(../Imagens/fotocadastre-se/background\ \(11\).png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-  }
+
+.form {
+  border-radius: 20px;
+  margin-top: 3%;
+  height: 100vh;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  background-image: url(../Imagens/fotocadastre-se/background\ \(11\).png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center
+}
+
+
 
   .btnenviar{
     background-color: #ff6200;

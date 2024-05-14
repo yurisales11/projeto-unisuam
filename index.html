@@ -38,6 +38,7 @@
       <div class = "containernav">
         <div class= "logoimg"> 
           <a href="index.html"><img src="imagens/unipet.png" alt="imglogo" id ="logoimagem"></a>
+          <a href="index.html"><img src="imagens/unipetdarkmode.png" alt="imglogo" id ="logoimagemdarkmode"></a>
         </div>
 
         <div class = "areainput">
@@ -51,9 +52,10 @@
         </div>
 
         <div class = "iconeslogin">
-          <div class = "iconlogin"><a href="contato.html"><i class="bi bi-telephone-fill" style="font-size:20px; color: black;"></i></a></div>
-          <div class = "iconlogin"><a href="login.html"><i class="bi bi-heart" style="font-size:20px;color: black;"></i></a></div>
-          <div class = "iconlogin"><button id="open-modal"><i class="bi bi-cart2" style="font-size:20px;color: black;"></i></button></div>
+          <div class = "iconlogin"><a href="contato.html"><i class="bi bi-telephone-fill" style="font-size:20px; "></i></a></div>
+          <div class = "iconlogin"><a href="login.html"><i class="bi bi-heart" style="font-size:20px;"></i></a></div>
+
+          <div class = "iconlogin"><button id="open-modal"><i class="bi bi-cart2" style="font-size:20px;"></i></button></div>
           <div id="fade" class="hide"></div>
           <div id="modal" class="hide">
             <div class="modal-header">
@@ -73,16 +75,21 @@
                   <div class = buttonmodal><button class="btnmodal">Entendi</button></div>
                 </div>
               </div>
-          </div>
+  
+         
 
-          <div class = "iconlogin"><a href="login.html"><i class="bi bi-person" style="font-size:20px;color: rgb(0, 0, 0);"></i></a></div>
-            <div>
-              <div>
-                <i id="icon-dark-mode" class="bi bi-moon-fill"></i>
-                <i class="bi bi-sun-fill"></i>
-              </div>    
-            </div>
           </div>
+          
+
+          <div class = "iconlogin"><a href="login.html"><i class="bi bi-person" style="font-size:20px;"></i></a></div>
+          <div>
+            <div class = darkmode >
+              <i id= "icon-dark-mode"  class="bi bi-moon-fill"></i>
+              <i id= "icon-light-mode" class="bi bi-sun-fill"></i>
+            </div>    
+          </div>                      
+          </div>
+      </div>
       </div>
 
       <div class = "areadeservico">
@@ -139,27 +146,35 @@
       </div>  
     </nav>
     </header>
+
+
+  
+
   <!--Header Mobile-->
+
+
   <!--menu-->
   <header class="header-mobile">
     <nav class = "navbar">
       <div class = "containernav">
         <div class= "containertop"> 
           <div class = iconmobile>
-
           <div class = "mobile-menu-icon">
-            <button onclick ="menuShow()"><img class = imgicon src="Imagens/menumobile/menuiconmobile.png" alt=""></button>
-          </div>
+            <button id ="btn-menu">
+              <i class="bi bi-list" id = iconemenumobile style="font-size:40px;"></i>
+            </button>
+           </div>
 
-          <div class = "iconlogin"><a href="login.html"><i class="bi bi-person" style="font-size:35px;color: rgb(0, 0, 0);"></i></a></div>
+           <div class = "iconlogin"><a href="login.html"><i class="bi bi-person" style="font-size:35px;"></i></a></div>
           </div>
 
 
           <a href="index.html"><img src="imagens/unipet.png" alt="imglogo" id ="logoimagem"></a>
+          <a href="index.html"><img src="imagens/unipetdarkmode.png" alt="imglogo" id ="logoimagemdarkmode"></a>
 
           <div class = iconmobile2>
 
-          <div class = "iconlogin"><button id="open-modal"><i class="bi bi-cart2" style="font-size:25px;color: black;"></i></button></div>
+          <div class = "iconlogin"><button id="open-modal"><i class="bi bi-cart2" style="font-size:25px;"></i></button></div>
           <div id="fade" class="hide"></div>
           <div id="modal" class="hide">
             <div class="modal-header">
@@ -173,14 +188,14 @@
                 <div class="container-modal">
                   <div class = paragrafo1><p><b>Você ainda não tem</b></p></div>
                   <div class = paragrafo1><p><b>produtos adicionados ao seu carrinho</b></p></div>
-                  <div class="sacola-modal"> <i class="bi bi-cart2" style="font-size:40px;color: black;"></i></div>
+                  <div class="sacola-modal"> <i class="bi bi-cart2" style="font-size:40px;"></i></div>
                   <div class = paragrafo1><p>Escolha tudo o que seu Pet precisa e adicione ao</div>
                   <div class = paragrafo1><p>seu carrinho para comprar.</p></div>
                   <div class = buttonmodal><button class="btnmodal">Entendi</button></div>
                 </div>
               </div>
           </div>
-          <div class = "iconlogin"><a href="login.html"><i class="bi bi-heart" style="font-size:20px;color: black;"></i></a></div>
+          <div class = "iconlogin"><a href="login.html"><i class="bi bi-heart" style="font-size:20px;"></i></a></div>
         </div>
         </div>
 
@@ -194,66 +209,29 @@
           </div>
         </div>
 
-        <div class = "iconeslogin">
-          <div class = "iconlogin"><a href="contato.html"><i class="bi bi-telephone-fill" style="font-size:20px; color: black;"></i></a></div>
-          <div class = "iconlogin"><a href="login.html"><i class="bi bi-heart" style="font-size:20px;color: black;"></i></a></div>
-          <div class = "iconlogin"><button id="open-modal"><i class="bi bi-cart2" style="font-size:20px;color: black;"></i></button></div>
-          <div id="fade" class="hide"></div>
-          <div id="modal" class="hide">
-            <div class="modal-header">
-              <h2 class = titlemodal>Carrinho</h2>
-              <button id="close-modal"><i class="bi bi-x" style="font-size:40px;"></i></button>
-            </div>
-
-              <hr class = hrmodal>
-      
-              <div class="modal-body">
-                <div class="container-modal">
-                  <div class = paragrafo1><p><b>Você ainda não tem</b></p></div>
-                  <div class = paragrafo1><p><b>produtos adicionados ao seu carrinho</b></p></div>
-                  <div class="sacola-modal"> <i class="bi bi-cart2" style="font-size:40px;color: black;"></i></div>
-                  <div class = paragrafo1><p>Escolha tudo o que seu Pet precisa e adicione ao</div>
-                  <div class = paragrafo1><p>seu carrinho para comprar.</p></div>
-                  <div class = buttonmodal><button class="btnmodal">Entendi</button></div>
-                </div>
-              </div>
-          </div>
-
-          <div class = "iconlogin"><a href="login.html"><i class="bi bi-person" style="font-size:20px;color: rgb(0, 0, 0);"></i></a></div>
-            <div>
-              <div>
-                <i id="icon-dark-mode" class="bi bi-moon-fill"></i>
-                <i class="bi bi-sun-fill"></i>
-              </div>    
-            </div>
-          </div>
-      </div>
-
-      <div class = "areadeservico">
-        <ul class="mobile-menu">
+        <div class = menu-mobile id ="menu-mobile">
           <div class = arealoginmobile>
-            <div class = "iconlogin"><a href="login.html"><i class="bi bi-person" style="font-size:30px;color: rgb(0, 0, 0);"></i></a></div>
-              <p>Olá, Faça seu login.</p>
-              <button id="close-modal"><i class="bi bi-x" style="font-size:40px;" ></i></button>
-            </div>
+            <div class = "iconlogin"><a href="login.html"><i class="bi bi-person" style="font-size:30px;"></i></a></div>
+             <p>Olá, Faça seu login.</p>
+             
             
+          <div class="btn-fechar" id = btn-fechar >
+            <i class="bi bi-x" id = btn-fechar></i>
+          </div>
+        </div>
+          <nav>
+            <ul>
               <div class = titulomobile><p>Tudo que seu pet precisa</p></div>
-            
+             
           <li class="li-dropdown">     
             <div class = "dificil"> 
               <a href="PaginaMenu/todososprodutos.html" id = todososprodutos><b>Todos os Produtos</b></a>
             </div>
-            <div class = "dropdown-menu">
-              <a href="PaginaMenu/cahorro.html"><b>Produtos para seu Dog</b></a> 
-              <a href="PaginaMenu/gato.html"><b>Produtos para seu Gato</b></a>
-              <a href="PaginaMenu/Aves.html"><b>Produtos para sua Ave</b></a>
-              <a href="PaginaMenu/medicamento.html"><b>Remédios para seu Amigo(a)</b></a>
-              <a href="PaginaMenu/todososprodutos.html"><b>Coleção UNIPET</b></a>
-            </div>
+           
           </li>
           <div class =titulomobile><p>Departamentos</p></div>
           <li class="li-dropdown">
-            
+             
             <div class = "dificil"> 
               <a href="PaginaMenu/cahorro.html"id = cachorro><b>Cachorro</b></a>
             </div>
@@ -295,17 +273,28 @@
           </div>
           <div class =titulomobile><p>Troca de Contraste</p></div>
           <div class = areacontraste>
-            
-              <div>
-                <i id="icon-dark-mode" class="bi bi-moon-fill"></i>
-                <i class="bi bi-sun-fill"></i>
+            <div>
+              <div class = darkmode >
+                <i id= "icon-dark-mode-mobile"  class= "bi bi-moon-fill"></i>
+                <i id= "icon-light-mode-mobile" class="bi bi-sun-fill"></i>
               </div>    
-              
-          </div>
-          
-        </ul>
-      </div>  
-    </nav>
+            </div>                          
+              </div>   
+            </ul>
+          </nav>
+
+        
+
+        </div><!--menu-mobile-->
+        <div class = overlay-menu id = overlay-menu></div>
+
+
+            
+          </ul>
+        </div>  
+      </nav>
+        
+     
     </header>
 
 
@@ -314,7 +303,7 @@
 
     <section class = "sectionmsg">
       <div class = mensagemcadastre-se>
-        <a href="cadastre-se.html"><i class="bi bi-suit-heart-fill" style="font-size: 20px; color: rgb(252, 252, 252)";></i><span>Cadastre-se Agora! e faça parte da comunidade <B>UNIPET</B></span></a>
+        <a href="cadastre-se.html"><i class="bi bi-suit-heart-fill" style="font-size: 20px;";></i><span>Cadastre-se Agora! e faça parte da comunidade <B>UNIPET</B></span></a>
       </div>
     </section>
   
@@ -418,18 +407,7 @@
               </div>
             </li>
 
-            <li class="lista-item">
-              <div class="card-categoria">
-                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
-                  <a href="PaginaMenu/medicamento.html">
-                  <img src="imagens/categorias/categoriadog.png"  alt="" class="img-cover">
-                </a>
-                </figure>
-                <h3 class="h3">
-                  <a href="PaginaMenu/medicamento.html" class="card-titulo">cao</a>
-                </h3>
-              </div>
-            </li>
+          
 
             <li class="lista-item">
               <div class="card-categoria">
@@ -440,6 +418,18 @@
                 </figure>
                 <h3 class="h3">
                   <a href="PaginaMenu/medicamento.html" class="card-titulo">Remedios</a>
+                </h3>
+              </div>
+            </li>
+            <li class="lista-item">
+              <div class="card-categoria">
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <a href="PaginaMenu/todososprodutos.html">
+                  <img src="imagens/categorias/todososprodutos.png"  alt="" class="img-cover">
+                </a>
+                </figure>
+                <h3 class="h3">
+                  <a href="PaginaMenu/medicamento.html" class="card-titulo">Todos os Produtos</a>
                 </h3>
               </div>
             </li>
@@ -997,7 +987,7 @@
   <!-- 
     - custom js link
   -->
-  <script src="java/darkmode.js"></script>
+  <script src="java/darkmode.js" defer></script>
 
   
 

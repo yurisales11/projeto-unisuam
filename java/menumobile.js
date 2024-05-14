@@ -1,13 +1,21 @@
 
-function menuShow(){
-  let menuMobile = document.querySelector('.mobile-menu');
-  if(menuMobile.classList.contains('open')){
-  menuMobile.classList.remove('open');
-} else{
-  menuMobile.classList.add('open');
-  }
+let btnMenu = document.getElementById('btn-menu');
+let menu  = document.getElementById('menu-mobile');
+let overlay  = document.getElementById('overlay-menu');
+let btnFechar  = document.getElementById('btn-fechar');
 
-}
+btnMenu.addEventListener('click',() =>{
+  menu.classList.add('abrir-menu');
+})
+
+btnFechar.addEventListener('click',() =>{
+  menu.classList.remove('abrir-menu');
+})
+
+
+overlay.addEventListener('click',() =>{
+  menu.classList.remove('abrir-menu');
+})
 
 
 

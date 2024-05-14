@@ -200,6 +200,11 @@ hr {width: 85%;
   margin-block-end: -20px;
 }
 
+
+.lista-item-categoria{display: flex;
+
+
+}
 .lista-item {
   min-width: 100%;
   scroll-snap-align: start;
@@ -271,7 +276,7 @@ hr {width: 85%;
   gap:1%;
   text-decoration: none;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: var(--cor-primaria);
+  color: white;
   font-size: 2rem;
   font-weight: 600;
 

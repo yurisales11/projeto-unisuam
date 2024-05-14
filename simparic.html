@@ -15,19 +15,20 @@
 
     <!-- Link Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Link Java -->
+    <script src="java/menumobile.js" defer></script>
 
 </head>
 <body>
-    
-    
-  <!--Header-->
-  <header class="header">
-    <!--menu-->
+     
+      <!--Header Desktop-->
+  <!--menu-->
+  <header class="header-desktop">
     <nav class = "navbar">
       <div class = "containernav">
-
         <div class= "logoimg"> 
           <a href="index.html"><img src="imagens/unipet.png" alt="imglogo" id ="logoimagem"></a>
+          <a href="index.html"><img src="imagens/unipetdarkmode.png" alt="imglogo" id ="logoimagemdarkmode"></a>
         </div>
 
         <div class = "areainput">
@@ -41,9 +42,10 @@
         </div>
 
         <div class = "iconeslogin">
-          <div class = "iconlogin"><a href="contato.html"><i class="bi bi-telephone-fill" style="font-size:20px; color: black;"></i></a></div>
-          <div class = "iconlogin"><a href="login.html"><i class="bi bi-heart" style="font-size:20px;color: black;"></i></a></div>
-          <div class = "iconlogin"><button id="open-modal"><i class="bi bi-cart2" style="font-size:20px;color: black;"></i></button></div>
+          <div class = "iconlogin"><a href="contato.html"><i class="bi bi-telephone-fill" style="font-size:20px; "></i></a></div>
+          <div class = "iconlogin"><a href="login.html"><i class="bi bi-heart" style="font-size:20px;"></i></a></div>
+
+          <div class = "iconlogin"><button id="open-modal"><i class="bi bi-cart2" style="font-size:20px;"></i></button></div>
           <div id="fade" class="hide"></div>
           <div id="modal" class="hide">
             <div class="modal-header">
@@ -57,30 +59,34 @@
                 <div class="container-modal">
                   <div class = paragrafo1><p><b>Você ainda não tem</b></p></div>
                   <div class = paragrafo1><p><b>produtos adicionados ao seu carrinho</b></p></div>
-                  <div class="sacola-modal"> <i class="bi bi-cart2" style="font-size:40px;color: black;"></i></div>
+                  <div class="sacola-modal"> <i class="bi bi-cart2" style="font-size:40px;"></i></div>
                   <div class = paragrafo1><p>Escolha tudo o que seu Pet precisa e adicione ao</div>
                   <div class = paragrafo1><p>seu carrinho para comprar.</p></div>
                   <div class = buttonmodal><button class="btnmodal">Entendi</button></div>
                 </div>
               </div>
-          </div>
+  
+         
 
-          <div class = "iconlogin"><a href="login.html"><i class="bi bi-person" style="font-size:20px;color: rgb(0, 0, 0);"></i></a></div>
+          </div>
+          
+
+          <div class = "iconlogin"><a href="login.html"><i class="bi bi-person" style="font-size:20px;"></i></a></div>
             <div>
               <div>
-                <i id="icon-dark-mode" class="bi bi-moon-fill"></i>
-                <i class="bi bi-sun-fill"></i>
+                <i id= "icon-dark-mode" class= "bi bi-moon-fill"></i>
+                <i id= "icon-light-mode" class="bi bi-sun-fill"></i>
               </div>    
             </div>
           </div>
       </div>
+      </div>
 
-     
       <div class = "areadeservico">
         <ul class="ul-dropdown">
           <li class="li-dropdown">
             <div class = "dificil"> 
-              <a href="PaginaMenu/todososprodutos.html"id = todososprodutos><b>Todos os Produtos</b></a>
+              <a href="PaginaMenu/todososprodutos.html" id = todososprodutos><b>Todos os Produtos</b></a>
             </div>
             <div class = "dropdown-menu">
               <a href="PaginaMenu/cahorro.html"><b>Produtos para seu Dog</b></a> 
@@ -129,7 +135,154 @@
         </ul>
       </div>  
     </nav>
-  </header>
+    </header>
+
+    <!--Header Mobile-->
+
+
+  <!--menu-->
+  <header class="header-mobile">
+    <nav class = "navbar">
+      <div class = "containernav">
+        <div class= "containertop"> 
+          <div class = iconmobile>
+          <div class = "mobile-menu-icon">
+            <button id ="btn-menu">
+              <i class="bi bi-list" id = iconemenumobile style="font-size:40px;"></i>
+            </button>
+           </div>
+
+           <div class = "iconlogin"><a href="login.html"><i class="bi bi-person" style="font-size:35px; color: var(--cor-secundaria);"></i></a></div>
+           <a href="index.html"><img src="imagens/unipetdarkmode.png" alt="imglogo" id ="logoimagemdarkmode"></a>
+          </div>
+
+
+          <a href="index.html"><img src="imagens/unipet.png" alt="imglogo" id ="logoimagem"></a>
+
+          <div class = iconmobile2>
+
+          <div class = "iconlogin"><button id="open-modal"><i class="bi bi-cart2" style="font-size:25px;"></i></button></div>
+          <div id="fade" class="hide"></div>
+          <div id="modal" class="hide">
+            <div class="modal-header">
+              <h2 class = titlemodal>Carrinho</h2>
+              <button id="close-modal"><i class="bi bi-x" style="font-size:40px;"></i></button>
+            </div>
+
+              <hr class = hrmodal>
+            
+              <div class="modal-body">
+                <div class="container-modal">
+                  <div class = paragrafo1><p><b>Você ainda não tem</b></p></div>
+                  <div class = paragrafo1><p><b>produtos adicionados ao seu carrinho</b></p></div>
+                  <div class="sacola-modal"> <i class="bi bi-cart2" style="font-size:40px;"></i></div>
+                  <div class = paragrafo1><p>Escolha tudo o que seu Pet precisa e adicione ao</div>
+                  <div class = paragrafo1><p>seu carrinho para comprar.</p></div>
+                  <div class = buttonmodal><button class="btnmodal">Entendi</button></div>
+                </div>
+              </div>
+          </div>
+          <div class = "iconlogin"><a href="login.html"><i class="bi bi-heart" style="font-size:20px;color: var(--cor-secundaria);"></i></a></div>
+        </div>
+        </div>
+
+        <div class = "areainput">
+          <div class = "imglupa">
+            <button><img src="imagens/imagem-menu/lupapng.png" alt="imglupa" id = "lupaimagem"></button>
+          </div>
+
+          <div class = "inputsearch">
+            <input type="text" placeholder="Digite aqui o que seu pet precisa!"></input>
+          </div>
+        </div>
+
+        <div class = menu-mobile id ="menu-mobile">
+          <div class = arealoginmobile>
+            <div class = "iconlogin"><a href="login.html"><i class="bi bi-person" style="font-size:30px;color: var(--cor-secundaria);"></i></a></div>
+             <p style="color: var(--cor-secundaria);">Olá, Faça seu login.</p>
+             
+            
+          <div class="btn-fechar" id = btn-fechar >
+            <i class="bi bi-x" id = btn-fechar></i>
+          </div>
+        </div>
+          <nav>
+            <ul>
+              <div class = titulomobile><p>Tudo que seu pet precisa</p></div>
+             
+          <li class="li-dropdown">     
+            <div class = "dificil"> 
+              <a href="PaginaMenu/todososprodutos.html" id = todososprodutos><b>Todos os Produtos</b></a>
+            </div>
+           
+          </li>
+          <div class =titulomobile><p>Departamentos</p></div>
+          <li class="li-dropdown">
+             
+            <div class = "dificil"> 
+              <a href="PaginaMenu/cahorro.html"id = cachorro><b>Cachorro</b></a>
+            </div>
+          </li>
+
+          <li class= "li-dropdown">
+            <div class = "dificil"> 
+              <a href="PaginaMenu/gato.html"id = gato><b>Gato</b></a>
+            </div>
+          </li>
+
+          <li class = "li-dropdown">           
+            <div class = "dificil">
+              <a href="PaginaMenu/Aves.html"id = pássaro><b>Pássaro</b></a>
+            </div>
+          </li>
+
+          <li class = "li-dropdown">
+            <div class = "dificil"> 
+              <a href="PaginaMenu/medicamento.html"id = remedios><b>Remédios</b></a>
+            </div>         
+          </li>
+
+          <li class = "li-dropdown">         
+            <div class = "dificil">  
+              <a href="PaginaMenu/Doação.html"id = doação><b>Doação</b></a>
+            </div>      
+          </li>
+
+          <li class = "li-dropdown">   
+            <div class = "dificil">
+              <a href="PaginaMenu/Quem Somos.html"id = unipet><b>Unipet</b></a>
+            </div>         
+          </li>
+          <div class =titulomobile><p>Utilidades</p></div>
+
+          <div class = areautilidades>
+            <a href="contato.html">Contato</a>
+          </div>
+          <div class =titulomobile><p>Troca de Contraste</p></div>
+          <div class = areacontraste>
+            <div>
+              <div class = darkmodemobile>
+                <i id= "icon-dark-mode-mobile"  class= "bi bi-moon-fill"></i>
+                <i id= "icon-light-mode-mobile" class="bi bi-sun-fill"style="color: var(--cor-secundaria);" ></i>
+              </div>    
+            </div>                          
+              </div>   
+            </ul>
+          </nav>
+
+        
+
+        </div><!--menu-mobile-->
+        <div class = overlay-menu id = overlay-menu></div>
+
+
+            
+          </ul>
+        </div>  
+      </nav>
+        
+     
+    </header>
 
 
 
