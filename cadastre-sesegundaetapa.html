@@ -16,25 +16,24 @@
   <link rel="shortcut icon" href="imagens/favicon/icon-unipet.png" type="">
 
   <!--css link-->
-  <link rel="stylesheet" href="css/cadastre-se.css">
+  <link rel="stylesheet" href="css/cadastre-sesegundaetapa.css">
   
   <link rel="stylesheet" href="css/modal.css">
   <link rel="stylesheet" href="css/menufixo.css">
   <link rel="stylesheet" href="css/footer.css">
 
 <!--javascript link-->
-  <script src="java/validacao.js" defer></script>
-  <script src="java/resetform.js" defer></script>
-  
+  <script src="java/validacao.js"></script>
 </head>
 
 <body>
 
  
     <main>
-      <div id="toast" class="hidden"></div>
-      <div id="toast2" class="hidden"></div>
-   
+
+        <div id="toast" class="hidden"></div>
+        <div id="toast2" class="hidden"></div>
+        
      <div class ="containermain container-background-image ">
       
      
@@ -45,39 +44,43 @@
                   </div>
                   <div class = mensagemlogin>
                     <p>Criar uma <b style="color: #ff7b00;">nova conta</b></p>
-                    <p> Primeira<b style="color: #ff7b00;"> etapa</b></p>
+                    <p> Segunda<b style="color: #ff7b00;"> etapa</b></p>
                    
                   </div>
             </div>
-             <form action="" class = containerdireita id = form>
+             <form action="" class = containerdireita  id = form>
+                
                 <div class = input-box>
-                    <input type="text" placeholder="Nome Completo" id =nome required>
+                    <input type="text" placeholder="E-mail"  id = E-mail required>
                 </div>
                 <div class = input-box>
-                    <input id ="data" type ="date" name="data" id="data"required >
-                </div>
-                <div class = input-boxsex>
-                    <label for="sexo">Sexo</label>
-                    <select name="sexo" id="sexo" id = sexo>
-                        <option value="" select id = defalt>--- Escolha ---</option>
-                        <option value="masc"> Masculino</option>
-                        <option value="femi"> Feminino</option>
-                        <option value="naosei"> Prefiro não dizer</option>
-                       </select>
+                    <input type ="text" placeholder ="Login"  id = Login required>
+                </div>               
+                <div class = input-box>
+                    <input type="password" placeholder="Senha"  id = Senha required>
                 </div>
                 <div class = input-box>
-                    <input type="text" placeholder="Nome Materno" id = nomemae required>
+                    <input type="password" placeholder="Confirme sua senha" required id = ConfirmSenha>
                 </div>
                 <div class = input-box>
-                    <input type="text" placeholder="CPF" id = cpf required >
+                    <input type="text" placeholder="CEP" required id = CEP >
+                </div>
+                <div class =input-box>
+                    <input id ="Bairro" type ="text" name="Bairro" placeholder ="Digite o nome do seu Bairro" required id = >
+                </div>
+                <div class =input-box>   
+                    <input id ="Cidade" type ="text" name="Cidade" placeholder ="Digite sua Cidade"  required id = >
+                </div>
+                <div class =input-box>
+                   
+                    <input id ="Estado" type ="text" name="Estado" placeholder ="Digite seu Estado" required id = >
                 </div>
                 <div class = input-box>
-                    <input type="text" placeholder="Telefone Celular" id = telefonecelular required>
+                    <input type="text" placeholder="Telefone Fixo" required id = Fixo >
                 </div>    
                 <div class = btncadastrar>
-                  <button type="submit" id="Enviar" onclick="validaçãoCAD()">Cadastrar</button>
+                    <button type="submit" id="Enviar" onclick="validaçãoCAD2()">Cadastrar</button>
                     <button type ="submit" id= "limpar" onclick="resetartext()">Limpar</button>
-                  
                 </div>
 
                 <div class = voltaraohome>
@@ -107,10 +110,6 @@
 
 
 
-
-  <!-- 
-    - custom js link
-  -->
 
   
 

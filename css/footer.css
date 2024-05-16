@@ -202,7 +202,10 @@
   #MEDIA  QUERIES
 \*-----------------------------------*/
 
-
+.rodape-inferior img {display: flex;
+flex-wrap: wrap;
+max-width: 100%;
+}
 
 @media (min-width: 560px) {
 

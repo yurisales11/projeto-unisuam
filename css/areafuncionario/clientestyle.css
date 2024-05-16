@@ -24,8 +24,6 @@ input[type=submit]:hover{opacity: 0.8;}
 
 .row{
 display: flex;
-max-width: 100%;
-
 }
 
 .listas{border: 1px solid gray;
@@ -87,12 +85,52 @@ border-radius: 10px}
 .big-box  .respota-pedido{
 display: flex;
 justify-content: center;
-align-items: center;
-text-align: center;
 border: 1px solid gray;
 padding: 35px 0px;
 font-size: 3rem;}
 
 
 footer{margin-top: 10%;}
+
+
+
+@media screen and (max-width: 1680px)  
+{
+
+}
+
+
+
+@media screen and (max-width: 1440px)  
+{
+
+}
+
+@media screen and (max-width: 1200px)  
+{
+
+
+
+}
+
+@media screen and (max-width: 1024px)  
+{
+
+
+}
+
+@media screen and (max-width: 820px)  
+{
+
+
+
+}
+
+@media screen and (max-width: 555px)  
+{
+
+  
+
+}
+
 

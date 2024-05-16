@@ -23,21 +23,19 @@
   <link rel="stylesheet" href="css/footer.css">
 
 <!--javascript link-->
-
-<script src="java/validacao.js"></script>
-
-
+  <script src="java/slide.js" defer></script>
+  <script src="java/modal.js" defer></script>
+  <script src="java/menumobile.js" defer></script>
 </head>
 
 <body>
-  <div id="toast" class="hidden"></div>
-  <div id="toast2" class="hidden"></div>
- 
+
+  
     <main>
      <div class ="containermain container-background-image ">
       
-     
-        <div class = containerform id = form>
+        
+        <div class = containerform>
             <div class = containeresqueda>
                 <div class= "logoimglogin"> 
                     <a href="index.html"><img src="imagens/fotoslogin/unipetdarkmode-removebg-preview.png" alt="imglogo" id ="logoimagemdarkmodee"></a>
@@ -47,27 +45,25 @@
                     <p>para seu amigo(a)  </p>
                   </div>
             </div>
-             <form action="" class = containerdireita>
+            
+            <form action="" class = containerdireita>
                 <div class = tiltelogin>
-                    <p><b>Acesse usando seu Login ou CPF</b></p>
+                    <p><b>Informe seu e-mail abaixo que iremos lhe enviar o link de recuperação.</b></p>
                 </div>
                 <div class = input-box>
-                    <input type="text" placeholder="Insira seu Login ou CPF" id="email-log" required>
+                    <input type="text" placeholder="Insira seu E-mail" required >
                 </div>
-                <div class = input-box>
-                    <input type="password" placeholder="Senha"id=senha-log required>
-                </div>
+             
                 <div class = esqueciminhasenha>
                 <a href="esqueciasenha.html"> <i class="bi bi-question-circle"></i> Esqueci minha senha</a>
               </div>
                 <div class = btnentrar>
-                    <button type="submit" id="Enviar" onclick="validaçãoTLOgin()">Entrar</button>
-                   <a href="cadastre-se.html">Cadastre-se</a>
+                    <button>Redefinir Senha</button>
+                    <a href="login.html">Voltar</a>
                 </div>
-                <div class = voltaraohome>
-                <a href="index.html"> Voltar ao Inicio</a></div>
+                
+                
             </form>
-          
         </div>
      </div>
    
@@ -91,6 +87,10 @@
 
 
 
+  <!-- 
+    - custom js link
+  -->
+  <script src="java/darkmode.js" defer></script>
 
   
 

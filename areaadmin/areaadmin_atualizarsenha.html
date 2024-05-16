@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>area cliente</title>
      <!--css-->
-     <link rel="stylesheet" href="../css/areacliente/clientestyle.css"/>
+     <link rel="stylesheet" href="../css/areadmin/clientestyle.css">
      <link rel="stylesheet" href="../css/menufixo.css">
      <link rel="stylesheet" href="../css/modal.css">
      <link rel="stylesheet" href="../css/footer.css">
-     <link rel="stylesheet" href="../css/areacliente/meuspedidos.css"/>
+     <link rel="stylesheet" href="../css/areacliente/alterarsenha.css">
       <!--js link-->
       <script src="../java/darkmode.js"defer></script>
       <script src="../java/menumobile.js"defer></script>
@@ -287,75 +287,80 @@
 
 
 
-    
-    <div class="contener-pai">
-      <div class="mensagem-boas-vinda">
-        <span>
-          Olá "cliente!" Acompanhe aqui seus pedidos e seus dados cadastrais
-        </span>
-        <input type="submit" a value="Voltar para a loja" />
+        <!--estrutura da pagina-->
+
+
+    <div class="logo-img">
+      <a href="index.html"><img src="Imagens/unipet.png" alt="" /></a>
+    </div>
+  </header>
+  <div class="contener-pai">
+  <body>
+    <div class="mensagem-boas-vinda">
+      <span>
+        Olá "admin!" Acompanhe aqui os pedidos e os dados de seus clientes
+      </span>
+      <input type="submit" a value="Voltar para a loja" />
+    </div>
+    <div class="row">
+      <div class="listas">
+        <ul>
+          <li class="lista_func">
+            <a href="areaadmin-meusPedidos.html">
+              <i class="bi bi-bag"></i> <span>Pedidos de Clientes</span>
+            </a>
+          </li>
+          <li class="lista_func">
+            <a href="areaadmin_atualizarsenha.html">
+              <i class="bi bi-arrow-clockwise"></i>
+              <span> Adicionar Produtos </span></a
+            >
+          </li>
+          <li class="lista_func">
+            <a href="areaadmin_dadospessoais.html">
+              <span><i class="bi bi-person"></i> Controle de estoque </span></a
+            >
+          </li>
+          <li class="lista_func">
+            <a href="areaadmin-contato.html">
+              <i class="bi bi-envelope"></i> <span>Suporte ao Cliente </span>
+            </a>
+          </li>
+          <li class="lista_func">
+            <a href="areaadmin_atualizarsenha.html">
+              <i class="bi bi-arrow-clockwise"></i>
+              <span> Cadastrar Funcionario</span></a>
+              </li>
+          <li class="lista_func"><a href="../index.html">
+            <i class="bi bi-x-lg"></i> <span>Sair</span></a>
+          </li>
+        </ul>
       </div>
-      <div class="row">
-        <div class="listas">
-          <ul>
-            <li class="lista_func">
-              <a href="areaClient-meusPedidos.html">
-                <i class="bi bi-bag"></i> <span>Meus pedidos</span>
-              </a>
-            </li>
-            <li class="lista_func">
-              <a href="areaCliente_atualizarsenha.html">
-                <i class="bi bi-arrow-clockwise"></i>
-                <span> Alterar senha</span></a
-              >
-            </li>
-            <li class="lista_func">
-              <a href="areaCliente_dadospessoais.html">
-                <span><i class="bi bi-person"></i> Dados pessoais </span></a
-              >
-            </li>
-            <li class="lista_func">
-              <a href="areaClient-contato.html">
-                <i class="bi bi-envelope"></i> <span>Entre em contato </span>
-              </a>
-            </li>
-            <li class="lista_func">
-              <a href="../index.html"> 
-                <i class="bi bi-x-lg"></i> <span>Sair</span></a>
-            </li>
-          </ul>
-        </div>
-        <div class="big-box">
-          <div class="busca">
-            <input type="text" class = inputbuscarmp placeholder="Pedido por n°"/>
-            <button type="submit">BUSCAR</button>
+      <div class="Redefiner-senha">
+        <div class="contener-newSenha">
+          <div class="top">
+            <p><b>Alterar senha</b></p>
           </div>
-          <br/>
-
-          <div class="barra-de-pedidos">
-            <div class="informativo">
-              <div class="pedido">
-                <samp>Pedido</samp>
-              </div>
-              <div class="Valor">
-                <samp>Valor</samp>
-              </div>
-              <div class="Status">
-                <samp>Status</samp>
-              </div>
+          <form action="" class="space-senha">
+            <div class="input-box">
+              <label>Nova Senha</label>
+              <input type="password" name="nova senha" class="nova senha" />
+            </div>
+            <div class="input-box">
+              <label>Confirmar nova senha</label>
+              <input type="password" name="Confirmar nova senha" />
             </div>
 
-            <br/>
-
-            <div class="respota-pedido">
-              <span>Nenhum pedido encontrado </span>
+            <div class="btn-att">
+              <input type="submit" value="Atualizar" />
             </div>
-          </div>
-        </div>
+          </form>
+        </d>
       </div>
     </div>
+  </div>
+</div>
   </body>
-
     <!--Rodape-->
 
     <footer class="rodape" style="background-image: url('../imagens/footer-bg.jpg')">

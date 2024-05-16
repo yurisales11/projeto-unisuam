@@ -24,8 +24,6 @@ input[type=submit]:hover{opacity: 0.8;}
 
 .row{
 display: flex;
-max-width: 100%;
-
 }
 
 .listas{border: 1px solid gray;
@@ -35,7 +33,7 @@ border-radius: 10px;
 justify-content: center;
 max-width: 100%;
 width: 25%;
-height: 275px;
+height: 390px;
 }
 
 .lista_func a {
@@ -87,12 +85,9 @@ border-radius: 10px}
 .big-box  .respota-pedido{
 display: flex;
 justify-content: center;
-align-items: center;
-text-align: center;
 border: 1px solid gray;
 padding: 35px 0px;
 font-size: 3rem;}
 
 
 footer{margin-top: 10%;}
-
