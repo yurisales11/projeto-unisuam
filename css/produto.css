@@ -90,10 +90,6 @@ margin: 5px 0 15px 0;}
   max-width: 100%;/*should not be more than 100%*/
 }
 
-.principal-produto-detalhes {
-  padding-left: 4.5%;
-}
-
 .produto-marca {
   display: flex;
   font-size: var(--fs-7);
@@ -397,7 +393,7 @@ input::-webkit-inner-spin-button {
 
   .acao {
     justify-content: center;
-    align-items: center;
+    gap: 15px;
   }
 
   .titulo-produto {
