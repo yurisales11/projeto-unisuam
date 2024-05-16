@@ -289,145 +289,144 @@
 
     <!-- Main -->
     <main>
-        <section class="container-produto">
-            <div class="produto-container">
-                <div class="produto-slider">
-                    <img class="produto-img" src="Imagens/produtos/simparic/1.png" id="MainImg" alt="">
-                    <button class="nav-btn nav-btn-left" onclick="Imagem_Anterior()">&#10094;</button>
-                    <button class="nav-btn nav-btn-right" onclick="Proxima_Imagem()">&#10095;</button>
-                </div>
-                <div class="thumbnail-container">
-                    <button class="thumbnail-img-btn" onclick="Mostrar_Imagem(0)">
-                        <img class="thumbnail-img" src="Imagens/produtos/simparic/1.png" alt="">
-                    </button>
-                    <button class="thumbnail-img-btn" onclick="Mostrar_Imagem(1)">
-                        <img class="thumbnail-img" src="Imagens/produtos/simparic/2.png" alt="">
-                    </button>
-                    <button class="thumbnail-img-btn" onclick="Mostrar_Imagem(2)">
-                        <img class="thumbnail-img" src="Imagens/produtos/simparic/3.png" alt="">
-                    </button>
-                    <button class="thumbnail-img-btn" onclick="Mostrar_Imagem(3)">
-                        <img class="thumbnail-img" src="Imagens/produtos/simparic/4.png" alt="">
-                    </button>
-                    <button class="thumbnail-img-btn" onclick="Mostrar_Imagem(4)">
-                        <img class="thumbnail-img" src="Imagens/produtos/simparic/5.png" alt="">
-                    </button>
-                </div>
+      <section id="produto-detalhes" class="section-p1">
+        <div class="row">
+          <div class="col-2 principal-produto-imagem">
+            <img src="Imagens/produtos/cachorro/1.png" width="100%" id="img-principal" alt="">
+            
+            <div class="small-img-group">
+              <div class="small-img-col">
+                <img src="Imagens/produtos/simparic/1.png" onclick="Mostrar_Imagem(0)" width="100%" class="small-img" alt="">
+              </div>
+  
+              <div class="small-img-col">
+                <img src="Imagens/produtos/simparic/2.png" onclick="Mostrar_Imagem(1)" width="100%" class="small-img" alt="">
+              </div>
+  
+              <div class="small-img-col">
+                <img src="Imagens/produtos/simparic/3.png" onclick="Mostrar_Imagem(2)" width="100%" class="small-img" alt="">
+              </div>
+  
+              <div class="small-img-col">
+                <img src="Imagens/produtos/simparic/4.png" onclick="Mostrar_Imagem(3)" width="100%" class="small-img" alt="">
+              </div>
+  
+              <div class="small-img-col">
+                <img src="Imagens/produtos/simparic/5.png" onclick="Mostrar_Imagem(4)" width="100%" class="small-img" alt="">
+              </div>
             </div>
-            <div class="detalhes">
-                <p class="subtitulo">
-                    Simparic Antipulgas 20 mg para Caes 5,1 a 10kg</p>
-                <h1 class="produto-titulo">Cuidado Especial</h1>
-                
-                <button class="fav-btn" onclick="Btn_Favorito()"><i class="bi bi-heart"></i></button>
-
-                <div class="preco-container">
-                    <div class="preco-detalhes">
-                        <h1 class="preco-produto">R$1,00</h1>
-                        <p class="preco-parcela">ou 2x de R$ 0,50 sem juros</p>
-                        <select name="opcao-produto" id="select-produto">
-                            <option value="">20mg</option>
-                            
-                        </select>
-                        
-                        <!-- botao de quantidade -->
-                    <div class="quantity-input">
-                        <button type="button" class="minus-btn" onclick="Diminuir_Valor()">-</button>
-                        <input type="number" value="1" id="btn-input">
-                        <button type="button" class="plus-btn" onclick="Aumentar_Valor()">+</button>
-                    </div>
-                        <button class="btn-add"><i class="bi bi-cart2"></i> Adicionar ao Carrinho</button>
-                    </div>
-                </div>
-                <p id="invisivel">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit iure libero ex, debitis exercitationem ea incidunt iste eveniet, accusamus voluptates aaa!</p>
-            </div>
-        </section>
-
-        <section class="descricao" id="id-descricao">
-            <div class="descricao-container">
-                <h2 class="descricao-titulo">Descrição</h2>
-                <li class="texto-descricao">
-                    - Indicado para cães de 5,1 a 10 kg; 
-                    <br>
-                    - Proteção contra pulgas, carrapatos, sarnas; 
-                    <br>
-                    - Comprimido mastigável; 
-                    <br>
-                    - Indicado para cães de 8 semanas e peso acima de 1,3 kg;
-                    <br>
-                    - Começa a agir rapidamente; 
-                    <br>
-                    - Protege por 35 dias,
-                    <br>
-                    - Disponível em embalagens com 1 ou 3 tabletes mastigáveis de 20 mg. 
-                    
-                </li>
-            </div>
-        </section>
-
-        <section id="especificaçao">
-            <div class="container-espec">
-                <h2 class="espec-titulo">Especificações</h2>
-                <ul>
-                    <li class="especificaçao-li" style="background-color: rgb(223, 223, 223);">
-                        <span class="spec-key">Idade</span>
-                        <span class="spec-valor">Adulto, Sênior, Filhote, Adulto</span>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="especificaçao-li" >
-                        <span class="spec-key">Linha</span>
-                        <span class="spec-valor">Super Premium</span>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="especificaçao-li" style="background-color: rgb(223, 223, 223);">
-                        <span class="spec-key">Pet</span>
-                        <span class="spec-valor">Cachorros</span>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="especificaçao-li" >
-                        <span class="spec-key">Porte de Raça</span>
-                        <span class="spec-valor">Pequeno</span>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="especificaçao-li" style="background-color: rgb(223, 223, 223);">
-                        <span class="spec-key">Uso</span>
-                        <span class="spec-valor">Oral</span>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="especificaçao-li" >
-                        <span class="spec-key">Composição</span>
-                        <span class="spec-valor">
-                            Isoxazolina: Sarolaner e Isoxazolina</span>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="especificaçao-li" style="background-color: rgb(223, 223, 223);">
-                        <span class="spec-key">Medidas aproximadas</span>
-                        <span class="spec-valor">14mm cada grão</span>
-                    </li>
-                </ul>
+          </div>
+  
           
-
+  
+          <div class="col-2 principal-produto-detalhes">
+            <!-- Titulo Produto -->
+            <h1 class="titulo-produto">Ração Golden Special para Cães Adultos Sabor Frango e Carne</h1>
+            <div class="produto-marca"><a href="index.html">Home</a><span> | </span><a href="#descricao-link">Ver Descrição</a><span> | </span><a href="">Golden</a></div>
+  
+            <!-- Botão Selecionar -->
+            <select name="" id="Select-qtd">
+              <option value="">Selecione o tamanho</option>
+              <option value="">800g R$ 65,99</option>
+              <option value="">2,5 KG R$ 169,99</option>
+              <option value="">6KG  R$354,99</option>
+            </select>
+  
+            <div class="preco-produto">
+              <h3>R$ 65,00</h3>
+              
+              <div><p class="preco-parcela"><strong>ou 2x de R$ 50 sem juros</strong></p></div>
             </div>
-        </section>
+            <div class="favorito"><button class="fav-btn" onclick="Btn_Favorito()"><i class="bi bi-heart-fill"></i></button></div>
+  
+            <div class="descricao-simples">
+              <p>Buscando uma ração Premium de ótima qualidade para nutrir seu cãozinho? Conheça a ração Golden Special.
+              <br> 
+              Com o delicioso sabor de frango e carne, será um verdadeiro banquete a ser oferecido ao seu pet.</p>
+            </div>
+  
+            <div class="acao">
+              <!-- botao de quantidade -->
+              <div class="quantity-input">
+                <button type="button" class="minus-btn" onclick="Diminuir_Valor()">-</button>
+                <input type="number" value="1" id="btn-input">
+                <button type="button" class="plus-btn" onclick="Aumentar_Valor()">+</button>
+              </div>
+              <button class="btn-add"><i class="bi bi-cart2"></i> Adicionar ao Carrinho</button>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="descricao" id="id-descricao">
+        <div class="descricao-container">
+          <h2 class="descricao-titulo"><a href="" name="descricao-link">Descrição</a></h2>
+            <li class="texto-descricao">
+              - Indicada para cães adultos;
+              <br>
+              - Redução do odor das fezes, seleção de ingredientes especiais que auxiliam na redução do odor das fezes;
+              <br>
+              - Blend de proteínas, máxima satisfação para o paladar;
+              <br>
+              - Maior rendimento, ingredientes de alto aproveitamento;
+              <br>
+              - Saúde e vitalidade, alimento de alta qualidade, rico em vitaminas e minerais;
+              <br>
+              - Disponível em embalagens de 15kg e 20kg. 
+            </li>
+        </div>
+      </section>
 
-
-
-
-
-
+      <section id="especificaçao">
+        <div class="container-espec">
+          <h2 class="espec-titulo">Especificações</h2>
+          <ul>
+            <li class="especificaçao-li-gray">
+              <span class="spec-key">Idade</span>
+              <span class="spec-valor">Adulto</span>
+            </li>
+          </ul>
+          <ul>
+            <li class="especificaçao-li" >
+              <span class="spec-key">Linha</span>
+              <span class="spec-valor">Super Premium</span>
+            </li>
+          </ul>
+          <ul>
+            <li class="especificaçao-li-gray">
+              <span class="spec-key">Pet</span>
+              <span class="spec-valor">Cachorros</span>
+            </li>
+          </ul>
+          <ul>
+            <li class="especificaçao-li" >
+              <span class="spec-key">Porte de Raça</span>
+              <span class="spec-valor">Pequeno</span>
+            </li>
+          </ul>
+          <ul>
+            <li class="especificaçao-li-gray">
+              <span class="spec-key">Uso</span>
+              <span class="spec-valor">Oral</span>
+            </li>
+          </ul>
+          <ul>
+            <li class="especificaçao-li" >
+              <span class="spec-key">Composição</span>
+              <span class="spec-valor">Isoxazolina: Sarolaner e Isoxazolina</span>
+            </li>
+          </ul>
+          <ul>
+            <li class="especificaçao-li-gray">
+              <span class="spec-key">Medidas aproximadas</span>
+              <span class="spec-valor"><p>14mm cada grão</p></span>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
-
-
     <!--Rodape-->
-
     <footer class="rodape" style="background-image: url('imagens/footer-bg.jpg')">
         <div class="rodape-topo secao">
             <div class="container">

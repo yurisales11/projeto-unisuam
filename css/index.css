@@ -201,10 +201,8 @@ hr {width: 85%;
 }
 
 
-.lista-item-categoria{display: flex;
+.lista-item-categoria{display: flex;}
 
-
-}
 .lista-item {
   min-width: 100%;
   scroll-snap-align: start;

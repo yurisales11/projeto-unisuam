@@ -1,30 +1,10 @@
 // Variáveis ​​para a imagem principal e miniaturas
-var MainImg = document.getElementById('MainImg');
-var thumbnail_img = document.getElementsByClassName('thumbnail-img');
+var MainImg = document.getElementById('img-principal');
+var small_img = document.getElementsByClassName('small-img');
 
 // Função para mostrar a imagem correspondente quando uma miniatura é clicada
 function Mostrar_Imagem(index) {
-    MainImg.src = thumbnail_img[index].src;
-}
-
-// Função para navegar para a imagem anterior
-function Imagem_Anterior() {
-    var currentIndex = Array.from(thumbnail_img).findIndex(function(img) {
-        return img.src === MainImg.src;
-    });
-    if (currentIndex > 0) {
-        MainImg.src = thumbnail_img[currentIndex - 1].src;
-    }
-}
-
-// Função para navegar para a próxima imagem
-function Proxima_Imagem() {
-    var currentIndex = Array.from(thumbnail_img).findIndex(function(img) {
-        return img.src === MainImg.src;
-    });
-    if (currentIndex < thumbnail_img.length - 1) {
-        MainImg.src = thumbnail_img[currentIndex + 1].src;
-    }
+    MainImg.src = small_img[index].src;
 }
 
 // Função para alternar o estado do botão de favorito

@@ -12,7 +12,7 @@ dark_icon.onclick = function() {
    
 }
 
-//DARK MODE//
+//DARK MODE MOBILE//
 dark_iconmobile.onclick = function() {
     document.body.classList.toggle("dark-theme")
     localStorage.setItem("dark-theme", 1);
@@ -27,7 +27,7 @@ document.body.classList.remove('dark-theme')
 localStorage.removeItem("dark-theme")
 }
 
-//LIGHT MODE//
+//LIGHT MODE MOBILE//
 light_iconmobile.onclick = function() {
     document.body.classList.remove('dark-theme')
     localStorage.removeItem("dark-theme")
