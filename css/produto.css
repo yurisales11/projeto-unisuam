@@ -80,14 +80,14 @@ margin: 5px 0 15px 0;}
 
 .row{
 
-  display: flex;/*flexible content*/
+  display: flex;
   align-items: flex-start;
-  flex-wrap: wrap;/*wrap place single line or multi lines in given space.*/ 
-  justify-content: center;/*"Display the flex items with space before, between, and after the lines:"*/
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .col-2 img{
-  max-width: 100%;/*should not be more than 100%*/
+  max-width: 100%;
 }
 
 .produto-marca {
@@ -348,6 +348,9 @@ input::-webkit-inner-spin-button {
 
 
 
+
+
+
 @media only screen and (max-width: 550px){
 
   .descricao-container {
@@ -371,16 +374,15 @@ input::-webkit-inner-spin-button {
 }
 
 
-/*----------media query for each and every item display on mobile or screen size less than 600px---------------*/
 
 @media only screen and (max-width: 880px){
 
-  .row {/*this is the row which we have used in every section*/
+  .row {
       flex-wrap: wrap;
       padding-left: 0;
       padding-right: 0;
     }
-  .col-2 {/*for all columns view on mobile, we want one column single line occupying 100% width we not want 3 or 4 in single line*/
+  .col-2 {
       flex-basis: 75%;
   }
 
@@ -403,7 +405,7 @@ input::-webkit-inner-spin-button {
 
   .produto-marca {justify-content: center;}
 
-  /*for single product detail page*/
+  
   .produto-detalhes .row{
       text-align: center;
   }
