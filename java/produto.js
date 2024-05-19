@@ -1,6 +1,6 @@
 // Variáveis ​​para a imagem principal e miniaturas
-var MainImg = document.getElementById('MainImg');
-var thumbnail_img = document.getElementsByClassName('thumbnail-img');
+var MainImg = document.getElementById('img-principal');
+var thumbnail_img = document.getElementsByClassName('small-img');
 
 // Função para mostrar a imagem correspondente quando uma miniatura é clicada
 function Mostrar_Imagem(index) {

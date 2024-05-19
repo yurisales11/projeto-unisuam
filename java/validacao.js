@@ -28,6 +28,11 @@ function toast(frase) {
 
 let emailLog = ""
 let senhaLog = "";
+let user1 = "user1";
+let funcionario = "funcionario";
+let admin = "admin";
+let senhalogin = "1234"
+
 
 function validaçãoTLOgin() {
   
@@ -56,17 +61,82 @@ function validaçãoTLOgin() {
    return;
   }
 
-
+  
 
 
   else {
+
+    if (emailLog == user1 && senhaLog == senhalogin)
+    
+   
+
     setTimeout(function() {
-      window.location.href = 'index.html';
-    }, 100); // Redirecionar após 2.5 segundos
-  };
+      window.location.href = 'areacliente/areaClient-meusPedidos.html';
+      let token = 1
+      localStorage.setItem('token', token)}); // Redirecionar após 2.5 segundos
+            
+
+    if (emailLog == funcionario && senhaLog == senhalogin)
+    
+      setTimeout(function() {
+        window.location.href = 'areafuncionario/areafuncionario-meusPedidos.html';
+        let token = 2
+        localStorage.setItem('token', token)},); // Redirecionar após 2.5 segundos
+        
+
+    if (emailLog == admin && senhaLog == senhalogin)
+        
+        setTimeout(function() {
+          window.location.href = 'areaadmin/areaadmin-meusPedidos.html';
+          let token = 3
+          localStorage.setItem('token', token)},); // Redirecionar após 2.5 segundos
+
+    else {
+      toast("E-mail ou senha incorretos");
+      
+    }
+  
+
+  }
+
 
 
 }
+
+function verificacesso(){
+ 
+  let token = localStorage.getItem('token');
+  if (token == 1) {
+    window.location.href = 'areacliente/areaClient-meusPedidos.html';
+    return;
+  }
+  if (token == 2) {
+    window.location.href = 'areafuncionario/areafuncionario-meusPedidos.html';
+    return;
+  }
+  if (token == 3) {
+    window.location.href = 'areaadmin/areaadmin-meusPedidos.html';
+    return;
+  }
+
+  else {
+    alert('Por favor realize um login')
+    }
+  
+}
+
+function sair(){
+  let token = localStorage.removeItem('token')
+  window.open("login.html")
+  }
+
+  function sair2(){
+    let token = localStorage.removeItem('token')
+    window.open("../login.html")
+    }
+  
+
+
 
 let nome = "nome";
 let cep = "";

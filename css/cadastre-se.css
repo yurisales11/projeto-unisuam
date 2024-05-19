@@ -4,12 +4,13 @@
   flex-direction: column;
   align-items: center;
   background-image: url(../Imagens/fotoslogin/fotobackgroundlogin.png);
-  background-position: left;
+  background-position: center;
   height: 100vh;
   width: 100%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
   background-clip: border-box;
+  overflow: hidden;
   }
   
   
@@ -52,6 +53,9 @@
     
   
   .mensagemlogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   max-width: 100%;
   width: 100%;
   text-align: center;
@@ -61,7 +65,60 @@
       line-height: 45px;
       word-break: keep-all;
       color: white;
+      margin-bottom: 20px;
+    
       }
+
+      .progressbar {
+      width: 110%;
+      display: flex;
+      justify-content: center;
+     
+    }
+
+
+    .progressbar ul li:before{
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-10%);
+      left: 55px;
+      width: 100%;
+      height: 2px;
+      background: rgb(255, 255, 255)
+  }
+      .progressbar ul li{
+        margin-right: 50px;
+        position: relative;
+    }
+      .progressbar ul li:last-child:before{
+      display: none;
+  }
+
+      .progressbar ul {display: flex;
+       
+        
+      }
+      .progressbar ul li {display: flex;
+      }
+
+      .progressbar ul li .p1{
+        
+        width: 50px;
+        height: 50px;
+        background-color: orangered;
+        line-height: 50px;
+        border-radius: 50%;
+    }
+      .progressbar ul li .p2{
+        
+      width: 50px;
+      height: 50px;
+      background-color: rgba(255, 68, 0, 0);
+      line-height: 50px;
+      border-radius: 50%;
+  }
+
   
   .containerdireita{
       width: 40%;
@@ -93,6 +150,21 @@ padding: 0px 15px;
 
      .input-box input:focus{border-bottom: 1px solid #ff4d00;;}
 
+     .input-boxsex label {padding: 0px 5px;
+      margin-bottom: 2%;}
+  
+  
+      .input-boxsex select{width: 95%;
+        background-color: #fc871900;
+        color: white;
+       border-radius: 15px;
+       height: 35px;
+       padding: 0px 10px;
+      }
+
+      .input-boxsex select option{color: black;}
+  
+
   .input-boxsex{width: 95%;
     display: flex;
     flex-direction: column;
@@ -106,14 +178,7 @@ padding: 0px 15px;
     color: white;}
 
 
-    .input-boxsex label {padding: 0px 5px;
-    margin-bottom: 2%;}
-
-
-    .input-boxsex select{width: 95%;
-     
-    }
-
+  
     
 
 

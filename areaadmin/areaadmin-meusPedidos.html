@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>area cliente</title>
      <!--css-->
+      <!--icon-->
+      <link rel="shortcut icon" href="../Imagens/favicon/icon-unipet.png" type="">
      <link rel="stylesheet" href="../css/areadmin/clientestyle.css"/>
      <link rel="stylesheet" href="../css/menufixo.css">
      <link rel="stylesheet" href="../css/modal.css">
@@ -14,6 +16,7 @@
       <script src="../java/darkmode.js"defer></script>
       <script src="../java/menumobile.js"defer></script>
       <script src="../java/modal.js"defer></script>
+      <script src="../java/validacao.js" defer>  </script>
          <!--bootstrap icons-->
      <link
        rel="stylesheet"
@@ -26,13 +29,13 @@
         <nav class = "navbar">
           <div class = "containernav">
             <div class= "logoimg"> 
-              <a href="../index.html"><img src="../imagens/unipet.png" alt="imglogo" id ="logoimagem"></a>
-              <a href="../index.html"><img src="../imagens/unipetdarkmode.png" alt="imglogo" id ="logoimagemdarkmode"></a>
+              <a href="../index.html"><img src="../Imagens/unipet.png" alt="imglogo" id ="logoimagem"></a>
+              <a href="../index.html"><img src="../Imagens/unipetdarkmode.png" alt="imglogo" id ="logoimagemdarkmode"></a>
             </div>
     
             <div class = "areainput">
               <div class = "imglupa">
-                <button><img src="../imagens/imagem-menu/lupapng.png" alt="imglupa" id = "lupaimagem"></button>
+                <button><img src="../Imagens/imagem-menu/lupapng.png" alt="imglupa" id = "lupaimagem"></button>
               </div>
     
               <div class = "inputsearch">
@@ -70,7 +73,9 @@
               </div>
               
     
-              <div class = "iconlogin"><a href="../login.html"><i class="bi bi-person" style="font-size:20px;"></i></a></div>
+              <div class = "iconlogin"><i class="bi bi-person" style="font-size:20px;" onclick="verificacesso()" id = iconemeusdados></i></div>
+              <div class = "iconlogin"><i class="bi bi-box-arrow-right " style="font-size:20px;" onclick="sair2()"></i></div>
+              
                 <div>
                   <div>
                     <i id= "icon-dark-mode" class= "bi bi-moon-fill"></i>
@@ -155,8 +160,8 @@
               </div>
     
     
-              <a href="../index.html"><img src="../imagens/unipet.png" alt="imglogo" id ="logoimagem"></a>
-              <a href="../index.html"><img src="../imagens/unipetdarkmode.png" alt="imglogo" id ="logoimagemdarkmode"></a>
+              <a href="../index.html"><img src="../Imagens/unipet.png" alt="imglogo" id ="logoimagem"></a>
+              <a href="../index.html"><img src="../Imagens/unipetdarkmode.png" alt="imglogo" id ="logoimagemdarkmode"></a>
     
               <div class = iconmobile2>
     
@@ -187,7 +192,7 @@
     
             <div class = "areainput">
               <div class = "imglupa">
-                <button><img src="../imagens/imagem-menu/lupapng.png" alt="imglupa" id = "lupaimagem"></button>
+                <button><img src="../Imagens/imagem-menu/lupapng.png" alt="imglupa" id = "lupaimagem"></button>
               </div>
     
               <div class = "inputsearch">
@@ -324,9 +329,7 @@
                 <i class="bi bi-arrow-clockwise"></i>
                 <span> Cadastrar Funcionario</span></a>
                 </li>
-            <li class="lista_func"><a href="../index.html">
-              <i class="bi bi-x-lg"></i> <span>Sair</span></a>
-            </li>
+          
           </ul>
         </div>
         <div class="big-box">
@@ -362,7 +365,7 @@
 
     <!--Rodape-->
 
-    <footer class="rodape" style="background-image: url('../imagens/footer-bg.jpg')">
+    <footer class="rodape" style="background-image: url('../Imagens/footer-bg.jpg')">
 
       <div class="rodape-topo secao">
         <div class="container">
@@ -497,7 +500,7 @@
             &copy; 2024 Feito por <a href="#" class="copyright-link">João.</a>
           </p>
   
-          <img src="../imagens/payment.png" alt="" class="img">
+          <img src="../Imagens/payment.png" alt="" class="img">
   
         </div>
       </div>
