@@ -103,6 +103,15 @@ function validaçãoTLOgin() {
 
 }
 
+function searchproducts(){
+
+
+  let input = document.getElementById('inputsearch')
+  if (input.value == "")
+    alert('Estamos em Manutenção. Unipet em Desenvolvimento')
+  else { alert('Estamos em Manutenção. Unipet em Desenvolvimento')}
+}
+
 function verificacesso(){
  
   let token = localStorage.getItem('token');
@@ -127,13 +136,14 @@ function verificacesso(){
 
 function sair(){
   let token = localStorage.removeItem('token')
-  window.open("login.html")
+  window.location.href = 'login.html'
   }
 
   function sair2(){
     let token = localStorage.removeItem('token')
-    window.open("../login.html")
+    window.location.href = '../login.html'
     }
+
   
 
 

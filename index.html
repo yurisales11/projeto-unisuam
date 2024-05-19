@@ -42,15 +42,15 @@
           <a href="index.html"><img src="Imagens/unipetdarkmode.png" alt="imglogo" id ="logoimagemdarkmode"></a>
         </div>
 
-        <div class = "areainput">
+        <form class = "areainput">
           <div class = "imglupa">
-            <button><img src="Imagens/imagem-menu/lupapng.png" alt="imglupa" id = "lupaimagem"></button>
+            <button onclick="searchproducts()"  type ="submit" ><img src="Imagens/imagem-menu/lupapng.png" alt="imglupa" id = "lupaimagem"></button>
           </div>
 
           <div class = "inputsearch">
-            <input type="text" placeholder="Digite aqui o que seu pet precisa!"></input>
+            <input type="text"  type ="submit" placeholder="Digite aqui o que seu pet precisa!" id = inputsearch></input>
           </div>
-        </div>
+        </form>
 
         <div class = "iconeslogin">
           <div class = "iconlogin"><a href="contato.html"><i class="bi bi-telephone-fill" style="font-size:20px; "></i></a></div>
@@ -84,11 +84,16 @@
 
           <div class = "iconlogin"><i class="bi bi-person" style="font-size:20px;" onclick="verificacesso()" id = iconemeusdados></i></div>
           <div class = "iconlogin"><i class="bi bi-box-arrow-right " style="font-size:20px;" onclick="sair()"></i></div>
+          
           <div>
             <div class = darkmode >
               <i id= "icon-dark-mode"  class="bi bi-moon-fill"></i>
               <i id= "icon-light-mode" class="bi bi-sun-fill"></i>
             </div>    
+          </div>
+          <div class = entraroucadastrar-se>
+            <a href="login.html" id = "entrar" style="font-size:20px;">Entrar</a>
+            
           </div>                      
           </div>
       </div>
@@ -995,7 +1000,9 @@
   <script src="java/darkmode.js" defer></script>
 
   
-
+<!--Botão whatsapp-->
+<a href="https://api.whatsapp.com/send?phone=5521971682272&text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20sobre%20a%20Unipet" target="_blank"><img src="https://host2b.net/download/imagem/whatsapp-icon.png" style="height:60px; position:fixed; bottom:25px; left:25px; z-index:99999;" data-selector="img"></a>
+<!--Botão whatsapp-->.
 </body>
 
 </html>
