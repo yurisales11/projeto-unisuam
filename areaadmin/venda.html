@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+            <title>Document</title>
+
+            <link rel="stylesheet" href="../css/areadmin/style-fixo-cadastro-produto.css"/>
+            <link rel="stylesheet" href="../css/areadmin/vendas.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">  
+        
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-primary" id="navbartop">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">Unipet</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="cadastro-produto.html">Cadastro de Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="venda.html">Vendas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="venda.html">Realizar Venda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="entrada-e-saida.html">Entrada e Saída</a>
+                    </li>
+                    <li class="nav-item">
+                        <form class="form-logout nav-link" action="/logout" method="post">
+                            <button class="btn-exit "><i class="bi bi-power"></i>Sair</button>
+                        </form>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>          
+        <div class="wrapper">
+            <nav id="sidebar">
+
+                <div class="sidebar-header">
+                    <h4><a href="/">Unipet</a></h4>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <p>MENU</p>
+                    
+                    <li>
+                        <a href="cadastro-produto.html"><i class="bi bi-bag-plus"></i>Cadastro de Produtos</a>
+                    </li>
+                    
+                    <li>
+                        <a href="venda.html"><i class="bi bi-bag-check"></i>Vendas</a>
+                    </li>
+                     <li>
+                        <a href="cartt.html"><i class="bi bi-cart-plus"></i>Realizar Vendas</a>
+                    </li>
+                    <li>
+                        <a href="entrada-e-saida.html"><i class="bi bi-bar-chart-line "></i>Entrada e Saída</a>
+                    </li>
+                </ul>
+
+                <form class="form-logout" action="/logout" method="post">
+                    <button class="btn-exit"><i class="bi bi-power"></i>Sair</button>
+                </form>
+            </nav>
+
+            <div class="container content" id="content">
+                <title>Vendas</title>
+                
+            
+                <div class="content">
+            
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Vendas</h4>
+                        </div>
+                        <div class="col-md-6 box-balance">
+                            <!-- <strong class="sales">Vendas: { vendas } </strong>
+                            <strong class="balance">Total: { total }</strong> -->
+                        </div>
+                    </div>
+            
+                    <form class="search" action="/salesdates" method="post">
+                        <div class="row">            
+                            <div class="col-md-4">
+                                <label for="startDate" class="form-label">Data Inicial</label>
+                                <input id="startDate" value="{{startDate}}" class="form-control" type="date" name="startDate" />
+                            </div>
+                            <div class="col-md-4">
+                                <label for="finalDate" class="form-label">Data final</label>
+                                <input id="finalDate" value="{{finalDate}}" class="form-control" type="date" name="finalDate" />
+                                </div>
+                            <div class="col-md-4">
+                                <button class="btn btn-primary bnt-exit" type="submit">Pesquisar</button>
+            
+                                    <a href="/sales" class="btn btn-secondary">Limpar</a>
+            
+                            </div>
+                        </div>
+                    </form>
+            
+                    <div class="row box-sale-row">
+            
+                                <div class="box-sale col-md-3">
+                                    <div class="header"> 
+                                        <div class="">
+                                            <!-- <strong class="data">{{ sale.formattedDate }}</strong> -->
+                                        </div>
+                                    
+                                        <div class="total">
+                                            <!-- <strong>Total: {{ sale.sale.formattedTotal }}</strong> -->
+                                        </div>
+                                    </div>
+            
+                                    <div class="box-descount">
+                                        <!-- <strong>Desconto: {{sale.sale.descount}} %</strong> -->
+                                    </div>
+            
+                                    <div class="row box-button">
+                                        <form  action="/sales/delete/{{sale._id}}?_method=DELETE" method="POST" onSubmit="deleteSale(event)">
+                                            <button class="btn btn-danger button-delete">Deletar</button>
+                                        </form>
+                                    </div>
+                                    
+                                    
+                                            <div class="data-product">
+                                                <!-- <strong>{nome produto}</strong>
+                                                <strong>QTD: {produto quantidade}</strong>
+                                                <strong>Valor: {preço produto}</strong> -->
+                                            </div>  
+                                        
+                                    
+                                </div>
+                    </div>
+            </div>
+
+<script>
+    function deleteSale(e) {
+        if(!window.confirm("Deseja realmente deletar essa venda ?")) {
+            e.returnValue = false; 
+        }
+    }
+</script>
+            </div>
+        </div>  
+    </body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>

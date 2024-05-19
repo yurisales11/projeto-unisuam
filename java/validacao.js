@@ -130,6 +130,7 @@ function verificacesso(){
 
   else {
     alert('Por favor realize um login')
+    window.location.href = 'login.html';
     }
   
 }
@@ -142,6 +143,11 @@ function sair(){
   function sair2(){
     let token = localStorage.removeItem('token')
     window.location.href = '../login.html'
+    }
+
+  function sair3(){
+    let token = localStorage.removeItem('token')
+    window.location.href = '../areaadmin/areaadmin-meusPedidos.html'
     }
 
   

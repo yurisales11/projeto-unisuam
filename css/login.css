@@ -20,19 +20,21 @@ margin-top: 8%;
 display: flex;
 justify-content: center;
 align-items: center;
-height: 675px;}
+height: 675px;
+}
 
 .containeresqueda{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-width: 40%;
-height: 70%
+  width: 40%;
+  height: 70%
 
 }
 
-.logoimglogin{max-width: 100%;
+.logoimglogin{
+  max-width: 100%;
     padding: 20px;
    
 
@@ -75,8 +77,6 @@ border-left: 2px solid rgba(255, 119, 0, 0.373);}
     width: 100%;
     color: white;}
 
-.input-box{}
-
 .input-box input {width: 315px;
     background-color: transparent;
     border: none;
@@ -94,7 +94,7 @@ border-left: 2px solid rgba(255, 119, 0, 0.373);}
 
     .esqueciminhasenha{
     width: 100%;
-    padding: 10px 30px;
+    padding: 10px 35px;
     color: white;}
 
    
