@@ -116,7 +116,7 @@ section.slider{
    
     width: 70%;
     margin: 0px auto;
-    border-radius: 50px;
+    border-radius: 25px;
 
 }
 
@@ -132,4 +132,41 @@ section.slider{
 
 
 }
+
+@media screen and (max-width: 768px){
+    .slide-box img{
+   
+        width: 85%;
+        height: 100%;
+        border-radius: 25px;
     
+    }
+
+    .nav-manual, .nav-auto{
+        position: absolute;
+        width: 100%;
+        margin-top: 62.5%;
+        display: flex;
+        justify-content: center;
+    }
+    
+
+}
+    
+
+@media screen and (max-width: 575px){
+
+   
+
+}
+
+@media (max-width: 450px) {
+
+    .nav-manual, .nav-auto{
+        position: absolute;
+        width: 100%;
+        margin-top: 61.5%;
+        display: flex;
+        justify-content: center;
+    }
+}

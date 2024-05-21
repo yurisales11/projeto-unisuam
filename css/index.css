@@ -316,6 +316,10 @@ hr {width: 85%;
   transition: var(--transition-1);
 }
 
+.card-categoria .card-titulo a {
+ font-size: 18px;
+}
+
 .card-categoria .card-titulo:is(:hover, :focus) { color: var(--portland-orange);  }
 
 
@@ -590,9 +594,63 @@ justify-content: center;
 @media (min-width: 370px) {
   /* Oferta */
   .lista-grid { grid-template-columns:  1fr 1fr; }
+  /* Oferta */
+  .lista-item { min-width: calc(50% - 15px); }
 }
 
 @media (max-width: 375px) {
+
+
+  
+  .sectionmsg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 65px;
+    background: linear-gradient(700deg,#41b0ff ,#242424 60%  );
+    margin: 20px 0;
+  }
+  
+  .mensagemcadastre-se{
+    width: 100%;
+    text-align: center;
+  
+    justify-content: center;
+    align-items: center;
+    
+  
+    
+  }
+  
+  .mensagemcadastre-se a {
+    display: flex;
+    
+    
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+  
+  }
+
+  
+  .mensagemcadastre-se i:hover{
+    background-color:#d47234;
+    padding: 3px;
+    border-radius: 10px;
+    transition: 0.7s;
+    }
+  
+  .mensagemcadastre-se span:hover {
+    color: #d47234;
+    border-radius: 10px;
+    
+  
+  }
+  
+
   /* Oferta */
   .lista-grid { grid-template-columns:  1fr; }
 }
@@ -600,7 +658,66 @@ justify-content: center;
 /*---------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------*/
+/* responsivo para telas de 455px */
+@media (min-width: 450px) {
 
+
+  /* Oferta */
+  .lista-item { min-width: calc(50% - 15px); }
+  
+
+
+  .sectionmsg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 65px;
+    background: linear-gradient(700deg,#41b0ff ,#242424 60%  );
+    margin: 20px 0;
+  }
+  
+  .mensagemcadastre-se{
+    width: 100%;
+    text-align: center;
+  
+    justify-content: center;
+    align-items: center;
+    
+  
+    
+  }
+  
+  .mensagemcadastre-se a {
+    display: flex;
+    
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 1.6rem;
+  
+  
+  }
+
+  
+  .mensagemcadastre-se i:hover{
+    background-color:#d47234;
+    padding: 3px;
+    border-radius: 10px;
+    transition: 0.7s;
+    }
+  
+  .mensagemcadastre-se span:hover {
+    color: #d47234;
+    border-radius: 10px;
+    
+  
+  }
+  
+}
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
 /* responsivo para telas de 575px */
 @media (min-width: 575px) {
 
@@ -609,13 +726,68 @@ justify-content: center;
   --fs-3: 2.6rem;
 }
 
+  
+
   /* Oferta */
   .lista-item { min-width: calc(50% - 15px); }
+  
 
   /* Marca */
   .marca .lista-item { min-width: 50%; }
 
+  .sectionmsg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 65px;
+    background: linear-gradient(700deg,#41b0ff ,#242424 60%  );
+    margin: 20px 0;
+  }
+  
+  .mensagemcadastre-se{
+    width: 100%;
+    text-align: center;
+  
+    justify-content: center;
+    align-items: center;
+    
+  
+    
+  }
+  
+  .mensagemcadastre-se a {
+    display: flex;
+    
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 2rem;
+  
+  
+  }
+
+  
+  .mensagemcadastre-se i:hover{
+    background-color:#d47234;
+    padding: 3px;
+    border-radius: 10px;
+    transition: 0.7s;
+    }
+  
+  .mensagemcadastre-se span:hover {
+    color: #d47234;
+    border-radius: 10px;
+    
+  
+  }
+
+ 
+
+  
 }
+
+
 
 @media (max-width: 575px) {
 
@@ -650,6 +822,7 @@ justify-content: center;
   /* Marca */
   .marca .lista-item { min-width: 33%; }
 
+  
   
 
 }
