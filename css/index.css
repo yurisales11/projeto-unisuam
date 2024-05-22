@@ -180,7 +180,6 @@ hr {width: 85%;
 
 .img-holder {
   aspect-ratio: var(--width) / var(--height);
-  background-color: var(--light-gray);
   overflow: hidden;
 }
 
@@ -615,7 +614,6 @@ justify-content: center;
   .mensagemcadastre-se{
     width: 100%;
     text-align: center;
-  
     justify-content: center;
     align-items: center;
     
