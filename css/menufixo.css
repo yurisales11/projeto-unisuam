@@ -85,6 +85,7 @@ font-size: 2.5rem;}
 
 .dark-theme #logoimagem{display: none;}
 
+.darkmode {color: var(--cor-secundaria);}
 
 
 
@@ -485,6 +486,7 @@ width: 80%;
 }
 
 .header-mobile{display: none;}
+
 
 
 
@@ -1095,17 +1097,20 @@ width: 20%;
 .titulomobile
 
 {
-background-color: rgba(229, 229, 229, 0.591);
+  border-top: 1px solid rgba(255, 68, 0, 0.62);
+border-bottom: 1px solid rgba(255, 68, 0, 0.62);
 height: 50px;
 display: flex;
 align-items: center;
 justify-content: space-between;
-padding: 0px 8%;}
+padding: 0px 8%;
+width: 100%;}
 
-.titulomobile p {font-size: bold;
+.titulomobile p {
+  font-size: bold;
   font-weight: 700;
 font-size: 1.6rem;
-color: black;
+color: var(--cor-secundaria);
 }
 
 .tituloli{
@@ -1238,14 +1243,14 @@ gap: 3%;
 
 .arealoginmobile
 {
+  color: var(--cor-secundaria);
   display: flex;
   justify-content: space-between;
   padding: 0px 20px;
   align-items: center;}
 
 
-
-
+ 
 
 
 

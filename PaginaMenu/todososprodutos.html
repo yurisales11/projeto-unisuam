@@ -19,7 +19,6 @@
      <link rel="stylesheet" href="../css/paginacategoria.css">
      <link rel="stylesheet" href="../css/modal.css">
      <link rel="stylesheet" href="../css/menufixo.css">
-     <link rel="stylesheet" href="../css/darkmode.css">
      <link rel="stylesheet" href="../css/footer.css">
      
    <!--javascript link-->
@@ -166,38 +165,18 @@
             </button>
            </div>
 
-           <div class = "iconlogin"><a href="../login.html"><i class="bi bi-person" style="font-size:35px; color: var(--cor-secundaria);"></i></a></div>
+           
           </div>
 
 
+          <div class =containerlogo>
           <a href="../index.html"><img src="../Imagens/unipet.png" alt="imglogo" id ="logoimagem"></a>
           <a href="../index.html"><img src="../Imagens/unipetdarkmode.png" alt="imglogo" id ="logoimagemdarkmode"></a>
-
-          <div class = iconmobile2>
-
-          <div class = "iconlogin"><button id="open-modal"><i class="bi bi-cart2" style="font-size:25px;"></i></button></div>
-          <div id="fade" class="hide"></div>
-          <div id="modal" class="hide">
-            <div class="modal-header">
-              <h2 class = titlemodal>Carrinho</h2>
-              <button id="close-modal"><i class="bi bi-x" style="font-size:40px;"></i></button>
-            </div>
-
-              <hr class = hrmodal>
-            
-              <div class="modal-body">
-                <div class="container-modal">
-                  <div class = paragrafo1><p><b>Você ainda não tem</b></p></div>
-                  <div class = paragrafo1><p><b>produtos adicionados ao seu carrinho</b></p></div>
-                  <div class="sacola-modal"> <i class="bi bi-cart2" style="font-size:40px;"></i></div>
-                  <div class = paragrafo1><p>Escolha tudo o que seu Pet precisa e adicione ao</div>
-                  <div class = paragrafo1><p>seu carrinho para comprar.</p></div>
-                  <div class = buttonmodal><button class="btnmodal">Entendi</button></div>
-                </div>
-              </div>
-          </div>
-          <div class = "iconlogin"><a href="../login.html"><i class="bi bi-heart" style="font-size:20px;color: var(--cor-secundaria);"></i></a></div>
         </div>
+  
+          
+
+         
         </div>
 
         <div class = "areainput">
@@ -212,8 +191,8 @@
 
         <div class = menu-mobile id ="menu-mobile">
           <div class = arealoginmobile>
-            <div class = "iconlogin"><a href="../login.html"><i class="bi bi-person" style="font-size:30px;color: var(--cor-secundaria);"></i></a></div>
-             <p style="color: var(--cor-secundaria);">Olá, Faça seu login.</p>
+            <div class = "iconlogin"><a href="../login.html"><i class="bi bi-person" style="font-size:30px;"></i></a></div>
+             <p>Olá, Faça seu login.</p>
              
             
           <div class="btn-fechar" id = btn-fechar >
@@ -275,9 +254,9 @@
           <div class =titulomobile><p>Troca de Contraste</p></div>
           <div class = areacontraste>
             <div>
-              <div class = darkmodemobile>
+              <div class = darkmode >
                 <i id= "icon-dark-mode-mobile"  class= "bi bi-moon-fill"></i>
-                <i id= "icon-light-mode-mobile" class="bi bi-sun-fill"style="color: var(--cor-secundaria);" ></i>
+                <i id= "icon-light-mode-mobile" class="bi bi-sun-fill"></i>
               </div>    
             </div>                          
               </div>   
@@ -298,6 +277,8 @@
      
     </header>
 
+
+    <!--Header Mobile-->
   
     <section class = banner>
         <div class = banner-content>
@@ -306,278 +287,173 @@
           </div>
           </div>
        </section>
-
-    <main>
-        <!-- <section class="secao produto">
-            <div class="containerproduto">
-    
-              <h2 class="h2 secao-titulo">
-                <span class="span">Bem vindo a Terra dos Peludos</span> 🐾💕
-              </h2>
-    
-              <ul class="lista">
-                <a href="../goldenformula.html">
+       <main>
+        <section class="secao produto">
+          <div class="containerproducts">
+            
+  
+            <ul class="lista-grid">
+              
                 <li>
                   <div class="card-produto">
-    
                     <div class="card-banner img-holder" >
-                        <img src="../Imagens/produtos/produto01.png"
-                        alt="" class="img-cover default">
-                    
-    
+                      <a href="../goldenformula.html"><img src="../Imagens/produtos/produto01.png" alt="" class="img-cover default"></a>
                     </div>
-                 
+  
                     <div class="card-conteudo">
-    
                       <h3 class="h3">
-                        <a href="../goldenformula.html" class="card-titulo"><span>Ração Golden Special para Cães Adultos</span></a>
+                        <a href="../goldenformula.html" class="card-titulo">Ração Golden Special para Cães </a>
                       </h3>
                       <data class="card-preco" value="97">R$97.00</data>
                       <div class = btncomprar><button class="comprar"><a href="../goldenformula.html">Comprar</a></button>
-    
                     </div>
-    
                   </div>
                 </li>
-                </a>
-                <a href="../whiskas.html">
+          
                 <li>
                   <div class="card-produto">
-    
                     <div class="card-banner img-holder" >
-                      <img src="../Imagens/produtos/produto02.png"
-                        alt="" class="img-cover default">
-                      
+                      <a href="../whiskas.html"><img src="../Imagens/produtos/produto02.png" alt="" class="img-cover default"></a>
                     </div>
-    
                     <div class="card-conteudo">
-    
                       <h3 class="h3">
-                        <a href="../whiskas.html" class="card-titulo">Promoção Leve 3 e Pague 2</a>
+                        <a href="../whiskas.html" class="card-titulo">Whiskas Pague 2 Leve 3  </a>
                       </h3>
-    
-                      <data class="card-preco" value="97">R$149.00</data>
+                      <data class="card-preco" value="97">R$129.00</data>
                       <div class = btncomprar><button class="comprar"><a href="../whiskas.html">Comprar</a></button>
-    
                     </div>
-    
                   </div>
                 </li>
-              </a>
-              <a href="../biotronnativo.html">
+  
                 <li>
                   <div class="card-produto">
-    
                     <div class="card-banner img-holder" >
-                        <img src="../Imagens/produtos/produto03.png"
-                        alt="" class="img-cover default">
-                     
-    
+                      <a href="../biotronnativo.html"><img src="../Imagens/produtos/produto03.png" alt="" class="img-cover default"></a>
                     </div>
-    
                     <div class="card-conteudo">
-    
                       <h3 class="h3">
-                        <a href="../biotronnativo.html" class="card-titulo">Biotron Nativos Ração Nativa</a>
+                        <a href="../biotronnativo.html" class="card-titulo">Biotron Nativo </a>
                       </h3>
-    
                       <data class="card-preco" value="97">R$69.97</data>
-                      <div class = btncomprar><button class="comprar"><a href="../biotronnativo.html">Comprar</a></button>
-    
+                      <div class = btncomprar><button class="comprar"><a href="../goldenformula.html">Comprar</a></button>
                     </div>
-    
                   </div>
                 </li>
-              </a>
-              <a href="../simparic.html">
+  
                 <li>
                   <div class="card-produto">
-    
                     <div class="card-banner img-holder" >
-                        <img src="../Imagens/produtos/produto04.png"
-                        alt="" class="img-cover default">
-                     
-    
+  
+                      <a href="../simparic.html"><img src="../Imagens/produtos/produto04.png" alt="" class="img-cover default"></a>
                     </div>
-                    
                     <div class="card-conteudo">
-    
                       <h3 class="h3">
-                        <a href="../simparic.html" class="card-titulo">Antipulgas Simparic 20 mg para cães 5,1 a 10 kg </a>
+                        <a href="../simparic.html" class="card-titulo">Simparic </a>
                       </h3>
-    
                       <data class="card-preco" value="97">R$1.00</data>
                       <div class = btncomprar><button class="comprar"><a href="../simparic.html">Comprar</a></button>
-                        </div>
-    
                     </div>
-    
                   </div>
                 </li>
-              </a> -->
-              <!--Produto-->
-      <section class="secao produto">
-        <div class="containerproducts">
-          
-
-          <ul class="lista-grid">
-            
-              <li>
-                <div class="card-produto">
-                  <div class="card-banner img-holder" >
-                    <a href="goldenformula.html"><img src="../Imagens/produtos/produto01.png" alt="" class="img-cover default"></a>
-                  </div>
-
-                  <div class="card-conteudo">
-                    <h3 class="h3">
-                      <a href="goldenformula.html" class="card-titulo">Ração Golden Special para Cães </a>
-                    </h3>
-                    <data class="card-preco" value="97">R$97.00</data>
-                  </div>
-                </div>
-              </li>
-        
-              <li>
-                <div class="card-produto">
-                  <div class="card-banner img-holder" >
-                    <a href="whiskas.html"><img src="../Imagens/produtos/produto02.png" alt="" class="img-cover default"></a>
-                  </div>
-                  <div class="card-conteudo">
-                    <h3 class="h3">
-                      <a href="whiskas.html" class="card-titulo">Promoção Leve 3 e Pague 2</a>
-                    </h3>
-                    <data class="card-preco" value="149">R$149,90</data>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="card-produto">
-                  <div class="card-banner img-holder" >
-                    <a href="biotronnativo.html"><img src="../Imagens/produtos/produto03.png" alt="" class="img-cover default"></a>
-                  </div>
-                  <div class="card-conteudo">
-                    <h3 class="h3">
-                      <a href="biotronnativo.html" class="card-titulo">Biotron Nativos</a>
-                    </h3>
-                    <data class="card-preco" value="69">R$69.97</data>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="card-produto">
-                  <div class="card-banner img-holder" >
-
-                    <a href="simparic.html"><img src="../Imagens/produtos/produto04.png" alt="" class="img-cover default"></a>
-                  </div>
-                  <div class="card-conteudo">
-                    <h3 class="h3">
-                      <a href="simparic.html" class="card-titulo">Simparic</a>
-                    </h3>
-                    <data class="card-preco" value="49">R$1.00</data>
-                  </div>
-                </div>
-              </li>
-
-            <!--OUTROS 4 PRODUTOS--
-            <li>
-              <div class="card-produto">
-
-                <div class="card-banner img-holder" >
-                  <img src="Imagens/produtos/product-5.jpg"
-                    alt="" class="img-cover default">
-                  <img src="Imagens/produtos/product-5_0.jpg"
-                    alt="" class="img-cover hover">
-                </div>
-
-                <div class="card-conteudo">
-
-                  <h3 class="h3">
-                    <a href="#" class="card-titulo">Abacaxi</a>
-                  </h3>
-
-                  <data class="card-preco" value="85">R$85.00</data>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="card-produto">
-
-                <div class="card-banner img-holder" >
-                  <img src="Imagens/produtos/product-6.jpg"
-                    alt="" class="img-cover default">
-                  <img src="Imagens/produtos/product-6_0.jpg"
-                    alt="" class="img-cover hover">
-                </div>
-
-                <div class="card-conteudo">
-
-                  <h3 class="h3">
-                    <a href="#" class="card-titulo">Abacaxi</a>
-                  </h3>
-
-                  <data class="card-preco" value="85">R$85.00</data>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="card-produto">
-
-                <div class="card-banner img-holder">
-                  <img src="Imagens/produtos/product-7.jpg"
-                    alt="" class="img-cover default">
-                  <img src="Imagens/produtos/product-7_0.jpg"
-                    alt="" class="img-cover hover">
-
-                </div>
-
-                <div class="card-conteudo">
-
-                  <h3 class="h3">
-                    <a href="#" class="card-titulo">Abacaxi</a>
-                  </h3>
-
-                  <data class="card-preco" value="85">R$85.00</data>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="card-produto">
-
-                <div class="card-banner img-holder">
-                  <img src="Imagens/produtos/product-8.jpg"
-                    alt="" class="img-cover default">
-                  <img src="Imagens/produtos/product-8_0.jpg"
-                    alt="" class="img-cover hover">
-                </div>
-
-                <div class="card-conteudo">
-
-                  <h3 class="h3">
-                    <a href="#" class="card-titulo">Abacaxi</a>
-                  </h3>
-
-                  <data class="card-preco" value="55">R$55.00</data>
-
-                </div>
-                <--OUTROS 4 PRODUTOS-->
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
   
+              <!--OUTROS 4 PRODUTOS--
+              <li>
+                <div class="card-produto">
+  
+                  <div class="card-banner img-holder" >
+                    <img src="Imagens/produtos/product-5.jpg"
+                      alt="" class="img-cover default">
+                    <img src="Imagens/produtos/product-5_0.jpg"
+                      alt="" class="img-cover hover">
+                  </div>
+  
+                  <div class="card-conteudo">
+  
+                    <h3 class="h3">
+                      <a href="#" class="card-titulo">Abacaxi</a>
+                    </h3>
+  
+                    <data class="card-preco" value="85">R$85.00</data>
+  
+                  </div>
+  
+                </div>
+              </li>
+  
+              <li>
+                <div class="card-produto">
+  
+                  <div class="card-banner img-holder" >
+                    <img src="Imagens/produtos/product-6.jpg"
+                      alt="" class="img-cover default">
+                    <img src="Imagens/produtos/product-6_0.jpg"
+                      alt="" class="img-cover hover">
+                  </div>
+  
+                  <div class="card-conteudo">
+  
+                    <h3 class="h3">
+                      <a href="#" class="card-titulo">Abacaxi</a>
+                    </h3>
+  
+                    <data class="card-preco" value="85">R$85.00</data>
+  
+                  </div>
+  
+                </div>
+              </li>
+  
+              <li>
+                <div class="card-produto">
+  
+                  <div class="card-banner img-holder">
+                    <img src="Imagens/produtos/product-7.jpg"
+                      alt="" class="img-cover default">
+                    <img src="Imagens/produtos/product-7_0.jpg"
+                      alt="" class="img-cover hover">
+  
+                  </div>
+  
+                  <div class="card-conteudo">
+  
+                    <h3 class="h3">
+                      <a href="#" class="card-titulo">Abacaxi</a>
+                    </h3>
+  
+                    <data class="card-preco" value="85">R$85.00</data>
+  
+                  </div>
+  
+                </div>
+              </li>
+  
+              <li>
+                <div class="card-produto">
+  
+                  <div class="card-banner img-holder">
+                    <img src="Imagens/produtos/product-8.jpg"
+                      alt="" class="img-cover default">
+                    <img src="Imagens/produtos/product-8_0.jpg"
+                      alt="" class="img-cover hover">
+                  </div>
+  
+                  <div class="card-conteudo">
+  
+                    <h3 class="h3">
+                      <a href="#" class="card-titulo">Abacaxi</a>
+                    </h3>
+  
+                    <data class="card-preco" value="55">R$55.00</data>
+  
+                  </div>
+                  <--OUTROS 4 PRODUTOS-->
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    
    
   <!--Rodape-->
 
