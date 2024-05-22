@@ -236,6 +236,8 @@ transition: 0.5s;}
   
   .comprar:hover{opacity: 0.9;}
 
+  .img-mobile{display: none;}
+
 /* .containerproduto{display: flex;
   flex-direction: column;
   justify-content: center;
@@ -385,11 +387,18 @@ flex-wrap: wrap;}
 
 .banner{margin-top: 1%;}
 }
+
+
 */
 @media screen and (max-width: 768px)  
 {
 .img-desktop{width: 100%;
-height: 100%}
+height: 100%;
+display: none;}
+
+.img-mobile{width: 100%;
+height: 100%;
+display: block;}
 
 }
 
