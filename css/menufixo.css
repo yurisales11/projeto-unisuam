@@ -865,7 +865,7 @@ width: 80%;
   .header-mobile{display: block;}
 
   .menu-mobile{background-color: var(--cor-primaria);
-   width: 0%;
+  width: 0%;
   height: 100%;
   position: fixed;
   top: 0;
@@ -1249,6 +1249,10 @@ gap: 3%;
   padding: 0px 20px;
   align-items: center;}
 
+  .darkmode{
+  margin-bottom: 10%;
+  font-size: 2rem;}
+
 
  
 
@@ -1571,6 +1575,7 @@ width: 23%;
 
   max-width: 100%;
   width: 20%;
+ 
   
 }
 
@@ -1754,6 +1759,12 @@ width: 23%;
   
 }
 
+.menu-mobile.abrir-menu{
+  width: 85%;
+  height: 100%;
+ 
+}
+
 
 
 .ul-dropdown{
@@ -1781,6 +1792,13 @@ gap: 3%;}
 
 @media screen and (max-width: 375px)
 {
+
+  .menu-mobile.abrir-menu{
+    width: 90%;
+    height: 100%;
+   
+  }
+  
 .iconmobile{
   display: flex;
   justify-content: center;

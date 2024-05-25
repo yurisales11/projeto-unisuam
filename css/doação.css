@@ -447,6 +447,8 @@ justify-content: center;}
   }
 
   @media screen and (max-width: 768px)  {
+
+    .img-desktop{display: none;}
     .container{display: flex;
     flex-direction: column;
  }
@@ -569,5 +571,9 @@ justify-content: center;}
     
   }
 
+  @media screen and (max-width: 450px)
+{
+  
+}
 
   
